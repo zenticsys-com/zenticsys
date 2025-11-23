@@ -1,26 +1,136 @@
 @import "tailwindcss";
 
 :root {
+  --font-size: 16px;
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #2c2c2c;
+  --primary: #ef3d23;
+  --primary-dark: #d62c14;
+  --primary-light: #f25a42;
+  --brand-primary: #ef3d23;
+  --secondary: #f5f5f5;
+  --secondary-dark: #e0e0e0;
+  --muted: #f9f9f9;
+  --muted-foreground: #757575;
+  --accent: #e3f2fd;
+  --border: rgba(0, 0, 0, 0.12);
+  --input-background: #f8f8f8;
+  --error: #d32f2f;
+  --warning: #ff9800;
+  --success: #4caf50;
+  --info: #2196f3;
+  --radius: 8px;
+  --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.12);
+  --shadow-2: 0 1px 5px rgba(0, 0, 0, 0.2);
+  --shadow-3: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dark {
+  --background: #1a1a1a;
+  --foreground: #ffffff;
+  --primary: #ef3d23;
+  --primary-dark: #d62c14;
+  --primary-light: #f25a42;
+  --secondary: #2a2a2a;
+  --secondary-dark: #1f1f1f;
+  --muted: #2a2a2a;
+  --muted-foreground: #b0b0b0;
+  --accent: #1e3a8a;
+  --border: rgba(255, 255, 255, 0.12);
+  --input-background: #2a2a2a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+  --color-brand-primary: var(--brand-primary);
+  --color-secondary: var(--secondary);
+  --color-secondary-dark: var(--secondary-dark);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+  --color-input-background: var(--input-background);
+  --color-error: var(--error);
+  --color-warning: var(--warning);
+  --color-success: var(--success);
+  --color-info: var(--info);
+  --radius-sm: 4px;
+  --radius-md: var(--radius);
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --shadow-1: var(--shadow-1);
+  --shadow-2: var(--shadow-2);
+  --shadow-3: var(--shadow-3);
+  --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-inter), Inter, system-ui, -apple-system, sans-serif;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h4 {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+
+    label {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    button {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    input {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
 }
