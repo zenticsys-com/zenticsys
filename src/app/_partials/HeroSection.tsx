@@ -20,16 +20,6 @@ const HeroSection = () => {
               life.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              {/* <Button
-                variant="contained"
-                size="large"
-                component={NextLink}
-                href="/schedule"
-                endIcon={<ArrowRight className="w-4 h-4" />}
-                className="bg-primary hover:bg-primary-dark text-white"
-              >
-                Get Started
-              </Button> */}
               <Link href="/schedule">
                 <ZtsButton
                   icon={
@@ -42,15 +32,7 @@ const HeroSection = () => {
                   className="border-none text-white bg-primary hover:border-transparent hover:bg-primary-dark hover:text-white"
                 />
               </Link>
-              {/* <Button
-                variant="outlined"
-                size="large"
-                component={NextLink}
-                href="/about"
-                className="border-primary text-primary hover:bg-primary hover:text-white"
-              >
-                Learn More
-              </Button> */}
+
               <Link href="/about">
                 <ZtsButton
                   text="Learn More"

@@ -125,11 +125,6 @@ const CaseStudies = () => {
               </div>
 
               <div className={index % 2 === 1 ? "lg:col-start-1" : ""}>
-                {/* <ImageWithFallback
-                  src={study.image}
-                  alt={study.title}
-                  className="rounded-lg shadow-lg w-full h-96 object-cover"
-                /> */}
                 <div className="w-full h-auto ">
                   <Image
                     src={study.image}
