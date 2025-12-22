@@ -78,12 +78,14 @@ const LatestfromOurBlog = () => {
           ))}
         </div>
 
-        <Link href="/schedule">
-          <ZtsButton
-            text="Schedule a Call Today"
-            className="border-primary text-primary hover:bg-primary hover:border-transparent hover:text-white"
-          />
-        </Link>
+        <div className="mt-12  flex justify-center">
+          <Link href="/schedule">
+            <ZtsButton
+              text="Schedule a Call Today"
+              className="border-primary text-primary hover:bg-primary hover:border-transparent hover:text-white"
+            />
+          </Link>
+        </div>
       </div>
     </section>
   );
