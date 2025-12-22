@@ -2,7 +2,6 @@
 
 import NextLink from "next/link";
 import { useState } from "react";
-import { Button } from "./ui/Button";
 import { Card, CardContent } from "./ui/card";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Badge } from "./ui/badge";
@@ -15,6 +14,8 @@ import {
   LuClock as Clock,
   LuArrowRight as ArrowRight,
 } from "react-icons/lu";
+import Link from "next/link";
+import ZtsButton from "@/app/_components/ZtButton";
 
 export function BlogPage() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -50,7 +51,7 @@ export function BlogPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-50 to-white py-20">
+      <section className="bg-gradient-to from-gray-50 to-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -116,7 +117,7 @@ export function BlogPage() {
                         </div>
                       </div>
 
-                      <Button
+                      {/* <Button
                         className="bg-[#ef3d23] hover:bg-[#d63420] text-white"
                         asChild
                       >
@@ -126,7 +127,18 @@ export function BlogPage() {
                         >
                           Read More <ArrowRight className="ml-2 h-4 w-4" />
                         </NextLink>
-                      </Button>
+                      </Button> */}
+                      <Link
+                        href={`/blog/${featuredPost.id}`}
+                        className="inline-flex items-center mb-4"
+                      >
+                        <ZtsButton
+                          text="Read More"
+                          className="border-none text-white bg-primary hover:border-transparent hover:bg-primary-dark hover:text-white"
+                          icon={<ArrowRight className="ml-2 h-4 w-4" />}
+                          iconPlacement="after"
+                        />
+                      </Link>
                     </CardContent>
                   </div>
                 </Card>
@@ -192,13 +204,13 @@ export function BlogPage() {
                         ))}
                       </div>
 
-                      <Button
+                      {/* <Button
                         variant="outline"
                         className="w-full border-[#ef3d23] text-[#ef3d23] hover:bg-[#ef3d23] hover:text-white"
                         asChild
                       >
                         <NextLink href={`/blog/${post.id}`}>Read More</NextLink>
-                      </Button>
+                      </Button> */}
                     </CardContent>
                   </Card>
                 ))}
@@ -297,9 +309,9 @@ export function BlogPage() {
                     placeholder="Your email address"
                     className="bg-white text-gray-900 placeholder-gray-500"
                   />
-                  <Button className="w-full bg-white text-[#ef3d23] hover:bg-gray-100">
+                  {/* <Button className="w-full bg-white text-[#ef3d23] hover:bg-gray-100">
                     Subscribe
-                  </Button>
+                  </Button> */}
                 </div>
               </CardContent>
             </Card>

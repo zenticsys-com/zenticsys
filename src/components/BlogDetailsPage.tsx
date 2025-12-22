@@ -1,23 +1,25 @@
 "use client";
 
-import NextLink from "next/link";
 import { blogPosts, type BlogPost } from "@/data/blogPosts";
-import { Button } from "./ui/Button";
-import { Card, CardContent } from "./ui/card";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
-import { Badge } from "./ui/badge";
+import NextLink from "next/link";
+
+import ZtsButton from "@/app/_components/ZtButton";
+import Link from "next/link";
 import {
-  LuCalendar as Calendar,
-  LuUser as User,
-  LuClock as Clock,
-  LuShare2 as Share2,
-  LuBookmarkPlus as BookmarkPlus,
-  LuArrowLeft as ArrowLeft,
   LuArrowRight as ArrowRight,
-  LuTwitter as Twitter,
+  LuBookmarkPlus as BookmarkPlus,
+  LuCalendar as Calendar,
+  LuClock as Clock,
   LuFacebook as Facebook,
   LuLinkedin as Linkedin,
+  LuShare2 as Share2,
+  LuTwitter as Twitter,
+  LuUser as User,
 } from "react-icons/lu";
+import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { Badge } from "./ui/badge";
+
+import { Card, CardContent } from "./ui/card";
 
 interface BlogDetailsPageProps {
   blog: BlogPost;
@@ -33,12 +35,18 @@ export function BlogDetailsPage({ blog }: BlogDetailsPageProps) {
       {/* Back to Blog */}
       <section className="bg-gray-50 py-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Button variant="outline" className="mb-4" asChild>
+          {/* <Button variant="outline" className="mb-4" asChild>
             <NextLink href="/blog" className="inline-flex items-center">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Blog
             </NextLink>
-          </Button>
+          </Button> */}
+          <Link href="/blog" className="inline-flex items-center mb-4">
+            <ZtsButton
+              text="Back to Blog"
+              className="border-none text-white bg-primary hover:border-transparent hover:bg-primary-dark hover:text-white"
+            />
+          </Link>
         </div>
       </section>
 
@@ -72,7 +80,7 @@ export function BlogDetailsPage({ blog }: BlogDetailsPageProps) {
           </div>
 
           {/* Social Share */}
-          <div className="flex items-center gap-4 mb-8">
+          {/* <div className="flex items-center gap-4 mb-8">
             <span className="text-gray-600">Share:</span>
             <div className="flex gap-2">
               <Button size="sm" variant="outline" className="p-2">
@@ -91,7 +99,7 @@ export function BlogDetailsPage({ blog }: BlogDetailsPageProps) {
                 <BookmarkPlus className="w-4 h-4" />
               </Button>
             </div>
-          </div>
+          </div> */}
 
           {/* Featured Image */}
           <div className="mb-12">
@@ -134,7 +142,7 @@ export function BlogDetailsPage({ blog }: BlogDetailsPageProps) {
           <Card className="border-none shadow-lg">
             <CardContent className="p-8">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="flex-shrink-0">
+                <div className="">
                   <ImageWithFallback
                     src={blog.authorImage}
                     alt={blog.author}
@@ -146,9 +154,9 @@ export function BlogDetailsPage({ blog }: BlogDetailsPageProps) {
                     About {blog.author}
                   </h3>
                   <p className="text-gray-600 mb-4">{blog.authorBio}</p>
-                  <Button variant="outline" asChild>
+                  {/* <Button variant="outline" asChild>
                     <NextLink href="/about">View Profile</NextLink>
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
             </CardContent>
@@ -186,13 +194,13 @@ export function BlogDetailsPage({ blog }: BlogDetailsPageProps) {
                       {post.date}
                     </div>
                   </div>
-                  <Button
+                  {/* <Button
                     variant="outline"
                     className="w-full border-[#ef3d23] text-[#ef3d23] hover:bg-[#ef3d23] hover:text-white"
                     asChild
                   >
                     <NextLink href={`/blog/${post.id}`}>Read More</NextLink>
-                  </Button>
+                  </Button> */}
                 </CardContent>
               </Card>
             ))}
@@ -211,7 +219,7 @@ export function BlogDetailsPage({ blog }: BlogDetailsPageProps) {
             achieve your goals.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
+            {/* <Button
               size="lg"
               className="bg-white text-[#ef3d23] hover:bg-gray-100"
               asChild
@@ -227,7 +235,7 @@ export function BlogDetailsPage({ blog }: BlogDetailsPageProps) {
               asChild
             >
               <NextLink href="/services">View Our Services</NextLink>
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>
