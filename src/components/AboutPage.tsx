@@ -16,15 +16,11 @@ import {
   LuCalendar as Calendar,
   LuTrendingUp as TrendingUp,
 } from "react-icons/lu";
+import AboutHerroSection from "@/app/about/_partials/AboutHerroSection";
+import CompanyStatus from "@/app/about/_partials/CompanyStatus";
+import MissionAndVision from "@/app/about/_partials/MissionAndVision";
 
 export function AboutPage() {
-  const stats = [
-    { number: "10+", label: "Years of Experience" },
-    { number: "200+", label: "Projects Completed" },
-    { number: "50+", label: "Expert Developers" },
-    { number: "98%", label: "Client Satisfaction" },
-  ];
-
   const timeline = [
     {
       year: "2014",
@@ -136,41 +132,12 @@ export function AboutPage() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="from-gray-50 to-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-              About <span className="text-primary">Zenticsys</span>
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-              We are a passionate team of innovators, developers, and
-              strategists dedicated to transforming businesses through
-              cutting-edge software solutions. Our mission is to empower
-              organizations with technology that drives growth and success.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Company Stats */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
-                  {stat.number}
-                </div>
-                <div className="text-gray-600 font-medium">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <AboutHerroSection />
+      <CompanyStatus />
+      <MissionAndVision />
 
       {/* Mission & Vision */}
-      <section className="py-20 bg-gray-50">
+      {/* <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -231,7 +198,7 @@ export function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Our Story Timeline */}
       <section className="py-20 bg-white">
