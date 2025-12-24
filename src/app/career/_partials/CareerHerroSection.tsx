@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const CareerHerroSection = () => {
   return (
-    <section className="bg-gradient-to from-gray-50 to-white py-20">
+    <section className="bg-gradient-to from-gray-50 to-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -38,15 +38,6 @@ const CareerHerroSection = () => {
                 />
               </Link>
             </div>
-            {/* <div className="flex flex-col sm:flex-row gap-4">
-
-                <Button size="lg">
-                  View Open Positions <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-                <Button size="lg" variant="outline">
-                  Learn About Our Culture
-                </Button>
-              </div> */}
           </div>
           <div className="w-full h-auto ">
             <Image

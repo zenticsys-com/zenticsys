@@ -1,4 +1,4 @@
-import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
+import Image from "next/image";
 import {
   LuAward as Award,
   LuHeart as Heart,
@@ -45,12 +45,14 @@ const CompanyCulture = () => {
               </div>
             </div>
           </div>
-
-          <div>
-            <ImageWithFallback
+          <div className="w-full h-auto ">
+            <Image
               src="https://images.unsplash.com/photo-1758518731706-be5d5230e5a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMG1lZXRpbmclMjBwcm9mZXNzaW9uYWwlMjB0ZWFtfGVufDF8fHx8MTc1ODkyMjg1Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-              alt="Team culture"
-              className="rounded-lg shadow-lg w-full h-96 object-cover"
+              alt="image"
+              width={570}
+              height={380}
+              sizes="(max-width: 768px) 100vw, 570px"
+              className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
         </div>
