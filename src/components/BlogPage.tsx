@@ -1,21 +1,20 @@
 "use client";
 
-import NextLink from "next/link";
+import ZtsButton from "@/app/_components/ZtButton";
+import { blogPosts } from "@/data/blogPosts";
+import Link from "next/link";
 import { useState } from "react";
-import { Card, CardContent } from "./ui/card";
+import {
+  LuArrowRight as ArrowRight,
+  LuCalendar as Calendar,
+  LuClock as Clock,
+  LuSearch as Search,
+  LuUser as User,
+} from "react-icons/lu";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Badge } from "./ui/badge";
+import { Card, CardContent } from "./ui/card";
 import { Input } from "./ui/input";
-import { blogPosts } from "@/data/blogPosts";
-import {
-  LuSearch as Search,
-  LuCalendar as Calendar,
-  LuUser as User,
-  LuClock as Clock,
-  LuArrowRight as ArrowRight,
-} from "react-icons/lu";
-import Link from "next/link";
-import ZtsButton from "@/app/_components/ZtButton";
 
 export function BlogPage() {
   const [searchTerm, setSearchTerm] = useState("");

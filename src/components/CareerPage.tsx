@@ -29,6 +29,7 @@ import {
   LuCircleCheck as CheckCircle,
 } from "react-icons/lu";
 import { Button } from "@mui/material";
+import CareerHerroSection from "@/app/career/_partials/CareerHerroSection";
 
 export function CareerPage() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -246,7 +247,7 @@ export function CareerPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to from-gray-50 to-white py-20">
+      {/* <section className="bg-gradient-to from-gray-50 to-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -277,7 +278,8 @@ export function CareerPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <CareerHerroSection />
 
       {/* Why Work With Us */}
       <section className="py-20 bg-white">
@@ -365,7 +367,7 @@ export function CareerPage() {
               </SelectContent>
             </Select>
             <Button
-              variant="outline"
+              // variant="outline"
               onClick={() => {
                 setSearchTerm("");
                 setSelectedDepartment("All");
@@ -541,7 +543,7 @@ export function CareerPage() {
             mission.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
+            {/* <Button
               size="lg"
               className="bg-white text-[#ef3d23] hover:bg-gray-100"
             >
@@ -554,7 +556,7 @@ export function CareerPage() {
               asChild
             >
               <NextLink href="/about">Learn More About Us</NextLink>
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>

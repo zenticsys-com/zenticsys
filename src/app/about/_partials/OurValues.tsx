@@ -1,18 +1,9 @@
-import AboutHerroSection from "@/app/about/_partials/AboutHerroSection";
-import CompanyStatus from "@/app/about/_partials/CompanyStatus";
-import MissionAndVision from "@/app/about/_partials/MissionAndVision";
-import OurStory from "@/app/about/_partials/OurStory";
-import { Button, Card, CardContent, Chip } from "@mui/material";
-import NextLink from "next/link";
+import { Card, CardContent } from "@mui/material";
 import {
-  LuArrowRight as ArrowRight,
   LuAward as Award,
-  LuCalendar as Calendar,
-  LuGlobe as Globe,
   LuHeart as Heart,
   LuShield as Shield,
   LuTarget as Target,
-  LuTrendingUp as TrendingUp,
   LuUsers as Users,
   LuZap as Zap,
 } from "react-icons/lu";
