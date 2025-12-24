@@ -1,5 +1,3 @@
-"use client";
-
 import CallSchedule from "@/app/_partials/CallSchedule";
 import ClientReviews from "@/app/_partials/ClientReviews";
 import FeaturedWorks from "@/app/_partials/FeaturedWorks";
@@ -22,6 +20,7 @@ const HomePage = () => {
       <TheTechnologyWeUse />
       <FeaturedWorks />
       <ClientReviews />
+      <LatestfromOurBlog />
       <LatestfromOurBlog />
       <CallSchedule />
     </div>
