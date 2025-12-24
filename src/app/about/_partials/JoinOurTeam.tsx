@@ -1,7 +1,5 @@
 import ZtsButton from "@/app/_components/ZtButton";
-import { Button } from "@mui/material";
 import Link from "next/link";
-import NextLink from "next/link";
 import { LuArrowRight as ArrowRight } from "react-icons/lu";
 const JoinOurTeam = () => {
   return (
@@ -15,25 +13,6 @@ const JoinOurTeam = () => {
           software or join our team of experts, we'd love to hear from you.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          {/* <Button
-            variant="contained"
-            size="large"
-            component={NextLink}
-            href="/schedule"
-            endIcon={<ArrowRight className="w-4 h-4" />}
-            className="bg-white text-primary hover:bg-gray-100"
-          >
-            Start Your Project
-          </Button>
-          <Button
-            variant="outlined"
-            size="large"
-            component={NextLink}
-            href="/career"
-            className="border-white text-white hover:bg-white hover:text-primary"
-          >
-            Join Our Team
-          </Button> */}
           <Link href="/schedule">
             <ZtsButton
               icon={

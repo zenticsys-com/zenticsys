@@ -1,5 +1,23 @@
-import { AboutPage } from "@/components/AboutPage";
-
-export default function Page() {
-  return <AboutPage />;
-}
+import AboutHerroSection from "@/app/about/_partials/AboutHerroSection";
+import CompanyStatus from "@/app/about/_partials/CompanyStatus";
+import JoinOurTeam from "@/app/about/_partials/JoinOurTeam";
+import LeadershipTeam from "@/app/about/_partials/LeadershipTeam";
+import MissionAndVision from "@/app/about/_partials/MissionAndVision";
+import OurStory from "@/app/about/_partials/OurStory";
+import OurValues from "@/app/about/_partials/OurValues";
+import WhyChooseZenticsys from "@/app/about/_partials/WhyChooseZenticsys";
+const AboutPage = () => {
+  return (
+    <div>
+      <AboutHerroSection />
+      <CompanyStatus />
+      <MissionAndVision />
+      <OurStory />
+      <LeadershipTeam />
+      <OurValues />
+      <WhyChooseZenticsys />
+      <JoinOurTeam />
+    </div>
+  );
+};
+export default AboutPage;

@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import NextLink from "next/link";
-import { Button } from "./ui/Button";
 import { Card, CardContent } from "./ui/card";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Badge } from "./ui/badge";
@@ -29,6 +28,7 @@ import {
   LuArrowRight as ArrowRight,
   LuCircleCheck as CheckCircle,
 } from "react-icons/lu";
+import { Button } from "@mui/material";
 
 export function CareerPage() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -246,7 +246,7 @@ export function CareerPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-50 to-white py-20">
+      <section className="bg-gradient-to from-gray-50 to-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -260,10 +260,7 @@ export function CareerPage() {
                 worldwide.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button
-                  size="lg"
-                  className="bg-[#ef3d23] hover:bg-[#d63420] text-white"
-                >
+                <Button size="lg">
                   View Open Positions <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
                 <Button size="lg" variant="outline">
@@ -429,7 +426,7 @@ export function CareerPage() {
                               key={index}
                               className="flex items-start text-sm text-gray-600"
                             >
-                              <CheckCircle className="w-4 h-4 text-[#ef3d23] mr-2 flex-shrink-0 mt-0.5" />
+                              <CheckCircle className="w-4 h-4 text-[#ef3d23] mr-2  mt-0.5" />
                               {req}
                             </li>
                           ))}

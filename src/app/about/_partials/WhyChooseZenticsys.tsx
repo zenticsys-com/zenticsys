@@ -1,4 +1,5 @@
 import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
+import Image from "next/image";
 import {
   LuGlobe as Globe,
   LuTrendingUp as TrendingUp,
@@ -68,11 +69,21 @@ const WhyChooseZenticsys = () => {
             </div>
           </div>
 
-          <div>
+          {/* <div>
             <ImageWithFallback
               src="https://images.unsplash.com/photo-1758518731706-be5d5230e5a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMG1lZXRpbmclMjBwcm9mZXNzaW9uYWwlMjB0ZWFtfGVufDF8fHx8MTc1ODkyMjg1Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
               alt="Professional team collaboration"
               className="rounded-lg shadow-lg w-full h-96 object-cover"
+            />
+          </div> */}
+
+          <div className="w-full md:min-h-96 h-auto ">
+            <Image
+              src="https://images.unsplash.com/photo-1758518731706-be5d5230e5a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMG1lZXRpbmclMjBwcm9mZXNzaW9uYWwlMjB0ZWFtfGVufDF8fHx8MTc1ODkyMjg1Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+              alt="Modern office workspace"
+              width={570}
+              height={384}
+              className="w-full h-auto md:min-h-96 object-cover rounded-lg shadow-lg"
             />
           </div>
         </div>
