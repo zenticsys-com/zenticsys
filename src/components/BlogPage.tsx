@@ -15,57 +15,43 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Badge } from "./ui/badge";
 import { Card, CardContent } from "./ui/card";
 import { Input } from "./ui/input";
-import BlogHerroSection from "@/app/blog/_partials/BlogHerroSection";
+import BlogHeroSection from "@/app/blog/_partials/BlogHeroSection";
 
 export function BlogPage() {
-  const [searchTerm, setSearchTerm] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  // const [searchTerm, setSearchTerm] = useState("");
+  // const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const categories = [
-    "All",
-    "Technology",
-    "Industry Insights",
-    "Development",
-    "AI & ML",
-    "Cloud",
-    "Security",
-  ];
+  // const categories = [
+  //   "All",
+  //   "Technology",
+  //   "Industry Insights",
+  //   "Development",
+  //   "AI & ML",
+  //   "Cloud",
+  //   "Security",
+  // ];
 
-  const filteredPosts = blogPosts.filter((post) => {
-    const matchesSearch =
-      post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      post.excerpt.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      post.tags.some((tag) =>
-        tag.toLowerCase().includes(searchTerm.toLowerCase())
-      );
+  // const filteredPosts = blogPosts.filter((post) => {
+  //   const matchesSearch =
+  //     post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+  //     post.excerpt.toLowerCase().includes(searchTerm.toLowerCase()) ||
+  //     post.tags.some((tag) =>
+  //       tag.toLowerCase().includes(searchTerm.toLowerCase())
+  //     );
 
-    const matchesCategory =
-      selectedCategory === "All" || post.category === selectedCategory;
+  //   const matchesCategory =
+  //     selectedCategory === "All" || post.category === selectedCategory;
 
-    return matchesSearch && matchesCategory;
-  });
+  //   return matchesSearch && matchesCategory;
+  // });
 
-  const featuredPost = blogPosts.find((post) => post.featured);
-  const regularPosts = filteredPosts.filter((post) => !post.featured);
+  // const featuredPost = blogPosts.find((post) => post.featured);
+  // const regularPosts = filteredPosts.filter((post) => !post.featured);
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <BlogHerroSection />
-      {/* <section className="bg-gradient-to from-gray-50 to-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-              Our <span className="text-[#ef3d23]">Blog</span>
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-              Insights, trends, and expert perspectives on software development,
-              technology, and digital transformation. Stay informed with the
-              latest industry knowledge.
-            </p>
-          </div>
-        </div>
-      </section> */}
+      <BlogHeroSection />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">

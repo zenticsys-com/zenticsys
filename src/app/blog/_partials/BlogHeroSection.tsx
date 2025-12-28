@@ -1,4 +1,4 @@
-const BlogHerroSection = () => {
+const BlogHeroSection = () => {
   return (
     <section className="bg-gradient-to from-gray-50 to-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,4 +17,4 @@ const BlogHerroSection = () => {
   );
 };
 
-export default BlogHerroSection;
+export default BlogHeroSection;
