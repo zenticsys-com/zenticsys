@@ -1,4 +1,3 @@
-import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
 import Image from "next/image";
 import { LuCircleCheck as CheckCircle } from "react-icons/lu";
 

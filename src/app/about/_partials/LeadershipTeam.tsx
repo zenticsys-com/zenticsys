@@ -1,5 +1,3 @@
-'use client";';
-import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
 import { Card, CardContent } from "@mui/material";
 import Image from "next/image";
 
@@ -53,14 +51,6 @@ const LeadershipTeam = () => {
               key={index}
               className="hover:shadow-xl transition-shadow overflow-hidden"
             >
-              {/* <div className="relative h-64">
-                <ImageWithFallback
-                  src={member.image}
-                  alt={member.name}
-                  className="w-full h-full object-cover"
-                />
-              </div> */}
-
               <div className="relative h-64">
                 <Image
                   src={member.image}

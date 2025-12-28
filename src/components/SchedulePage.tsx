@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import NextLink from "next/link";
-import { Button } from "./ui/Button";
 import { Card, CardContent } from "./ui/card";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
@@ -28,6 +27,7 @@ import {
   LuZap as Zap,
   LuTarget as Target,
 } from "react-icons/lu";
+import Button from "@/app/_components/Button";
 
 // FAQ Section Component
 function FAQSection() {
@@ -208,9 +208,9 @@ export function SchedulePage() {
           </p>
           <div className="space-y-4">
             <Button
-              size="lg"
+              // size="lg"
               className="bg-[#ef3d23] hover:bg-[#d63420] text-white"
-              asChild
+              // asChild
             >
               <NextLink href="/">Return to Homepage</NextLink>
             </Button>
@@ -447,7 +447,7 @@ export function SchedulePage() {
 
                   <Button
                     type="submit"
-                    size="lg"
+                    // size="lg"
                     disabled={!formData.agreeToTerms}
                     className="w-full bg-[#ef3d23] hover:bg-[#d63420] text-white"
                   >

@@ -188,6 +188,7 @@ const OpenPositions = () => {
 
     const matchesDepartment =
       selectedDepartment === "All" || job.department === selectedDepartment;
+
     const matchesLocation =
       selectedLocation === "All" || job.location.includes(selectedLocation);
 
@@ -207,7 +208,7 @@ const OpenPositions = () => {
 
         {/* Filters */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
-          <div className="relative">
+          <div className="relative z-20">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
             <Input
               placeholder="Search positions..."
@@ -223,7 +224,7 @@ const OpenPositions = () => {
             <SelectTrigger>
               <SelectValue placeholder="Department" />
             </SelectTrigger>
-            <SelectContent>
+            <SelectContent className="">
               {departments.map((dept) => (
                 <SelectItem key={dept} value={dept}>
                   {dept}
