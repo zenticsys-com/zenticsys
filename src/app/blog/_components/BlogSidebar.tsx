@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input";
 import { LuSearch as Search } from "react-icons/lu";
 import Newsletter from "./Newsletter";
 import PopularTags from "./PopularTags";
+import CategoryFilter from "./CategoryFilter";
 
 type BlogSidebarProps = {
   searchTerm: string;
@@ -46,33 +47,12 @@ const BlogSidebar = ({
         </CardContent>
       </Card>
 
-      {/* Categories */}
-      <Card className="border-none shadow-lg">
-        <CardContent className="p-6">
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">
-            Categories
-          </h3>
-          <div className="space-y-2">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setSelectedCategory(category)}
-                className={`block w-full text-left p-2 rounded transition-colors ${
-                  selectedCategory === category
-                    ? "bg-[#ef3d23] text-white"
-                    : "text-gray-600 hover:bg-gray-100"
-                }`}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* Popular Tags */}
+      <CategoryFilter
+        categories={categories}
+        selectedCategory={selectedCategory}
+        onCategoryChange={setSelectedCategory}
+      />
       <PopularTags tags={popularTags} onTagClick={setSearchTerm} />
-
       <Newsletter />
     </div>
   );
