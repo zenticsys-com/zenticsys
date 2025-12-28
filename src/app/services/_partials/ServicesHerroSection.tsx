@@ -15,7 +15,7 @@ import {
   LuUsers as Users,
   LuZap as Zap,
 } from "react-icons/lu";
-const OurServices = () => {
+const ServicesHerroSection = () => {
   const services = [
     {
       icon: <Code className="w-12 h-12 text-primary" />,
@@ -137,7 +137,7 @@ const OurServices = () => {
   ];
   return (
     <div>
-      <section className="from-gray-50 to-white py-20">
+      <section className="from-gray-50 to-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -223,4 +223,4 @@ const OurServices = () => {
   );
 };
 
-export default OurServices;
+export default ServicesHerroSection;

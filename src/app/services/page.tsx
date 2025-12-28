@@ -1,11 +1,11 @@
 import CaseStudies from "./_partials/CaseStudies";
-import OurServices from "./_partials/OurServices";
+import ServicesHerroSection from "./_partials/ServicesHerroSection";
 import LetUsBuild from "./_partials/LetUsBuild";
 
 const ServicesPage = () => {
   return (
     <div className="min-h-screen">
-      <OurServices />
+      <ServicesHerroSection />
       <CaseStudies />
       <LetUsBuild />
     </div>

@@ -15,6 +15,7 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Badge } from "./ui/badge";
 import { Card, CardContent } from "./ui/card";
 import { Input } from "./ui/input";
+import BlogHerroSection from "@/app/blog/_partials/BlogHerroSection";
 
 export function BlogPage() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -50,7 +51,8 @@ export function BlogPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to from-gray-50 to-white py-20">
+      <BlogHerroSection />
+      {/* <section className="bg-gradient-to from-gray-50 to-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -63,7 +65,7 @@ export function BlogPage() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
