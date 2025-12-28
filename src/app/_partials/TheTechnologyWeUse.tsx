@@ -1,5 +1,3 @@
-import React from "react";
-
 const TheTechnologyWeUse = () => {
   const technologies = [
     "React",

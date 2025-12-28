@@ -1,10 +1,10 @@
 import { Card, CardContent } from "@mui/material";
 import {
-  FiCode,
-  FiSmartphone,
   FiCloud,
+  FiCode,
   FiDatabase,
   FiShield,
+  FiSmartphone,
   FiZap,
 } from "react-icons/fi";
 

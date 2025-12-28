@@ -1,8 +1,5 @@
 import { Card, CardContent, Chip } from "@mui/material";
 
-import ZtsButton from "@/app/_components/ZtButton";
-import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa6";
 import {
   LuCircleCheck as CheckCircle,
   LuCloud as Cloud,

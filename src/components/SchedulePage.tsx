@@ -1,11 +1,23 @@
 "use client";
 
-import { useState } from "react";
+import Button from "@/app/_components/Button";
 import NextLink from "next/link";
+import { useState } from "react";
+import {
+  LuArrowRight as ArrowRight,
+  LuCircleCheck as CheckCircle,
+  LuMail as Mail,
+  LuMapPin as MapPin,
+  LuMessageSquare as MessageSquare,
+  LuPhone as Phone,
+  LuTarget as Target,
+  LuUsers as Users,
+  LuZap as Zap,
+} from "react-icons/lu";
 import { Card, CardContent } from "./ui/card";
+import { Checkbox } from "./ui/checkbox";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
-import { Textarea } from "./ui/textarea";
 import {
   Select,
   SelectContent,
@@ -13,21 +25,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "./ui/select";
-import { Checkbox } from "./ui/checkbox";
-import {
-  LuCalendar as Calendar,
-  LuClock as Clock,
-  LuMapPin as MapPin,
-  LuPhone as Phone,
-  LuMail as Mail,
-  LuMessageSquare as MessageSquare,
-  LuCircleCheck as CheckCircle,
-  LuArrowRight as ArrowRight,
-  LuUsers as Users,
-  LuZap as Zap,
-  LuTarget as Target,
-} from "react-icons/lu";
-import Button from "@/app/_components/Button";
+import { Textarea } from "./ui/textarea";
 
 // FAQ Section Component
 function FAQSection() {
@@ -195,7 +193,7 @@ export function SchedulePage() {
 
   if (isSubmitted) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white flex items-center justify-center">
+      <div className="min-h-screen bg-gradient from-gray-50 to-white flex items-center justify-center">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-green-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-8">
             <CheckCircle className="w-12 h-12 text-green-600" />
@@ -226,7 +224,7 @@ export function SchedulePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-50 to-white py-20">
+      <section className="bg-gradient from-gray-50 to-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -470,7 +468,7 @@ export function SchedulePage() {
                 <div className="space-y-6">
                   {contactInfo.map((info, index) => (
                     <div key={index} className="flex items-start space-x-4">
-                      <div className="flex-shrink-0">{info.icon}</div>
+                      <div className="">{info.icon}</div>
                       <div>
                         <h4 className="font-medium text-gray-900">
                           {info.title}

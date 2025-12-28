@@ -1,9 +1,7 @@
-"use client";
-import { Button, Card, CardContent } from "@mui/material";
+import { Card, CardContent } from "@mui/material";
 import Image from "next/image";
-import NextLink from "next/link";
+import { default as Link } from "next/link";
 import ZtsButton from "../_components/ZtButton";
-import Link from "next/link";
 
 const LatestfromOurBlog = () => {
   const blogPosts = [
@@ -66,14 +64,13 @@ const LatestfromOurBlog = () => {
                   {post.title}
                 </h3>
                 <p className="text-gray-600 mb-4">{post.excerpt}</p>
-                <Button
-                  component={NextLink}
-                  href="/blog"
-                  className="text-primary hover:text-primary-dark p-0 min-w-0"
-                  variant="text"
-                >
-                  Read More
-                </Button>
+
+                <Link href="/blog">
+                  <ZtsButton
+                    text="Read More"
+                    className="border-none text-primary "
+                  />
+                </Link>
               </CardContent>
             </Card>
           ))}

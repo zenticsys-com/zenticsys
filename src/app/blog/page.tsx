@@ -1,4 +1,3 @@
-import React from "react";
 import BlogHeroSection from "./_partials/BlogHeroSection";
 import OurFeaturedPost from "./_partials/OurFeaturedPost";
 

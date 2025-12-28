@@ -21,7 +21,6 @@ const HomePage = () => {
       <FeaturedWorks />
       <ClientReviews />
       <LatestfromOurBlog />
-      <LatestfromOurBlog />
       <CallSchedule />
     </div>
   );

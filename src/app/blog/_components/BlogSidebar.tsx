@@ -1,9 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { LuSearch as Search } from "react-icons/lu";
+import CategoryFilter from "./CategoryFilter";
 import Newsletter from "./Newsletter";
 import PopularTags from "./PopularTags";
-import CategoryFilter from "./CategoryFilter";
 
 type BlogSidebarProps = {
   searchTerm: string;
