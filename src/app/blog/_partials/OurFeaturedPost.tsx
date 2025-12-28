@@ -17,6 +17,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
 import BlogPosts from "../_components/BlogPosts";
+import FeaturedPost from "../_components/FeaturedPost";
 
 const OurFeaturedPost = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -53,72 +54,9 @@ const OurFeaturedPost = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
         <div className="lg:col-span-3">
-          {/* Featured Post */}
           {featuredPost && selectedCategory === "All" && !searchTerm && (
-            <div className="mb-12">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                Featured Post
-              </h2>
-              <Card className="border-none shadow-xl overflow-hidden">
-                <div className="grid grid-cols-1 md:grid-cols-2">
-                  <div className="relative h-64 md:h-auto">
-                    <div className="w-full h-auto ">
-                      <Image
-                        src={featuredPost.image}
-                        alt="image"
-                        width={570}
-                        height={380}
-                        className="w-full h-auto rounded-lg shadow-lg"
-                      />
-                    </div>
-                    <Badge className="absolute top-4 left-4 bg-[#ef3d23] text-white">
-                      Featured
-                    </Badge>
-                  </div>
-                  <CardContent className="p-8">
-                    <Badge
-                      variant="outline"
-                      className="border-[#ef3d23] text-[#ef3d23] mb-4"
-                    >
-                      {featuredPost.category}
-                    </Badge>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                      {featuredPost.title}
-                    </h3>
-                    <p className="text-gray-600 mb-6">{featuredPost.excerpt}</p>
-
-                    <div className="flex items-center justify-between text-sm text-gray-500 mb-6">
-                      <div className="flex items-center">
-                        <User className="w-4 h-4 mr-2" />
-                        {featuredPost.author}
-                      </div>
-                      <div className="flex items-center">
-                        <Calendar className="w-4 h-4 mr-2" />
-                        {featuredPost.date}
-                      </div>
-                      <div className="flex items-center">
-                        <Clock className="w-4 h-4 mr-2" />
-                        {featuredPost.readTime}
-                      </div>
-                    </div>
-
-                    <Link
-                      href={`/blog/${featuredPost.id}`}
-                      className="inline-flex items-center mb-4"
-                    >
-                      <ZtsButton
-                        text="Read More"
-                        className="border-none text-white bg-primary hover:border-transparent hover:bg-primary-dark hover:text-white"
-                        icon={<ArrowRight className="ml-2 h-4 w-4" />}
-                        iconPlacement="after"
-                      />
-                    </Link>
-                  </CardContent>
-                </div>
-              </Card>
-            </div>
+            <FeaturedPost post={featuredPost} />
           )}
-
           {/* Blog Posts Grid */}
           <BlogPosts
             posts={regularPosts}
