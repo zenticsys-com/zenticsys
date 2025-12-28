@@ -224,7 +224,7 @@ const OpenPositions = () => {
             <SelectTrigger>
               <SelectValue placeholder="Department" />
             </SelectTrigger>
-            <SelectContent className="">
+            <SelectContent>
               {departments.map((dept) => (
                 <SelectItem key={dept} value={dept}>
                   {dept}
