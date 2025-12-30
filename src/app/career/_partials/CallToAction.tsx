@@ -1,3 +1,7 @@
+import ZtsButton from "@/app/_components/ZtButton";
+import { ArrowRight } from "@mui/icons-material";
+import Link from "next/link";
+
 const CallToAction = () => {
   return (
     <section className="py-20 bg-[#ef3d23]">
@@ -11,20 +15,25 @@ const CallToAction = () => {
           mission.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          {/* <Button
-              size="lg"
-              className="bg-white text-[#ef3d23] hover:bg-gray-100"
-            >
-              Send Your Resume
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-[#ef3d23]"
-              asChild
-            >
-              <NextLink href="/about">Learn More About Us</NextLink>
-            </Button> */}
+          <Link href="/schedule">
+            <ZtsButton
+              icon={
+                <>
+                  <ArrowRight className="w-4 h-4" />
+                </>
+              }
+              iconPlacement="after"
+              text="Send Your Resume"
+              className="border-none text-white bg-primary hover:border-transparent hover:bg-primary-dark hover:text-white"
+            />
+          </Link>
+
+          <Link href="/about">
+            <ZtsButton
+              text="Learn More About Us"
+              className="border-none text-white bg-primary hover:border-transparent hover:bg-primary-dark hover:text-white"
+            />
+          </Link>
         </div>
       </div>
     </section>

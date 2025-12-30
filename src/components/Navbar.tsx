@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
 import {
   AppBar,
   Box,
@@ -16,15 +16,15 @@ import {
   ListItemText,
   Toolbar,
   Typography,
-} from '@mui/material';
-import { Close, Menu } from '@mui/icons-material';
+} from "@mui/material";
+import { Close, Menu } from "@mui/icons-material";
 
 const navItems = [
-  { name: 'Services', href: '/services' },
-  { name: 'Industries', href: '/industries' },
-  { name: 'About', href: '/about' },
-  { name: 'Blog', href: '/blog' },
-  { name: 'Career', href: '/career' },
+  { name: "Services", href: "/services" },
+  { name: "Industries", href: "/industries" },
+  { name: "About", href: "/about" },
+  { name: "Blog", href: "/blog" },
+  { name: "Career", href: "/career" },
 ];
 
 export function Navbar() {
@@ -33,8 +33,8 @@ export function Navbar() {
 
   const isActive = (href: string) => {
     if (!pathname) return false;
-    if (href === '/') return pathname === '/';
-    if (href === '/blog') return pathname.startsWith('/blog');
+    if (href === "/") return pathname === "/";
+    if (href === "/blog") return pathname.startsWith("/blog");
     return pathname.startsWith(href);
   };
 
@@ -43,39 +43,47 @@ export function Navbar() {
       <AppBar
         position="sticky"
         sx={{
-          backgroundColor: 'white',
-          color: 'text.primary',
+          backgroundColor: "white",
+          color: "text.primary",
           boxShadow: 1,
-          borderBottom: '1px solid',
-          borderColor: 'grey.200',
+          borderBottom: "1px solid",
+          borderColor: "grey.200",
         }}
       >
         <Container maxWidth="xl">
-          <Toolbar sx={{ justifyContent: 'space-between', py: 1 }}>
+          <Toolbar sx={{ justifyContent: "space-between", py: 1 }}>
             <Typography
               variant="h5"
               component={Link}
               href="/"
               sx={{
-                fontWeight: 'bold',
-                color: 'text.primary',
-                textDecoration: 'none',
-                '&:hover': { color: 'primary.main' },
+                fontWeight: "bold",
+                color: "text.primary",
+                textDecoration: "none",
+                "&:hover": { color: "primary.main" },
               }}
             >
               Zenticsys
             </Typography>
 
-            <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center', gap: 4 }}>
+            <Box
+              sx={{
+                display: { xs: "none", md: "flex" },
+                alignItems: "center",
+                gap: 4,
+              }}
+            >
               {navItems.map((item) => (
                 <Button
                   key={item.href}
                   component={Link}
                   href={item.href}
                   sx={{
-                    color: isActive(item.href) ? 'primary.main' : 'text.secondary',
-                    '&:hover': { color: 'primary.main' },
-                    textTransform: 'none',
+                    color: isActive(item.href)
+                      ? "primary.main"
+                      : "text.secondary",
+                    "&:hover": { color: "primary.main" },
+                    textTransform: "none",
                     fontWeight: 500,
                   }}
                 >
@@ -87,8 +95,9 @@ export function Navbar() {
                 component={Link}
                 href="/schedule"
                 sx={{
-                  backgroundColor: 'primary.main',
-                  '&:hover': { backgroundColor: 'primary.dark' },
+                  backgroundColor: "primary.main",
+                  borderRadius: 0,
+                  "&:hover": { backgroundColor: "primary.dark" },
                 }}
               >
                 Schedule a Call
@@ -97,7 +106,10 @@ export function Navbar() {
 
             <IconButton
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              sx={{ display: { xs: 'block', md: 'none' }, color: 'text.secondary' }}
+              sx={{
+                display: { xs: "block", md: "none" },
+                color: "text.secondary",
+              }}
             >
               <Menu />
             </IconButton>
@@ -109,10 +121,12 @@ export function Navbar() {
         anchor="right"
         open={isMenuOpen}
         onClose={() => setIsMenuOpen(false)}
-        sx={{ display: { xs: 'block', md: 'none' } }}
+        sx={{ display: { xs: "block", md: "none" } }}
       >
         <Box sx={{ width: 250, pt: 2 }}>
-          <Box sx={{ display: 'flex', justifyContent: 'flex-end', px: 2, pb: 2 }}>
+          <Box
+            sx={{ display: "flex", justifyContent: "flex-end", px: 2, pb: 2 }}
+          >
             <IconButton onClick={() => setIsMenuOpen(false)}>
               <Close />
             </IconButton>
@@ -125,11 +139,17 @@ export function Navbar() {
                   href={item.href}
                   onClick={() => setIsMenuOpen(false)}
                   sx={{
-                    color: isActive(item.href) ? 'primary.main' : 'text.primary',
-                    backgroundColor: isActive(item.href) ? 'primary.light' : 'transparent',
-                    '&:hover': {
-                      backgroundColor: isActive(item.href) ? 'primary.light' : 'grey.100',
-                      color: 'primary.main',
+                    color: isActive(item.href)
+                      ? "primary.main"
+                      : "text.primary",
+                    backgroundColor: isActive(item.href)
+                      ? "primary.light"
+                      : "transparent",
+                    "&:hover": {
+                      backgroundColor: isActive(item.href)
+                        ? "primary.light"
+                        : "grey.100",
+                      color: "primary.main",
                     },
                   }}
                 >
@@ -145,8 +165,8 @@ export function Navbar() {
                 href="/schedule"
                 onClick={() => setIsMenuOpen(false)}
                 sx={{
-                  backgroundColor: 'primary.main',
-                  '&:hover': { backgroundColor: 'primary.dark' },
+                  backgroundColor: "primary.main",
+                  "&:hover": { backgroundColor: "primary.dark" },
                 }}
               >
                 Schedule a Call

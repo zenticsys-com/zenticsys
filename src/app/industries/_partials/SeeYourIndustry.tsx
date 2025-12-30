@@ -16,25 +16,6 @@ const SeeYourIndustry = () => {
           solutions.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          {/* <Button
-            variant="contained"
-            size="large"
-            component={NextLink}
-            href="/schedule"
-            className="bg-white text-primary hover:bg-gray-100"
-          >
-            Discuss Your Industry Needs
-          </Button>
-          <Button
-            variant="outlined"
-            size="large"
-            component={NextLink}
-            href="/services"
-            className="border-white text-white hover:bg-white hover:text-primary"
-          >
-            View All Services
-          </Button> */}
-
           <Link href="/schedule">
             <ZtsButton
               icon={
