@@ -14,18 +14,7 @@ import {
   LuUsers as Users,
   LuZap as Zap,
 } from "react-icons/lu";
-// import { Card, CardContent } from "./ui/card";
-// import { Checkbox } from "./ui/checkbox";
-// import { Input } from "./ui/input";
-// import { Label } from "./ui/label";
-// import {
-//   Select,
-//   SelectContent,
-//   SelectItem,
-//   SelectTrigger,
-//   SelectValue,
-// } from "./ui/select";
-// import { Textarea } from "./ui/textarea";
+
 import {
   Select,
   SelectContent,
@@ -157,25 +146,25 @@ export function SchedulePage() {
 
   const processSteps = [
     {
-      icon: <MessageSquare className="w-8 h-8 text-[#ef3d23]" />,
+      icon: <MessageSquare className="w-8 h-8 text-primary" />,
       title: "Initial Consultation",
       description:
         "We discuss your project requirements, goals, and challenges to understand your needs.",
     },
     {
-      icon: <Target className="w-8 h-8 text-[#ef3d23]" />,
+      icon: <Target className="w-8 h-8 text-primary" />,
       title: "Solution Design",
       description:
         "Our experts create a tailored solution proposal with timeline and cost estimates.",
     },
     {
-      icon: <Users className="w-8 h-8 text-[#ef3d23]" />,
+      icon: <Users className="w-8 h-8 text-primary" />,
       title: "Team Assembly",
       description:
         "We assign the right team members with the expertise needed for your project.",
     },
     {
-      icon: <Zap className="w-8 h-8 text-[#ef3d23]" />,
+      icon: <Zap className="w-8 h-8 text-primary" />,
       title: "Development & Delivery",
       description:
         "Agile development process with regular updates and transparent communication.",
@@ -184,21 +173,21 @@ export function SchedulePage() {
 
   const contactInfo = [
     {
-      icon: <Phone className="w-6 h-6 text-[#ef3d23]" />,
+      icon: <Phone className="w-6 h-6 text-primary" />,
       title: "Phone",
-      details: "+1 (555) 123-4567",
-      description: "Mon-Fri 9:00 AM - 6:00 PM PST",
+      details: "+880 1629403203",
+      description: "Sun-Thu 9:00 AM - 6:00 PM PST",
     },
     {
-      icon: <Mail className="w-6 h-6 text-[#ef3d23]" />,
+      icon: <Mail className="w-6 h-6 text-primary" />,
       title: "Email",
-      details: "hello@zenticsys.com",
+      details: "zenticsys@gmail.com",
       description: "We respond within one business day.",
     },
     {
-      icon: <MapPin className="w-6 h-6 text-[#ef3d23]" />,
+      icon: <MapPin className="w-6 h-6 text-primary" />,
       title: "Office",
-      details: "123 Tech Street, San Francisco, CA 94105",
+      details: "Rupnagar R/A , Mirpur, Dhaka-1216 ",
       description: "Available for in-person meetings",
     },
   ];
@@ -218,14 +207,13 @@ export function SchedulePage() {
           </p>
           <div className="space-y-4">
             <Button
-              // size="lg"
-              className="bg-[#ef3d23] hover:bg-[#d63420] text-white"
+              className="bg-primary hover:bg-primary-dark text-white"
               // asChild
             >
               <NextLink href="/">Return to Homepage</NextLink>
             </Button>
             <div className="text-gray-500">
-              <p>Need immediate assistance? Call us at +1 (555) 123-4567</p>
+              <p>Need immediate assistance? Call us at +88 01629-403203</p>
             </div>
           </div>
         </div>
@@ -240,7 +228,7 @@ export function SchedulePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-              Let's <span className="text-[#ef3d23]">Talk</span>
+              Let's <span className="text-primary">Talk</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
               Ready to transform your business with innovative software
@@ -459,7 +447,7 @@ export function SchedulePage() {
                     type="submit"
                     // size="lg"
                     disabled={!formData.agreeToTerms}
-                    className="w-full bg-[#ef3d23] hover:bg-[#d63420] text-white"
+                    className="w-full bg-prtext-primary hover:bg-[#d63420] text-white"
                   >
                     Schedule Consultation{" "}
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -521,7 +509,7 @@ export function SchedulePage() {
             </Card>
 
             {/* Quick Call Option */}
-            <Card className="border-none shadow-lg bg-[#ef3d23] text-white">
+            <Card className="border-none shadow-lg bg-primary text-white">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-4">
                   Need to Talk Right Now?
@@ -532,7 +520,7 @@ export function SchedulePage() {
                 </p>
                 <Button
                   variant="outline"
-                  className="w-full border-white text-[#ef3d23] md:text-white  md:hover:bg-white hover:text-[#ef3d23]"
+                  className="w-full border-white text-primary md:text-white  md:hover:bg-white hover:text-primary"
                 >
                   <Phone className="mr-2 h-4 w-4" />
                   Call Now: +88016 2940 3203
