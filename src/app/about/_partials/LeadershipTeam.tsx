@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@mui/material";
+import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 
 const LeadershipTeam = () => {
@@ -45,7 +45,7 @@ const LeadershipTeam = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {team.map((member, index) => (
             <Card
               key={index}

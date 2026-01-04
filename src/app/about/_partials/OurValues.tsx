@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@mui/material";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   LuAward as Award,
   LuHeart as Heart,
@@ -57,7 +57,7 @@ const OurValues = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {values.map((value, index) => (
             <Card key={index} className="hover:shadow-xl transition-shadow">
               <CardContent className="p-8 text-center">

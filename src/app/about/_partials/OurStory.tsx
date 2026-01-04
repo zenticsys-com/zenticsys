@@ -1,4 +1,5 @@
-import { Card, CardContent, Chip } from "@mui/material";
+import { Card, CardContent } from "@/components/ui/card";
+import { Chip } from "@mui/material";
 import { LuCalendar as Calendar } from "react-icons/lu";
 const OurStory = () => {
   const timeline = [
