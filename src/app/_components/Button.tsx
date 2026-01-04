@@ -5,11 +5,19 @@ type ButtonVariant = "default" | "outline" | "ghost";
 
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: ButtonVariant;
+  size?: string;
 };
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
-    { variant = "default", className, children, type = "button", ...props },
+    {
+      variant = "default",
+      size,
+      className,
+      children,
+      type = "button",
+      ...props
+    },
     ref
   ) => {
     return (

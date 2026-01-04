@@ -20,6 +20,7 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Badge } from "./ui/badge";
 
 import { Card, CardContent } from "./ui/card";
+import Image from "next/image";
 
 interface BlogDetailsPageProps {
   blog: BlogPost;
@@ -142,11 +143,20 @@ export function BlogDetailsPage({ blog }: BlogDetailsPageProps) {
           <Card className="border-none shadow-lg">
             <CardContent className="p-8">
               <div className="flex flex-col md:flex-row gap-6">
-                <div className="">
+                {/* <div className="">
                   <ImageWithFallback
                     src={blog.authorImage}
                     alt={blog.author}
                     className="w-24 h-24 rounded-full object-cover"
+                  />
+                </div> */}
+                <div className="relative h-auto">
+                  <Image
+                    src={blog.authorImage}
+                    alt="Modern office workspace"
+                    width={570}
+                    height={384}
+                    className="w-full  aspect-5/6 shadow-lg"
                   />
                 </div>
                 <div>
@@ -157,6 +167,9 @@ export function BlogDetailsPage({ blog }: BlogDetailsPageProps) {
                   {/* <Button variant="outline" asChild>
                     <NextLink href="/about">View Profile</NextLink>
                   </Button> */}
+                  <Link href={"/about"}>
+                    <ZtsButton text="View Profile" />
+                  </Link>
                 </div>
               </div>
             </CardContent>
