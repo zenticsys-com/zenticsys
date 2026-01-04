@@ -1,4 +1,4 @@
-import { Card, CardContent, Chip } from "@mui/material";
+// import { Card, CardContent, Chip } from "@mui/material";
 
 import {
   LuCircleCheck as CheckCircle,
@@ -13,13 +13,16 @@ import {
   LuZap as Zap,
 } from "react-icons/lu";
 import ServicesHeroSection from "./ServicesHeroSection";
+import { Card, CardContent } from "@/components/ui/card";
+import { Chip } from "@mui/material";
 const OurServices = () => {
+  /**- Data -**/
   const services = [
     {
       icon: <Code className="w-12 h-12 text-primary" />,
       title: "Custom Software Development",
       description:
-        "Tailored solutions built to meet your specific business requirements and objectives. We create scalable, maintainable software that grows with your business.",
+        "Tailored solutions built to meet your specific business requirements and objectives.",
       features: [
         "Full-stack development",
         "API integration",
@@ -32,7 +35,7 @@ const OurServices = () => {
       icon: <Smartphone className="w-12 h-12 text-primary" />,
       title: "Mobile App Development",
       description:
-        "Native and cross-platform mobile applications for iOS and Android that deliver exceptional user experiences and drive engagement.",
+        "Native and cross-platform mobile applications for iOS and Android that deliver exceptional user experiences and drive engagement. mobile applications for iOS and Android that deliver exceptional user experiences and drive engagement",
       features: [
         "iOS & Android development",
         "Cross-platform solutions",
@@ -138,21 +141,21 @@ const OurServices = () => {
       <ServicesHeroSection />
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {services.map((service, index) => (
-              <Card
-                key={index}
-                className="h-full hover:shadow-xl transition-all duration-300 group"
-              >
-                <CardContent className="p-8">
-                  <div className="mb-6 group-hover:scale-110 transition-transform duration-300">
-                    {service.icon}
-                  </div>
+              <Card key={index} className="h-full group">
+                <CardContent className="p-5">
+                  <div className="mb-6">{service.icon}</div>
                   <h3 className="text-2xl font-semibold text-gray-900 mb-4">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 mb-6">{service.description}</p>
 
+                  <div className="h-10 text-gray-600 mb-6 relative">
+                    {/* <p className=" line-clamp-3 ">{service.description}</p> */}
+                    <p className="transition-all hover:line-clamp-none line-clamp-2 duration-300  hover:shadow-sm hover:pb-2 hover:block hover:absolute hover:top-0 hover:left-0 hover:bg-white ">
+                      {service.description}
+                    </p>
+                  </div>
                   <div className="mb-6">
                     <h4 className="font-semibold text-gray-900 mb-3">
                       Key Features:

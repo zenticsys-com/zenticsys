@@ -82,7 +82,7 @@ const AutomotiveIndustrySolutions = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {automotiveDetails.solutions.map((solution, index) => (
             <Card key={index} className="h-full">
               <CardContent className="p-8">

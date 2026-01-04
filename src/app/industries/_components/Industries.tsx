@@ -1,4 +1,5 @@
-import { Card, CardContent, Chip } from "@mui/material";
+import { Chip } from "@mui/material";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   LuBanknote as Banknote,
   LuBriefcase as Briefcase,
@@ -12,6 +13,7 @@ import {
   LuShoppingCart as ShoppingCart,
 } from "react-icons/lu";
 const Industries = () => {
+  /**- Data -**/
   const industries = [
     {
       icon: <Car className="w-12 h-12 text-primary" />,
@@ -179,18 +181,13 @@ const Industries = () => {
   ];
 
   return (
-    <section className="py-12 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section className="py-6 bg-white">
+      <div className="max-w-7xl mx-auto lg:px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {industries.map((industry, index) => (
-            <Card
-              key={index}
-              className="h-full hover:shadow-xl transition-all duration-300 group"
-            >
-              <CardContent className="p-8">
-                <div className="mb-6 transition-transform duration-300">
-                  {industry.icon}
-                </div>
+            <Card key={index} className="h-full hover:shadow-xl group">
+              <CardContent className="p-4">
+                <div className="mb-4">{industry.icon}</div>
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">
                   {industry.title}
                 </h3>
