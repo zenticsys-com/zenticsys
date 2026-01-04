@@ -1,16 +1,14 @@
-"use client";
-
-import * as React from "react";
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from "embla-carousel-react";
+import * as React from "react";
 import {
   LuArrowLeft as ArrowLeft,
   LuArrowRight as ArrowRight,
 } from "react-icons/lu";
 
+import ZtsButton from "@/app/_components/ZtButton";
 import { cn } from "./utils";
-import { Button } from "./Button";
 
 type CarouselApi = UseEmblaCarouselType[1];
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>;
@@ -176,17 +174,14 @@ function CarouselItem({ className, ...props }: React.ComponentProps<"div">) {
 
 function CarouselPrevious({
   className,
-  variant = "outline",
-  size = "icon",
+
   ...props
-}: React.ComponentProps<typeof Button>) {
+}: React.ComponentProps<typeof ZtsButton>) {
   const { orientation, scrollPrev, canScrollPrev } = useCarousel();
 
   return (
-    <Button
+    <ZtsButton
       data-slot="carousel-previous"
-      variant={variant}
-      size={size}
       className={cn(
         "absolute size-8 rounded-full",
         orientation === "horizontal"
@@ -200,23 +195,20 @@ function CarouselPrevious({
     >
       <ArrowLeft />
       <span className="sr-only">Previous slide</span>
-    </Button>
+    </ZtsButton>
   );
 }
 
 function CarouselNext({
   className,
-  variant = "outline",
-  size = "icon",
+
   ...props
-}: React.ComponentProps<typeof Button>) {
+}: React.ComponentProps<typeof ZtsButton>) {
   const { orientation, scrollNext, canScrollNext } = useCarousel();
 
   return (
-    <Button
+    <ZtsButton
       data-slot="carousel-next"
-      variant={variant}
-      size={size}
       className={cn(
         "absolute size-8 rounded-full",
         orientation === "horizontal"
@@ -230,15 +222,15 @@ function CarouselNext({
     >
       <ArrowRight />
       <span className="sr-only">Next slide</span>
-    </Button>
+    </ZtsButton>
   );
 }
 
 export {
-  type CarouselApi,
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselPrevious,
   CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
 };
