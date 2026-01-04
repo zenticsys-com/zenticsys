@@ -9,6 +9,7 @@ import {
 } from "react-icons/lu";
 
 const OurIndustryExpertise = () => {
+  /**- Data -**/
   const industries = [
     {
       icon: <Car className="w-8 h-8 text-primary" />,
@@ -57,7 +58,7 @@ const OurIndustryExpertise = () => {
           {industries.map((industry, index) => (
             <Card
               key={index}
-              className="h-full hover:shadow-lg transition-shadow duration-300 group"
+              className="h-full hover:shadow-lg shadow-primary/10 duration-300 group"
             >
               <CardContent className="p-8 text-center">
                 <div className="mb-6 flex justify-center transition-transform duration-300">

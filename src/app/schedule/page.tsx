@@ -243,7 +243,7 @@ export function SchedulePage() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <Card className="border-none shadow-xl">
+            <Card className="border-none hover:shadow-lg shadow-primary/10 shadow-xs">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">
                   Schedule Your Consultation
@@ -460,7 +460,7 @@ export function SchedulePage() {
           {/* Contact Information & Process */}
           <div className="space-y-8">
             {/* Contact Info */}
-            <Card className="border-none shadow-lg">
+            <Card className="border-none hover:shadow-lg shadow-primary/10 shadow-xs">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-6">
                   Contact Information
@@ -485,7 +485,7 @@ export function SchedulePage() {
             </Card>
 
             {/* Our Process */}
-            <Card className="border-none shadow-lg">
+            <Card className="border-none hover:shadow-lg shadow-primary/10 shadow-xs">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-6">
                   Our Process
@@ -509,7 +509,7 @@ export function SchedulePage() {
             </Card>
 
             {/* Quick Call Option */}
-            <Card className="border-none shadow-lg bg-primary text-white">
+            <Card className="border-none hover:shadow-lg shadow-primary/10 shadow-xs bg-primary text-white">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-4">
                   Need to Talk Right Now?

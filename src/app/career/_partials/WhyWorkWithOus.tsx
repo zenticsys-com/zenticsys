@@ -64,7 +64,7 @@ const WhyWorkWithOus = () => {
           {benefits.map((benefit, index) => (
             <Card
               key={index}
-              className="border-none shadow-lg hover:shadow-xl transition-shadow"
+              className="border-none hover:shadow-lg shadow-primary/10 shadow-xs"
             >
               <CardContent className="p-8 text-center">
                 <div className="mb-6 flex justify-center">{benefit.icon}</div>

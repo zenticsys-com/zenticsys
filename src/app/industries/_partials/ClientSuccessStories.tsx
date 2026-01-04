@@ -51,7 +51,10 @@ const ClientSuccessStories = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="h-full">
+            <Card
+              key={index}
+              className="h-full hover:shadow-lg shadow-primary/10"
+            >
               <CardContent className="p-8">
                 <div className="flex mb-4">
                   <Rating

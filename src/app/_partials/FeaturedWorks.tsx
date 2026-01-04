@@ -6,22 +6,19 @@ const FeaturedWorks = () => {
     {
       title: "AutoConnect Pro",
       description: "Connected car platform for automotive industry",
-      image:
-        "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/assets/images/photo_1.png",
       tags: ["React", "Node.js", "IoT"],
     },
     {
       title: "HealthTech Suite",
       description: "Comprehensive healthcare management system",
-      image:
-        "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/assets/images/group-photo.png",
       tags: ["Mobile", "Cloud", "AI"],
     },
     {
       title: "FinanceFlow",
       description: "Next-generation financial platform",
-      image:
-        "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/assets/images/photo_1.png",
       tags: ["Blockchain", "Security", "Analytics"],
     },
   ];
@@ -39,17 +36,14 @@ const FeaturedWorks = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {projects.map((project, index) => (
-            <Card
-              key={index}
-              className="h-full hover:shadow-lg transition-shadow duration-300 overflow-hidden"
-            >
+            <Card key={index} className="h-full overflow-hidden">
               <div className="w-full h-auto ">
                 <Image
                   src={project.image}
                   alt="image"
                   width={570}
                   height={380}
-                  className="w-full h-auto shadow-lg"
+                  className="w-full h-auto"
                 />
               </div>
               <CardContent className="p-6">

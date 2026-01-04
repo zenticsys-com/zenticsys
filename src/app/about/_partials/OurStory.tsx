@@ -66,7 +66,7 @@ const OurStory = () => {
                     index % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"
                   }`}
                 >
-                  <Card className="shadow-lg">
+                  <Card className="shadow-sm hover:shadow-lg shadow-primary/10">
                     <CardContent className="p-6">
                       <div className="flex items-center mb-3">
                         <Calendar className="w-5 h-5 text-primary mr-2" />

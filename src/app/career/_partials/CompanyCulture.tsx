@@ -51,7 +51,7 @@ const CompanyCulture = () => {
               alt="image"
               width={570}
               height={380}
-              className="w-full h-auto shadow-lg"
+              className="w-full h-auto shadow-sm"
             />
           </div>
         </div>

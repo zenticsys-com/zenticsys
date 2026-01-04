@@ -12,24 +12,21 @@ const LatestfromOurBlog = () => {
       excerpt:
         "Exploring emerging trends and technologies shaping the software industry.",
       date: "Dec 15, 2024",
-      image:
-        "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/assets/images/group-photo.png",
     },
     {
       title: "Building Scalable Cloud Architecture",
       excerpt:
         "Best practices for designing and implementing scalable cloud solutions.",
       date: "Dec 10, 2024",
-      image:
-        "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/assets/images/photo_1.png",
     },
     {
       title: "AI and Machine Learning in Business",
       excerpt:
         "How artificial intelligence is revolutionizing business operations.",
       date: "Dec 5, 2024",
-      image:
-        "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/assets/images/group-photo.png",
     },
   ];
 
@@ -46,17 +43,14 @@ const LatestfromOurBlog = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {blogPosts.map((post, index) => (
-            <Card
-              key={index}
-              className="h-full hover:shadow-lg transition-shadow duration-300 overflow-hidden"
-            >
+            <Card key={index} className="h-full overflow-hidden">
               <div className="w-full h-auto ">
                 <Image
                   src={post.image}
                   alt="image"
                   width={570}
                   height={380}
-                  className="w-full h-auto shadow-lg"
+                  className="w-full h-auto"
                 />
               </div>
               <CardContent className="p-6">

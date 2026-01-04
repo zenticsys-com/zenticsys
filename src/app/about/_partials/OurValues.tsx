@@ -59,7 +59,7 @@ const OurValues = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {values.map((value, index) => (
-            <Card key={index} className="hover:shadow-xl transition-shadow">
+            <Card key={index} className="hover:shadow-lg shadow-primary/10">
               <CardContent className="p-8 text-center">
                 <div className="mb-6 flex justify-center">{value.icon}</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">

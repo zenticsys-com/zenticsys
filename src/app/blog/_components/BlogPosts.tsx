@@ -31,11 +31,11 @@ const BlogPosts = ({ posts, heading }: BlogPostsGridProps) => {
     <div>
       <h2 className="text-2xl font-bold text-gray-900 mb-6">{heading}</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
         {posts.map((post) => (
           <Card
             key={post.id}
-            className="border-none shadow-lg hover:shadow-xl transition-shadow overflow-hidden"
+            className="border-none  hover:shadow-lg shadow-primary/10 shadow-xs overflow-hidden"
           >
             <Image
               src={post.image}

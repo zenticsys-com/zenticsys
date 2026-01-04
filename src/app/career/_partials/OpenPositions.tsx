@@ -263,7 +263,7 @@ const OpenPositions = () => {
           {filteredJobs.map((job) => (
             <Card
               key={job.id}
-              className="border-none shadow-lg hover:shadow-xl transition-shadow"
+              className="border-none hover:shadow-lg shadow-primary/10 shadow-xs"
             >
               <CardContent className="p-8">
                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">

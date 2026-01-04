@@ -12,7 +12,7 @@ const CategoryFilter = ({
   onCategoryChange,
 }: CategoryFilterProps) => {
   return (
-    <Card className="border-none shadow-lg">
+    <Card className="border-none hover:shadow-lg shadow-primary/10 shadow-xs">
       <CardContent className="p-6">
         <h3 className="text-lg font-semibold text-gray-900 mb-4">Categories</h3>
 

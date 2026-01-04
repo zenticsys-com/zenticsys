@@ -2,14 +2,13 @@ import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 
 const LeadershipTeam = () => {
+  /**- Data -**/
   const team = [
     {
       name: "NK Rafi",
       position: "CEO & Founder",
       bio: "Visionary leader with 15+ years in software development and business strategy.",
-      image:
-        // "https://images.unsplash.com/photo-1758518731468-98e90ffd7430?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB0ZWFtJTIwcG9ydHJhaXQlMjBvZmZpY2V8ZW58MXx8fHwxNzU5MDAwMTc1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "/assets/images/NK_Rafi (1).jpg",
+      image: "/assets/images/NK_Rafi (1).jpg",
     },
     {
       name: "Sarah Chen",
@@ -48,17 +47,14 @@ const LeadershipTeam = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {team.map((member, index) => (
-            <Card
-              key={index}
-              className="hover:shadow-xl transition-shadow overflow-hidden"
-            >
+            <Card key={index} className="overflow-hidden">
               <div className="relative h-auto">
                 <Image
                   src={member.image}
                   alt="Modern office workspace"
                   width={570}
                   height={384}
-                  className="w-full  aspect-5/6 shadow-lg"
+                  className="w-full  aspect-5/6 shadow-md"
                 />
               </div>
               <CardContent className="p-6 text-center">

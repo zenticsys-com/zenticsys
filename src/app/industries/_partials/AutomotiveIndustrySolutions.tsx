@@ -77,7 +77,7 @@ const AutomotiveIndustrySolutions = () => {
                 alt="image"
                 width={570}
                 height={380}
-                className="w-full h-auto shadow-lg"
+                className="w-full h-auto shadow-md"
               />
             </div>
           </div>
@@ -85,7 +85,10 @@ const AutomotiveIndustrySolutions = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {automotiveDetails.solutions.map((solution, index) => (
-            <Card key={index} className="h-full">
+            <Card
+              key={index}
+              className="h-full hover:shadow-lg shadow-primary/10"
+            >
               <CardContent className="p-8">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
                   {solution.title}

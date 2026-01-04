@@ -25,7 +25,7 @@ const TheTechnologyWeUse = () => {
           {technologies.map((tech, index) => (
             <div
               key={index}
-              className="bg-gray-100 hover:bg-gray-200 transition-colors duration-300  p-6 text-center"
+              className="bg-gray-100 hover:bg-gray-200 hover:shadow-lg shadow-primary/10  duration-300  p-6 text-center"
             >
               <span className="text-lg font-semibold text-gray-700">
                 {tech}

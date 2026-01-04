@@ -61,7 +61,7 @@ const WhatWeDoSection = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="h-full hover:shadow-lg transition-shadow duration-300 group"
+              className="h-full hover:shadow-lg shadow-primary/10 duration-300 group"
             >
               <CardContent className="p-8">
                 <div className="mb-6 transition-transform duration-300">
