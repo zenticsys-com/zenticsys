@@ -1,5 +1,8 @@
-import { Card, CardContent, Rating } from "@mui/material";
+import { Card, CardContent } from "@/components/ui/card";
+import { Rating } from "@mui/material";
+
 const ClientReviews = () => {
+  /**- Data -**/
   const testimonials = [
     {
       name: "Sarah Johnson",
@@ -49,7 +52,7 @@ const ClientReviews = () => {
             What our clients say about working with us
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="h-full">
               <CardContent className="p-8">

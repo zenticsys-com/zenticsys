@@ -1,4 +1,5 @@
-import { Card, CardContent, Chip } from "@mui/material";
+import { Card, CardContent } from "@/components/ui/card";
+import { Chip } from "@mui/material";
 import Image from "next/image";
 const FeaturedWorks = () => {
   const projects = [
@@ -36,7 +37,7 @@ const FeaturedWorks = () => {
             Showcasing our latest projects and innovations
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {projects.map((project, index) => (
             <Card
               key={index}

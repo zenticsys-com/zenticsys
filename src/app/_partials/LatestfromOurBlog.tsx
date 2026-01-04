@@ -1,9 +1,11 @@
-import { Card, CardContent } from "@mui/material";
+// import { Card, CardContent } from "@mui/material";
 import Image from "next/image";
 import { default as Link } from "next/link";
 import ZtsButton from "../_components/ZtButton";
+import { Card, CardContent } from "@/components/ui/card";
 
 const LatestfromOurBlog = () => {
+  /**- Data -**/
   const blogPosts = [
     {
       title: "The Future of Software Development",
@@ -42,7 +44,7 @@ const LatestfromOurBlog = () => {
             Insights, tips, and industry trends
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {blogPosts.map((post, index) => (
             <Card
               key={index}
@@ -54,8 +56,7 @@ const LatestfromOurBlog = () => {
                   alt="image"
                   width={570}
                   height={380}
-                  sizes="(max-width: 768px) 100vw, 570px"
-                  className="w-full h-auto rounded-t-lg shadow-lg"
+                  className="w-full h-auto shadow-lg"
                 />
               </div>
               <CardContent className="p-6">
@@ -65,12 +66,14 @@ const LatestfromOurBlog = () => {
                 </h3>
                 <p className="text-gray-600 mb-4">{post.excerpt}</p>
 
-                <Link href="/blog">
-                  <ZtsButton
-                    text="Read More"
-                    className="border-none text-primary "
-                  />
-                </Link>
+                <div className="flex justify-self-start">
+                  <Link href="/blog">
+                    <ZtsButton
+                      text="Read More"
+                      className="border-none text-primary"
+                    />
+                  </Link>
+                </div>
               </CardContent>
             </Card>
           ))}

@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@mui/material";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   LuBanknote as Banknote,
   LuBuilding as Building,
@@ -53,7 +53,7 @@ const OurIndustryExpertise = () => {
             Specialized solutions across diverse industries
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {industries.map((industry, index) => (
             <Card
               key={index}
