@@ -139,7 +139,7 @@ export function SchedulePage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real app, this would submit to a backend
+
     setIsSubmitted(true);
   };
 
