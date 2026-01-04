@@ -1,4 +1,5 @@
-import { Card, CardContent, Chip } from "@mui/material";
+import { Card, CardContent } from "@/components/ui/card";
+import { Chip } from "@mui/material";
 import Image from "next/image";
 import { LuCar as Car, LuCircleCheck as CheckCircle } from "react-icons/lu";
 

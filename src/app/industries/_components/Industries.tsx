@@ -16,7 +16,7 @@ const Industries = () => {
   /**- Data -**/
   const industries = [
     {
-      icon: <Car className="w-12 h-12 text-primary" />,
+      icon: <Car className="w-10 h-10 text-primary" />,
       title: "Automotive",
       description:
         "Advanced solutions for the automotive industry including connected car platforms, fleet management, and autonomous vehicle technologies.",
@@ -31,7 +31,7 @@ const Industries = () => {
         "AutoConnect Pro - Connected vehicle platform serving 100K+ vehicles",
     },
     {
-      icon: <Heart className="w-12 h-12 text-primary" />,
+      icon: <Heart className="w-10 h-10 text-primary" />,
       title: "Healthcare",
       description:
         "Innovative healthcare technology solutions that improve patient outcomes and streamline medical operations.",
@@ -50,7 +50,7 @@ const Industries = () => {
       caseStudy: "MediFlow - Comprehensive healthcare management platform",
     },
     {
-      icon: <Building className="w-12 h-12 text-primary" />,
+      icon: <Building className="w-10 h-10 text-primary" />,
       title: "Real Estate",
       description:
         "Digital solutions for property management, real estate transactions, and smart building technologies.",
@@ -64,7 +64,7 @@ const Industries = () => {
       caseStudy: "PropTech Suite - Complete real estate management solution",
     },
     {
-      icon: <ShoppingCart className="w-12 h-12 text-primary" />,
+      icon: <ShoppingCart className="w-10 h-10 text-primary" />,
       title: "E-commerce & Retail",
       description:
         "Comprehensive e-commerce platforms and retail solutions that drive sales and enhance customer experiences.",
@@ -83,7 +83,7 @@ const Industries = () => {
       caseStudy: "RetailMax - Omnichannel retail platform with 2M+ users",
     },
     {
-      icon: <Banknote className="w-12 h-12 text-primary" />,
+      icon: <Banknote className="w-10 h-10 text-primary" />,
       title: "Financial Services",
       description:
         "Secure financial technology solutions including banking platforms, payment systems, and investment tools.",
@@ -102,7 +102,7 @@ const Industries = () => {
       caseStudy: "FinanceFlow - Next-generation trading platform",
     },
     {
-      icon: <GraduationCap className="w-12 h-12 text-primary" />,
+      icon: <GraduationCap className="w-10 h-10 text-primary" />,
       title: "Education",
       description:
         "Educational technology solutions that enhance learning experiences and streamline educational administration.",
@@ -122,7 +122,7 @@ const Industries = () => {
         "EduTech Platform - Online learning platform for 50K+ students",
     },
     {
-      icon: <Plane className="w-12 h-12 text-primary" />,
+      icon: <Plane className="w-10 h-10 text-primary" />,
       title: "Travel & Hospitality",
       description:
         "Digital solutions for travel booking, hospitality management, and customer experience optimization.",
@@ -141,7 +141,7 @@ const Industries = () => {
       caseStudy: "TravelPro - Comprehensive travel management platform",
     },
     {
-      icon: <Factory className="w-12 h-12 text-primary" />,
+      icon: <Factory className="w-10 h-10 text-primary" />,
       title: "Manufacturing",
       description:
         "Industry 4.0 solutions including smart manufacturing, supply chain optimization, and predictive maintenance.",
@@ -160,7 +160,7 @@ const Industries = () => {
       caseStudy: "SmartFactory - IoT-enabled manufacturing optimization",
     },
     {
-      icon: <Briefcase className="w-12 h-12 text-primary" />,
+      icon: <Briefcase className="w-10 h-10 text-primary" />,
       title: "Professional Services",
       description:
         "Business solutions for consulting, legal, accounting, and other professional service organizations.",

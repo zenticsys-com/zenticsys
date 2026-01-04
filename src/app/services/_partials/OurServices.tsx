@@ -19,7 +19,7 @@ const OurServices = () => {
   /**- Data -**/
   const services = [
     {
-      icon: <Code className="w-12 h-12 text-primary" />,
+      icon: <Code className="w-10 h-10 text-primary" />,
       title: "Custom Software Development",
       description:
         "Tailored solutions built to meet your specific business requirements and objectives.",
@@ -32,7 +32,7 @@ const OurServices = () => {
       technologies: ["React", "Node.js", "Python", ".NET"],
     },
     {
-      icon: <Smartphone className="w-12 h-12 text-primary" />,
+      icon: <Smartphone className="w-10 h-10 text-primary" />,
       title: "Mobile App Development",
       description:
         "Native and cross-platform mobile applications for iOS and Android that deliver exceptional user experiences and drive engagement. mobile applications for iOS and Android that deliver exceptional user experiences and drive engagement",
@@ -45,7 +45,7 @@ const OurServices = () => {
       technologies: ["React Native", "Flutter", "Swift", "Kotlin"],
     },
     {
-      icon: <Cloud className="w-12 h-12 text-primary" />,
+      icon: <Cloud className="w-10 h-10 text-primary" />,
       title: "Cloud Solutions",
       description:
         "Scalable cloud infrastructure and migration services for modern businesses looking to leverage the power of cloud computing.",
@@ -58,7 +58,7 @@ const OurServices = () => {
       technologies: ["AWS", "Azure", "Google Cloud", "Docker"],
     },
     {
-      icon: <Database className="w-12 h-12 text-primary" />,
+      icon: <Database className="w-10 h-10 text-primary" />,
       title: "Data Analytics & BI",
       description:
         "Transform your data into actionable insights with advanced analytics solutions and business intelligence platforms.",
@@ -71,7 +71,7 @@ const OurServices = () => {
       technologies: ["Tableau", "Power BI", "Python", "SQL"],
     },
     {
-      icon: <Shield className="w-12 h-12 text-primary" />,
+      icon: <Shield className="w-10 h-10 text-primary" />,
       title: "Cybersecurity Solutions",
       description:
         "Comprehensive security solutions to protect your digital assets and data from evolving cyber threats.",
@@ -84,7 +84,7 @@ const OurServices = () => {
       technologies: ["SIEM", "Zero Trust", "IAM", "Encryption"],
     },
     {
-      icon: <Zap className="w-12 h-12 text-primary" />,
+      icon: <Zap className="w-10 h-10 text-primary" />,
       title: "Digital Transformation",
       description:
         "Complete digital transformation strategies to modernize your business operations and improve efficiency.",
@@ -97,7 +97,7 @@ const OurServices = () => {
       technologies: ["RPA", "AI/ML", "IoT", "Blockchain"],
     },
     {
-      icon: <Globe className="w-12 h-12 text-primary" />,
+      icon: <Globe className="w-10 h-10 text-primary" />,
       title: "Web Development",
       description:
         "Modern, responsive web applications that provide seamless user experiences across all devices and platforms.",
@@ -110,7 +110,7 @@ const OurServices = () => {
       technologies: ["React", "Vue.js", "WordPress", "Shopify"],
     },
     {
-      icon: <Users className="w-12 h-12 text-primary" />,
+      icon: <Users className="w-10 h-10 text-primary" />,
       title: "IT Consulting",
       description:
         "Strategic technology consulting to help you make informed decisions about your IT infrastructure and digital initiatives.",
@@ -123,7 +123,7 @@ const OurServices = () => {
       technologies: ["TOGAF", "ITIL", "Agile", "DevOps"],
     },
     {
-      icon: <Settings className="w-12 h-12 text-primary" />,
+      icon: <Settings className="w-10 h-10 text-primary" />,
       title: "System Integration",
       description:
         "Seamless integration of disparate systems and applications to create unified, efficient business processes.",
@@ -152,7 +152,7 @@ const OurServices = () => {
 
                   <div className="h-10 text-gray-600 mb-6 relative">
                     {/* <p className=" line-clamp-3 ">{service.description}</p> */}
-                    <p className="transition-all hover:line-clamp-none line-clamp-2 duration-300  hover:shadow-sm hover:pb-2 hover:block hover:absolute hover:top-0 hover:left-0 hover:bg-white ">
+                    <p className="transition-all hover:line-clamp-none line-clamp-2 duration-300 hover:pb-2 hover:block hover:absolute hover:top-0 hover:left-0 hover:bg-white ">
                       {service.description}
                     </p>
                   </div>
