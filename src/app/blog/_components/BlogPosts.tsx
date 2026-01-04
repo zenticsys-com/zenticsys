@@ -31,7 +31,7 @@ const BlogPosts = ({ posts, heading }: BlogPostsGridProps) => {
     <div>
       <h2 className="text-2xl font-bold text-gray-900 mb-6">{heading}</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {posts.map((post) => (
           <Card
             key={post.id}
@@ -42,7 +42,7 @@ const BlogPosts = ({ posts, heading }: BlogPostsGridProps) => {
               alt={post.title}
               width={570}
               height={300}
-              className="w-full h-auto rounded-t-lg aspect-8/5"
+              className="w-full h-auto aspect-8/5"
             />
 
             <CardContent className="p-6">
