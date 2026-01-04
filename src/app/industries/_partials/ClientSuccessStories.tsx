@@ -8,7 +8,7 @@ const ClientSuccessStories = () => {
       company: "Automotive",
       content:
         "Zenticsys helped us build a connected car platform that has revolutionized how we interact with our customers. The platform now serves over 100,000 vehicles.",
-      rating: 5,
+      rating: 4,
     },
     {
       name: "Dr. Sarah Chen",
@@ -32,7 +32,7 @@ const ClientSuccessStories = () => {
       company: "Education",
       content:
         "The learning management system has transformed our educational delivery, enabling us to serve 50,000+ students effectively.",
-      rating: 5,
+      rating: 4,
     },
   ];
 

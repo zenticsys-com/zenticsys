@@ -18,10 +18,9 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         type={type}
         {...props}
         className={cn(
-          // base
-          "inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition disabled:pointer-events-none disabled:opacity-50",
-
-          // variants
+          /**- base -**/
+          "inline-flex items-center justify-center px-4 py-2 text-sm font-medium transition disabled:pointer-events-none disabled:opacity-50",
+          /**- variants -**/
           variant === "default" && "bg-[#ef3d23] text-white hover:bg-[#d63420]",
 
           variant === "outline" &&

@@ -21,7 +21,7 @@ const CategoryFilter = ({
             <button
               key={category}
               onClick={() => onCategoryChange(category)}
-              className={`block w-full text-left p-2 rounded transition-colors ${
+              className={`block w-full text-left p-2 transition-colors ${
                 selectedCategory === category
                   ? "bg-[#ef3d23] text-white"
                   : "text-gray-600 hover:bg-gray-100"

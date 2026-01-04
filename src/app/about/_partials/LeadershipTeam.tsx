@@ -57,7 +57,7 @@ const LeadershipTeam = () => {
                   alt="Modern office workspace"
                   width={570}
                   height={384}
-                  className="w-full h-full rounded-t-md shadow-lg"
+                  className="w-full h-full shadow-lg"
                 />
               </div>
               <CardContent className="p-6 text-center">

@@ -48,8 +48,7 @@ const FeaturedWorks = () => {
                   alt="image"
                   width={570}
                   height={380}
-                  sizes="(max-width: 768px) 100vw, 570px"
-                  className="w-full h-auto rounded-t-lg shadow-lg"
+                  className="w-full h-auto shadow-lg"
                 />
               </div>
               <CardContent className="p-6">

@@ -28,7 +28,7 @@ const FeaturedPost = ({ post }: FeaturedPostProps) => {
     <div className="mb-12">
       <h2 className="text-2xl font-bold text-gray-900 mb-6">Featured Post</h2>
 
-      <Card className="border-none shadow-xl overflow-hidden">
+      <Card className="shadow-xl overflow-hidden">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="relative h-64 md:h-auto">
             <Image
@@ -36,7 +36,7 @@ const FeaturedPost = ({ post }: FeaturedPostProps) => {
               alt={post.title}
               width={570}
               height={380}
-              className="w-full h-auto rounded-lg shadow-lg"
+              className="w-full h-auto shadow-lg"
             />
 
             <Badge className="absolute top-4 left-4 bg-[#ef3d23] text-white">

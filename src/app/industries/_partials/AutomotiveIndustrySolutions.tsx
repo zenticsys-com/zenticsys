@@ -1,4 +1,3 @@
-import { ImageWithFallback } from "@/components/figma/ImageWithFallback";
 import { Card, CardContent, Chip } from "@mui/material";
 import Image from "next/image";
 import { LuCar as Car, LuCircleCheck as CheckCircle } from "react-icons/lu";
@@ -77,8 +76,7 @@ const AutomotiveIndustrySolutions = () => {
                 alt="image"
                 width={570}
                 height={380}
-                sizes="(max-width: 768px) 100vw, 570px"
-                className="w-full h-auto rounded-lg shadow-lg"
+                className="w-full h-auto shadow-lg"
               />
             </div>
           </div>

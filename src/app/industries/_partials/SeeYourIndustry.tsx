@@ -1,7 +1,6 @@
 import ZtsButton from "@/app/_components/ZtButton";
 import { ArrowRight } from "@mui/icons-material";
 import Link from "next/link";
-import React from "react";
 
 const SeeYourIndustry = () => {
   return (

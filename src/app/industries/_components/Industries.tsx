@@ -188,7 +188,7 @@ const Industries = () => {
               className="h-full hover:shadow-xl transition-all duration-300 group"
             >
               <CardContent className="p-8">
-                <div className="mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="mb-6 transition-transform duration-300">
                   {industry.icon}
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">

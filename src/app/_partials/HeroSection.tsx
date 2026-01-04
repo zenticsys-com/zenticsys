@@ -7,14 +7,14 @@ const HeroSection = () => {
   return (
     <section className="from-gray-50 to-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-16 gap-10 items-center">
           <div>
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl text-center md:text-start md:text-6xl font-bold text-gray-900 mb-6">
               Building the
               <span className="text-primary"> Future </span>
               of Software
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-xl text-gray-600 mb-8 text-center  md:text-justify">
               We create innovative software solutions that transform businesses
               and drive digital success. Partner with us to bring your vision to
               life.
@@ -47,8 +47,7 @@ const HeroSection = () => {
               alt="image"
               width={570}
               height={380}
-              sizes="(max-width: 768px) 100vw, 570px"
-              className="w-full h-auto rounded-lg shadow-lg"
+              className="w-full h-auto  shadow-lg"
             />
           </div>
         </div>

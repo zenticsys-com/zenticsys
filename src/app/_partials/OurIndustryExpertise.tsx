@@ -60,7 +60,7 @@ const OurIndustryExpertise = () => {
               className="h-full hover:shadow-lg transition-shadow duration-300 group"
             >
               <CardContent className="p-8 text-center">
-                <div className="mb-6 flex justify-center group-hover:scale-110 transition-transform duration-300">
+                <div className="mb-6 flex justify-center transition-transform duration-300">
                   {industry.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">

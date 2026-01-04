@@ -56,7 +56,7 @@ const MissionAndVision = () => {
               alt="Modern office workspace"
               width={570}
               height={384}
-              className="w-full h-auto md:min-h-96 object-cover rounded-lg shadow-lg"
+              className="w-full h-auto md:min-h-96 object-cover shadow-lg"
             />
           </div>
         </div>

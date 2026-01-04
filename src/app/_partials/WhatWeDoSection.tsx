@@ -57,14 +57,14 @@ const WhatWeDoSection = () => {
             Comprehensive software solutions for modern businesses
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {services.map((service, index) => (
             <Card
               key={index}
               className="h-full hover:shadow-lg transition-shadow duration-300 group"
             >
               <CardContent className="p-8">
-                <div className="mb-6 group-hover:scale-108 transition-transform duration-300">
+                <div className="mb-6 transition-transform duration-300">
                   {service.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
