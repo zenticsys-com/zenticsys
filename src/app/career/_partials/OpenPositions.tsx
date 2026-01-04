@@ -21,10 +21,12 @@ import {
 import { Badge } from "@/components/ui/badge";
 
 const OpenPositions = () => {
+  /**- React State -**/
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedDepartment, setSelectedDepartment] = useState("All");
   const [selectedLocation, setSelectedLocation] = useState("All");
 
+  /**- Data -**/
   const jobOpenings = [
     {
       id: "1",
@@ -333,7 +335,7 @@ const OpenPositions = () => {
 
                   <div className="lg:col-span-1 flex flex-col justify-between">
                     <div></div>
-                    <Button className="bg-[#ef3d23] hover:bg-[#d63420] text-white w-full">
+                    <Button className="bg-primary hover:bg-primary-dark text-white w-full">
                       Apply Now
                     </Button>
                   </div>

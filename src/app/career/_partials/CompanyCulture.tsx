@@ -51,8 +51,7 @@ const CompanyCulture = () => {
               alt="image"
               width={570}
               height={380}
-              sizes="(max-width: 768px) 100vw, 570px"
-              className="w-full h-auto rounded-lg shadow-lg"
+              className="w-full h-auto shadow-lg"
             />
           </div>
         </div>
