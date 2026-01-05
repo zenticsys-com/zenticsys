@@ -197,7 +197,7 @@ const OpenPositions = () => {
     return matchesSearch && matchesDepartment && matchesLocation;
   });
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -271,7 +271,7 @@ const OpenPositions = () => {
                     <div className="flex flex-wrap items-center gap-4 mb-4">
                       <Badge
                         variant="outline"
-                        className="border-[#ef3d23] text-[#ef3d23]"
+                        className="border-primary text-primary"
                       >
                         {job.department}
                       </Badge>
@@ -308,7 +308,7 @@ const OpenPositions = () => {
                             key={index}
                             className="flex items-start text-sm text-gray-600"
                           >
-                            <CheckCircle className="w-4 h-4 text-[#ef3d23] mr-2  mt-0.5" />
+                            <CheckCircle className="w-4 h-4 text-primary mr-2  mt-0.5" />
                             {req}
                           </li>
                         ))}
