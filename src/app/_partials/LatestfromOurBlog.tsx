@@ -1,4 +1,3 @@
-// import { Card, CardContent } from "@mui/material";
 import Image from "next/image";
 import { default as Link } from "next/link";
 import ZtsButton from "../_components/ZtButton";
@@ -64,7 +63,7 @@ const LatestfromOurBlog = () => {
                   <Link href="/blog">
                     <ZtsButton
                       text="Read More"
-                      className="border-none text-primary"
+                      className="border-primary text-primary hover:text-white hover:bg-primary hover:border-transparent transition duration-300 "
                     />
                   </Link>
                 </div>

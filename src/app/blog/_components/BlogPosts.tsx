@@ -48,7 +48,7 @@ const BlogPosts = ({ posts, heading }: BlogPostsGridProps) => {
             <CardContent className="p-6">
               <Badge
                 variant="outline"
-                className="border-[#ef3d23] text-[#ef3d23] mb-3"
+                className="border-primary text-primary mb-3"
               >
                 {post.category}
               </Badge>
