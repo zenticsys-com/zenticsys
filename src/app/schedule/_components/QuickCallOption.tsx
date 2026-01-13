@@ -16,7 +16,6 @@ const QuickCallOption = () => {
             Have an urgent project or need immediate consultation? Give us a
             call!
           </p>
-
           <ZtsButton
             text="  Call Now: +88016 2940 3203"
             className="w-full border-white text-primary md:text-white  md:hover:bg-white hover:text-primary"
