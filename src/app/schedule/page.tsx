@@ -27,92 +27,11 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
+import { cn } from "@/components/ui/utils";
+import FAQSection from "./_partials/FAQSection";
+import QuickCallOption from "./_components/QuickCallOption";
 
 // FAQ Section Component
-function FAQSection() {
-  const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
-
-  const faqs = [
-    {
-      question: "How long does a typical consultation take?",
-      answer:
-        "Initial consultations usually last 30-60 minutes, depending on project complexity.",
-    },
-    {
-      question: "Is the consultation free?",
-      answer:
-        "Yes, we offer free initial consultations to understand your needs and explore how we can help.",
-    },
-    {
-      question: "What happens after the consultation?",
-      answer:
-        "We'll provide a detailed proposal with timeline, costs, and next steps within 48 hours.",
-    },
-    {
-      question: "Do you work with startups?",
-      answer:
-        "Absolutely! We work with businesses of all sizes, from startups to enterprise organizations.",
-    },
-    {
-      question: "What information should I prepare for the consultation?",
-      answer:
-        "Come prepared with your project goals, timeline, budget range, and any existing documentation or requirements.",
-    },
-    {
-      question: "Can we schedule follow-up meetings?",
-      answer:
-        "Yes, we're happy to schedule additional meetings as needed throughout the project planning and development process.",
-    },
-  ];
-
-  return (
-    <>
-      {faqs.map((faq, index) => (
-        <Card
-          key={index}
-          className="cursor-pointer hover:shadow-md transition-all duration-200 border border-gray-200"
-          onClick={() => setExpandedFaq(expandedFaq === index ? null : index)}
-        >
-          <CardContent className="p-6">
-            <div className="flex items-center justify-between">
-              <h3 className="text-lg font-semibold text-gray-900 pr-4">
-                {faq.question}
-              </h3>
-              <div
-                className={`transform transition-transform duration-200 ${
-                  expandedFaq === index ? "rotate-180" : ""
-                }`}
-              >
-                <svg
-                  className="w-5 h-5 text-primary"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div
-              className={`mt-4 transition-all duration-200 ease-in-out ${
-                expandedFaq === index
-                  ? "max-h-96 opacity-100"
-                  : "max-h-0 opacity-0 overflow-hidden"
-              }`}
-            >
-              <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
-            </div>
-          </CardContent>
-        </Card>
-      ))}
-    </>
-  );
-}
 
 export function SchedulePage() {
   const [formData, setFormData] = useState({
@@ -259,7 +178,7 @@ export function SchedulePage() {
                         onChange={(e) =>
                           handleInputChange("firstName", e.target.value)
                         }
-                        className="mt-1"
+                        className="mt-1.5 focus-visible:ring-transparent"
                       />
                     </div>
                     <div>
@@ -271,7 +190,7 @@ export function SchedulePage() {
                         onChange={(e) =>
                           handleInputChange("lastName", e.target.value)
                         }
-                        className="mt-1"
+                        className="mt-1.5 focus-visible:ring-transparent"
                       />
                     </div>
                   </div>
@@ -287,7 +206,7 @@ export function SchedulePage() {
                         onChange={(e) =>
                           handleInputChange("email", e.target.value)
                         }
-                        className="mt-1"
+                        className="mt-1.5 focus-visible:ring-transparent"
                       />
                     </div>
                     <div>
@@ -299,7 +218,7 @@ export function SchedulePage() {
                         onChange={(e) =>
                           handleInputChange("phone", e.target.value)
                         }
-                        className="mt-1"
+                        className="mt-1.5 focus-visible:ring-transparent"
                       />
                     </div>
                   </div>
@@ -314,7 +233,7 @@ export function SchedulePage() {
                         onChange={(e) =>
                           handleInputChange("company", e.target.value)
                         }
-                        className="mt-1"
+                        className="mt-1.5 focus-visible:ring-transparent"
                       />
                     </div>
                     <div>
@@ -325,7 +244,7 @@ export function SchedulePage() {
                         onChange={(e) =>
                           handleInputChange("position", e.target.value)
                         }
-                        className="mt-1"
+                        className="mt-1.5 focus-visible:ring-transparent"
                       />
                     </div>
                   </div>
@@ -339,10 +258,10 @@ export function SchedulePage() {
                           handleInputChange("projectType", value)
                         }
                       >
-                        <SelectTrigger className="mt-1">
+                        <SelectTrigger className="mt-1.5 focus-visible:ring-transparent">
                           <SelectValue placeholder="Select project type" />
                         </SelectTrigger>
-                        <SelectContent>
+                        <SelectContent className="bg-white">
                           <SelectItem value="web-development">
                             Web Development
                           </SelectItem>
@@ -372,10 +291,10 @@ export function SchedulePage() {
                           handleInputChange("budget", value)
                         }
                       >
-                        <SelectTrigger className="mt-1">
+                        <SelectTrigger className="mt-1.5 focus-visible:ring-transparent">
                           <SelectValue placeholder="Select budget" />
                         </SelectTrigger>
-                        <SelectContent>
+                        <SelectContent className="bg-white">
                           <SelectItem value="under-50k">Under $50k</SelectItem>
                           <SelectItem value="50k-100k">$50k - $100k</SelectItem>
                           <SelectItem value="100k-250k">
@@ -397,10 +316,10 @@ export function SchedulePage() {
                           handleInputChange("timeline", value)
                         }
                       >
-                        <SelectTrigger className="mt-1">
+                        <SelectTrigger className="mt-1.5 focus-visible:ring-transparent">
                           <SelectValue placeholder="Select timeline" />
                         </SelectTrigger>
-                        <SelectContent>
+                        <SelectContent className="bg-white">
                           <SelectItem value="asap">ASAP</SelectItem>
                           <SelectItem value="1-3-months">1-3 months</SelectItem>
                           <SelectItem value="3-6-months">3-6 months</SelectItem>
@@ -426,7 +345,7 @@ export function SchedulePage() {
                       onChange={(e) =>
                         handleInputChange("message", e.target.value)
                       }
-                      className="mt-1"
+                      className="mt-1.5 focus-visible:ring-transparent"
                     />
                   </div>
 
@@ -507,26 +426,7 @@ export function SchedulePage() {
                 </div>
               </CardContent>
             </Card>
-
-            {/* Quick Call Option */}
-            <Card className="border-none hover:shadow-lg shadow-primary/10 shadow-xs bg-primary text-white">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-4">
-                  Need to Talk Right Now?
-                </h3>
-                <p className="text-red-100 mb-4">
-                  Have an urgent project or need immediate consultation? Give us
-                  a call!
-                </p>
-                <Button
-                  variant="outline"
-                  className="w-full border-white text-primary md:text-white  md:hover:bg-white hover:text-primary"
-                >
-                  <Phone className="mr-2 h-4 w-4" />
-                  Call Now: +88016 2940 3203
-                </Button>
-              </CardContent>
-            </Card>
+            <QuickCallOption />
           </div>
         </div>
       </div>

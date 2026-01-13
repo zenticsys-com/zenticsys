@@ -1,4 +1,4 @@
-import AboutHerroSection from "@/app/about/_partials/AboutHerroSection";
+import AboutHeroSection from "@/app/about/_partials/AboutHeroSection";
 import CompanyStatus from "@/app/about/_partials/CompanyStatus";
 import JoinOurTeam from "@/app/about/_partials/JoinOurTeam";
 import LeadershipTeam from "@/app/about/_partials/LeadershipTeam";
@@ -9,7 +9,7 @@ import WhyChooseZenticsys from "@/app/about/_partials/WhyChooseZenticsys";
 const AboutPage = () => {
   return (
     <div>
-      <AboutHerroSection />
+      <AboutHeroSection />
       <CompanyStatus />
       <MissionAndVision />
       <OurStory />
