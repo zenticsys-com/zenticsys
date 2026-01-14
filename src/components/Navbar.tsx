@@ -123,9 +123,9 @@ export function Navbar() {
         onClose={() => setIsMenuOpen(false)}
         sx={{ display: { xs: "block", md: "none" } }}
       >
-        <Box sx={{ width: 250, pt: 2 }}>
+        <Box sx={{ width: 220, pt: 2 }}>
           <Box
-            sx={{ display: "flex", justifyContent: "flex-end", px: 2, pb: 2 }}
+            sx={{ display: "flex", justifyContent: "flex-end", px: 3, pb: 2 }}
           >
             <IconButton onClick={() => setIsMenuOpen(false)}>
               <Close />
@@ -139,11 +139,9 @@ export function Navbar() {
                   href={item.href}
                   onClick={() => setIsMenuOpen(false)}
                   sx={{
-                    color: isActive(item.href)
-                      ? "primary.main"
-                      : "text.primary",
+                    color: isActive(item.href) ? "white" : "text.white",
                     backgroundColor: isActive(item.href)
-                      ? "primary.light"
+                      ? "#ef3d23"
                       : "transparent",
                     "&:hover": {
                       backgroundColor: isActive(item.href)

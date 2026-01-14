@@ -14,7 +14,7 @@ const Newsletter = () => {
           <div className="space-y-3">
             <Input
               placeholder="Your email address"
-              className="bg-white text-gray-900 placeholder-gray-500"
+              className="bg-white text-gray-900 placeholder-gray-500 focus-visible:ring-transparent"
             />
             <Button className="w-full bg-white text-primary hover:text-primary-dark cursor-pointer  hover:bg-gray-200">
               Subscribe

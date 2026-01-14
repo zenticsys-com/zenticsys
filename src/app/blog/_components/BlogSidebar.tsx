@@ -46,7 +46,6 @@ const BlogSidebar = ({
           </div>
         </CardContent>
       </Card>
-
       <CategoryFilter
         categories={categories}
         selectedCategory={selectedCategory}
