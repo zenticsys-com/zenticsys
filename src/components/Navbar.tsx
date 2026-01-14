@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+
 import {
   AppBar,
   Box,
@@ -18,6 +19,7 @@ import {
   Typography,
 } from "@mui/material";
 import { Close, Menu } from "@mui/icons-material";
+import Image from "next/image";
 
 const navItems = [
   { name: "Services", href: "/services" },
@@ -63,7 +65,13 @@ export function Navbar() {
                 "&:hover": { color: "primary.main" },
               }}
             >
-              Zenticsys
+              <Image
+                src={"/assets/images/zenticsys-con-2-black.png"}
+                alt="image"
+                width={70}
+                height={50}
+                className="w-full h-auto"
+              />
             </Typography>
 
             <Box
