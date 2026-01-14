@@ -153,9 +153,9 @@ const OurServices = () => {
                     {service.title}
                   </h3>
 
-                  <div className="h-9 text-gray-600 mb-6 relative">
+                  <div className="md:h-9 text-gray-600 mb-6 relative">
                     {/* <p className=" line-clamp-3 ">{service.description}</p> */}
-                    <p className="transition-all hover:line-clamp-none line-clamp-2 duration-300 hover:pb-2 hover:block hover:absolute hover:top-0 hover:left-0 hover:bg-white ">
+                    <p className="transition-all hover:line-clamp-none md:line-clamp-2 duration-300 hover:pb-2 hover:block hover:absolute hover:top-0 hover:left-0 hover:bg-white ">
                       {service.description}
                     </p>
                   </div>
