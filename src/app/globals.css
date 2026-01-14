@@ -17,7 +17,9 @@
   --input-background: #f8f8f8;
   --error: #d32f2f;
   --warning: #ff9800;
-  --success: #4caf50;
+  /* --success: #2baf2f; */
+    --success: #298a2c;
+
   --info: #2196f3;
   --radius: 8px;
   --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.12);

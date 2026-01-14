@@ -8,7 +8,7 @@ const FormSubmitSuccessMessage = () => {
     <div className="min-h-screen bg-gradient from-gray-50 to-white flex items-center justify-center">
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="bg-green-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-8">
-          <CheckCircle className="w-12 h-12 text-green-600" />
+          <CheckCircle className="w-12 h-12 text-success" />
         </div>
         <h1 className="text-4xl font-bold text-gray-900 mb-6">Thank You!</h1>
         <p className="text-xl text-gray-600 mb-8">

@@ -182,9 +182,9 @@ const OpenPositions = () => {
 
   const filteredJobs = jobOpenings.filter((job) => {
     const matchesSearch =
-      job.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      job.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      job.technologies.some((tech) =>
+      job?.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      job?.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      job?.technologies.some((tech) =>
         tech.toLowerCase().includes(searchTerm.toLowerCase())
       );
 

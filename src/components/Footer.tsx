@@ -1,6 +1,6 @@
 "use client";
 
-import NextLink from "next/link";
+import { Facebook, Instagram, LinkedIn } from "@mui/icons-material";
 import {
   Box,
   Button,
@@ -11,7 +11,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { Facebook, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
+import NextLink from "next/link";
 
 const quickLinks = [
   { name: "Services", href: "/services" },
@@ -37,6 +37,7 @@ export function Footer() {
             display: "grid",
             gap: 4,
             gridTemplateColumns: { xs: "1fr", md: "2fr 1fr 1fr" },
+            textAlign: { xs: "center", md: "left" },
           }}
         >
           <Box>
@@ -55,7 +56,13 @@ export function Footer() {
               innovative solutions that transform businesses and drive digital
               success.
             </Typography>
-            <Box sx={{ display: "flex", gap: 1 }}>
+            <Box
+              sx={{
+                display: "flex",
+                gap: 1,
+                justifyContent: { xs: "center", md: "flex-start" },
+              }}
+            >
               <IconButton
                 href="https://www.facebook.com/share/17ZMAVMK5J/"
                 target="_blank"
@@ -85,7 +92,14 @@ export function Footer() {
             <Typography variant="h6" sx={{ fontWeight: 600, mb: 2 }}>
               Quick Links
             </Typography>
-            <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
+            <Box
+              sx={{
+                display: "flex",
+
+                flexDirection: "column",
+                gap: 1,
+              }}
+            >
               {quickLinks.map((link) => (
                 <Button
                   key={link.href}
@@ -93,7 +107,7 @@ export function Footer() {
                   href={link.href}
                   sx={{
                     color: "grey.300",
-                    justifyContent: "flex-start",
+                    justifyContent: { xs: "center", md: "flex-start" },
                     textTransform: "none",
                     p: 0.5,
                     "&:hover": { color: "primary.main" },
@@ -163,7 +177,7 @@ export function Footer() {
           <Box sx={{ display: "flex", gap: 3 }}>
             <MuiLink
               component={NextLink}
-              href="#"
+              href="/about"
               sx={{
                 color: "grey.400",
                 textDecoration: "none",
@@ -174,7 +188,7 @@ export function Footer() {
             </MuiLink>
             <MuiLink
               component={NextLink}
-              href="#"
+              href="/services"
               sx={{
                 color: "grey.400",
                 textDecoration: "none",
@@ -185,7 +199,7 @@ export function Footer() {
             </MuiLink>
             <MuiLink
               component={NextLink}
-              href="#"
+              href="/schedule"
               sx={{
                 color: "grey.400",
                 textDecoration: "none",
