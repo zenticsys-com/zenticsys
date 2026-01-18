@@ -1,50 +1,50 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { FaCode } from "react-icons/fa6";
 import {
-  FiCloud,
   FiCode,
-  FiDatabase,
-  FiShield,
+  FiLayers,
+  FiPenTool,
   FiSmartphone,
-  FiZap,
+  FiTarget,
 } from "react-icons/fi";
 
 const WhatWeDoSection = () => {
   const services = [
     {
       icon: <FiCode className="w-8 h-8 text-primary" />,
+      title: "Website design & Development",
+      description:
+        "We create user-friendly and scalable websites that help your brand stand out and convert visitors into customers.",
+    },
+    {
+      icon: <FiPenTool className="w-8 h-8 text-primary" />,
+      title: "UI/UX Design",
+      description:
+        "Creating clean and effective UI/UX designs that help users navigate easily and boost customer satisfaction.",
+    },
+    {
+      icon: <FaCode className="w-8 h-8 text-primary" />,
       title: "Custom Software Development",
       description:
-        "Tailored solutions built to meet your specific business requirements and objectives.",
+        "We build scalable, secure, and custom software solutions tailored to your business needs and workflows.",
     },
     {
       icon: <FiSmartphone className="w-8 h-8 text-primary" />,
       title: "Mobile App Development",
       description:
-        "Native and cross-platform mobile applications for iOS and Android.",
+        "Native and cross-platform mobile apps built using modern technologies for speed, security, and scalability.",
     },
     {
-      icon: <FiCloud className="w-8 h-8 text-primary" />,
-      title: "Cloud Solutions",
+      icon: <FiLayers className="w-8 h-8 text-primary" />,
+      title: "SaaS Design",
       description:
-        "Scalable cloud infrastructure and migration services for modern businesses.",
+        "We design modern, scalable, and user-friendly SaaS interfaces that improve usability and drive user adoption.",
     },
     {
-      icon: <FiDatabase className="w-8 h-8 text-primary" />,
-      title: "Data Analytics",
+      icon: <FiTarget className="w-8 h-8 text-primary" />,
+      title: "Digital Marketing",
       description:
-        "Transform your data into actionable insights with advanced analytics solutions.",
-    },
-    {
-      icon: <FiShield className="w-8 h-8 text-primary" />,
-      title: "Cybersecurity",
-      description:
-        "Comprehensive security solutions to protect your digital assets and data.",
-    },
-    {
-      icon: <FiZap className="w-8 h-8 text-primary" />,
-      title: "Digital Transformation",
-      description:
-        "Complete digital transformation strategies to modernize your business operations.",
+        "Complete digital marketing services including SEO, ads, content marketing, and social media growth.",
     },
   ];
 
