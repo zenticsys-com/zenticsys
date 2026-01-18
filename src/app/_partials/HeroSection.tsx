@@ -14,10 +14,10 @@ const HeroSection = () => {
               <span className="text-primary"> Future </span>
               of Software
             </h1>
-            <h3 className="text-2xl">
+            <h3 className="text-xl mb-2 font-semibold">
               Top Custom Software Development Company
             </h3>
-            <p className="text-xl text-gray-600 mb-8 text-center  md:text-justify">
+            <p className="text- text-gray-600 mb-8 text-center  md:text-justify">
               We create innovative software solutions that transform businesses
               and drive digital success. Partner with us to bring your vision to
               life.
