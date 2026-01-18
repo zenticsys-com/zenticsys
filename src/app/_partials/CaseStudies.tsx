@@ -3,6 +3,7 @@ import { Chip } from "@mui/material";
 import Image from "next/image";
 
 const CaseStudies = () => {
+  /**_Data_**/
   const caseStudies = [
     {
       title: "Healthcare Management System",

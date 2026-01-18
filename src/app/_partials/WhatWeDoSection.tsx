@@ -9,6 +9,7 @@ import {
 } from "react-icons/fi";
 
 const WhatWeDoSection = () => {
+  /**_Data_**/
   const services = [
     {
       icon: <FiCode className="w-8 h-8 text-primary" />,

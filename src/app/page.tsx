@@ -9,6 +9,7 @@ import TheTechnologyWeUse from "@/app/_partials/TheTechnologyWeUse";
 import WhatWeAreSection from "@/app/_partials/WhatWeAreSection";
 import WhatWeDoSection from "@/app/_partials/WhatWeDoSection";
 import LatestFromOurBlog from "./_partials/LatestFromOurBlog";
+import CaseStudies from "./_partials/CaseStudies";
 
 const HomePage = () => {
   return (
@@ -18,6 +19,7 @@ const HomePage = () => {
       <WhatWeAreSection />
       <WhatWeDoSection />
       <OurIndustryExpertise />
+      <CaseStudies />
       <TheTechnologyWeUse />
       <FeaturedWorks />
       <ClientReviews />
