@@ -20,27 +20,27 @@ const TheTechnologyWeUse = () => {
     { name: "Next.js", icon: <SiNextdotjs /> },
     { name: "Node.js", icon: <SiNodedotjs /> },
     { name: "Express.js", icon: <SiExpress /> },
-    { name: "Python", icon: <SiPython /> },
     { name: "TypeScript", icon: <TbBrandTypescript /> },
+    { name: "Python", icon: <SiPython /> },
+    { name: "Django", icon: <TbBrandDjango /> },
     { name: "AWS", icon: <FaAws /> },
     { name: "Docker", icon: <SiDocker /> },
     { name: "Kubernetes", icon: <SiKubernetes /> },
     { name: "MongoDB", icon: <SiMongodb /> },
     { name: "PostgreSQL", icon: <SiPostgresql /> },
-    { name: "Django", icon: <TbBrandDjango /> },
   ];
   return (
-    <section className="py-12 bg-white">
+    <section className="py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-12">
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
             The Technology We Use
           </h2>
           <p className="text-xl text-gray-600">
             Cutting-edge technologies for robust solutions
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-4">
           {technologies.map((tech, index) => (
             <div
               key={index}

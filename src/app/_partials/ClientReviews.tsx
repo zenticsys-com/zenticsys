@@ -44,11 +44,11 @@ const ClientReviews = () => {
   return (
     <section className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-12">
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
             Client Reviews
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="md:text-xl text-gray-600">
             What our clients say about working with us
           </p>
         </div>
@@ -60,13 +60,9 @@ const ClientReviews = () => {
             >
               <CardContent className="p-8">
                 <div className="flex mb-4">
-                  <Rating
-                    value={testimonial.rating}
-                    readOnly
-                    className="text-yellow-400"
-                  />
+                  <Rating value={testimonial.rating} readOnly />
                 </div>
-                <p className="text-gray-600 mb-6 italic text-lg">
+                <p className="text-gray-600 mb-6 text-lg">
                   {testimonial.content}
                 </p>
                 <div>

@@ -12,13 +12,13 @@ const ContactInformation = () => {
     {
       icon: <Phone className="w-6 h-6 text-primary" />,
       title: "Phone",
-      details: "+880 1629403203",
+      details: "+880 1629 403 202",
       description: "Sun-Thu 9:00 AM - 6:00 PM PST",
     },
     {
       icon: <Mail className="w-6 h-6 text-primary" />,
       title: "Email",
-      details: "zenticsys@gmail.com",
+      details: "info@zenticsys.com",
       description: "We respond within one business day.",
     },
     {

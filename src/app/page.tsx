@@ -10,6 +10,7 @@ import WhatWeAreSection from "@/app/_partials/WhatWeAreSection";
 import WhatWeDoSection from "@/app/_partials/WhatWeDoSection";
 import LatestFromOurBlog from "./_partials/LatestFromOurBlog";
 import CaseStudies from "./_partials/CaseStudies";
+import FAQSection from "./_partials/FAQSection";
 
 const HomePage = () => {
   return (
@@ -21,9 +22,10 @@ const HomePage = () => {
       <OurIndustryExpertise />
       <CaseStudies />
       <TheTechnologyWeUse />
-      <FeaturedWorks />
+      {/* <FeaturedWorks /> */}
       <ClientReviews />
       <LatestFromOurBlog />
+      <FAQSection />
       <CallSchedule />
     </div>
   );

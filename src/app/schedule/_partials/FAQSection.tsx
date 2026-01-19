@@ -39,51 +39,74 @@ const FAQSection = () => {
   ];
 
   return (
-    <>
-      {faqs.map((faq, index) => (
-        <Card
-          key={index}
-          className="cursor-pointer hover:shadow-md transition-all duration-200 border border-gray-200"
-          onClick={() => setExpandedFaq(expandedFaq === index ? null : index)}
-        >
-          <CardContent className="p-6">
-            <div className="flex items-center justify-between">
-              <h3 className="text-lg font-semibold text-gray-900 pr-4">
-                {faq.question}
-              </h3>
-              <div
-                className={`transform transition-transform duration-200 ${
-                  expandedFaq === index ? "rotate-180" : ""
-                }`}
-              >
-                <svg
-                  className="w-5 h-5 text-gray-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+    <section className="bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
+          Frequently Asked Questions
+        </h2>
+        <section className="grid grid-cols-12 gap-4 py-8">
+          <div className="col-span-12 md:col-span-4 mb-5">
+            <h3 className="text-lg md:text-2xl font-semibold text-gray-900 mb-5">
+              <span>
+                Got Questions<span className="text-primary">?</span> <br />
+                We've Got Answers
+              </span>
+            </h3>
+          </div>
+          <div className="space-y-4 col-span-12  md:col-span-8">
+            <>
+              {faqs.map((faq, index) => (
+                <Card
+                  key={index}
+                  className="cursor-pointer hover:shadow-md transition-all duration-200 border border-gray-200"
+                  onClick={() =>
+                    setExpandedFaq(expandedFaq === index ? null : index)
+                  }
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div
-              className={`mt-4 transition-all duration-200 ease-in-out ${
-                expandedFaq === index
-                  ? "max-h-96 opacity-100"
-                  : "max-h-0 opacity-0 overflow-hidden"
-              }`}
-            >
-              <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
-            </div>
-          </CardContent>
-        </Card>
-      ))}
-    </>
+                  <CardContent className="p-6">
+                    <div className="flex items-center justify-between">
+                      <h3 className="text-lg font-semibold text-gray-900 pr-4">
+                        {faq.question}
+                      </h3>
+                      <div
+                        className={`transform transition-transform duration-200 ${
+                          expandedFaq === index ? "rotate-180" : ""
+                        }`}
+                      >
+                        <svg
+                          className="w-5 h-5 text-gray-400"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M19 9l-7 7-7-7"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div
+                      className={`mt-4 transition-all duration-200 ease-in-out ${
+                        expandedFaq === index
+                          ? "max-h-96 opacity-100"
+                          : "max-h-0 opacity-0 overflow-hidden"
+                      }`}
+                    >
+                      <p className="text-gray-600 leading-relaxed">
+                        {faq.answer}
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </>
+          </div>
+        </section>
+      </div>
+    </section>
   );
 };
 

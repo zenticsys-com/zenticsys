@@ -22,7 +22,7 @@ const ZtsButton: React.FC<PropsType> = ({
       className={cn(
         "px-5 py-2.5 flex items-center gap-2  border transition duration-300 border-[#d5d7da] font-semibold shadow cursor-pointer justify-center",
         iconPlacement === "after" && "flex-row-reverse",
-        className
+        className,
       )}
     >
       {icon && React.cloneElement(icon)}

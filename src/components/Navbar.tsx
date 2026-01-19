@@ -29,7 +29,7 @@ const navItems = [
   { name: "Career", href: "/career" },
 ];
 
-export function Navbar() {
+const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
@@ -172,6 +172,7 @@ export function Navbar() {
                 onClick={() => setIsMenuOpen(false)}
                 sx={{
                   backgroundColor: "primary.main",
+                  borderRadius: 0,
                   "&:hover": { backgroundColor: "primary.dark" },
                 }}
               >
@@ -183,4 +184,5 @@ export function Navbar() {
       </Drawer>
     </>
   );
-}
+};
+export default Navbar;
