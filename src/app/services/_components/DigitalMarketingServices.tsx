@@ -1,56 +1,55 @@
 import { CheckCircle } from "@mui/icons-material";
 import Link from "next/link";
-
-const CustomSoftwareDevelopmentServices = () => {
+const DigitalMarketingServices = () => {
   return (
-    <section>
-      <h2 className="text-2xl md:text-4xl font-bold mb-4 text-gray-900 ">
-        Custom Software Development Services
+    <section className="text-justify">
+      <h2 className="text-2xl md:text-4xl font-bold mb-4 text-gray-900">
+        Digital Marketing Services
       </h2>
-      <p className="text-gray-600 font-medium text-justify">
-        Our Custom Software Development Services provide tailored solutions
-        designed to meet your unique business requirements. We build secure,
-        scalable, and high-performance software that improves operational
-        efficiency and streamlines workflows. From planning and development to
-        deployment and maintenance, we ensure reliable solutions that support
-        long-term business growth.
+      <p className="text-gray-600 font-medium">
+        Our Digital Marketing Services help businesses increase online
+        visibility, attract targeted audiences, and drive measurable growth. We
+        use data-driven strategies, SEO, social media marketing, content
+        creation, and paid advertising to maximize brand reach and customer
+        engagement. Our goal is to deliver consistent results and long-term
+        digital success.
       </p>
       <div className="flex flex-col gap-3 font-semibold md:text-lg xl:text-2xl p-4 text-gray-900">
         <Link href={"#"} className="flex gap-3 items-center ">
           <CheckCircle className="text-primary" />
-          <span>Automotive Software Development</span>
+          <span>Search Engine Marketing (PPC)</span>
         </Link>
         <Link href={"#"} className="flex gap-3 items-center">
           <CheckCircle className="text-primary" />
-          <span>SaaS Product Development</span>
+          <span>Social Media Marketing</span>
         </Link>
         <Link href={"#"} className="flex gap-3 items-center">
           <CheckCircle className="text-primary" />
-          <span>Enterprise Software Development</span>
+          <span>E-Commerce Marketing</span>
         </Link>
         <Link href={"#"} className="flex gap-3 items-center">
           <CheckCircle className="text-primary" />
-          <span>Healthcare Software Development</span>
+          <span>Search Engine Optimization (White Level SEO)</span>
         </Link>
         <Link href={"#"} className="flex gap-3 items-center">
           <CheckCircle className="text-primary" />
-          <span>FinTech Software Development</span>
+          <span>Content Marketing</span>
         </Link>
         <Link href={"#"} className="flex gap-3 items-center">
           <CheckCircle className="text-primary" />
-          <span>Real Estate & PropTech Software</span>
+          <span>Conversion Rate Optimization</span>
         </Link>
         <Link href={"#"} className="flex gap-3 items-center">
           <CheckCircle className="text-primary" />
-          <span>Logistics & Supply Chain Software</span>
+          <span>Lead Generation Services</span>
         </Link>
         <Link href={"#"} className="flex gap-3 items-center">
           <CheckCircle className="text-primary" />
-          <span>API Design & Development</span>
+          <span>Local SEO & Maps Marketing</span>
         </Link>
       </div>
     </section>
   );
 };
 
-export default CustomSoftwareDevelopmentServices;
+export default DigitalMarketingServices;
