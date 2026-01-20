@@ -1,4 +1,5 @@
 import CaseStudies from "../_partials/CaseStudies";
+import OurIndustryExpertise from "../_partials/OurIndustryExpertise";
 import OurPartnerships from "../_partials/OurPartnerships";
 import LetUsBuild from "./_partials/LetUsBuild";
 import OurServices from "./_partials/OurServices";
@@ -11,7 +12,9 @@ const ServicesPage = () => {
       <ServicesHeroSection />
       <OurServices />
       <ServiceCtaSection />
+      <OurIndustryExpertise />
       <OurPartnerships />
+      <CaseStudies />
       <LetUsBuild />
     </div>
   );
