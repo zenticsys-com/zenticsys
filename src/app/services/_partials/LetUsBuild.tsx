@@ -23,16 +23,18 @@ const LetUsBuild = () => {
               }
               iconPlacement="after"
               text="Get Started"
-              className="border-none text-white bg-primary hover:border-transparent hover:bg-primary-dark hover:text-white"
+              className="text-white bg-primary-dark border-none hover:bg-white hover:text-primary shadow-lg shadow-gray-200/50"
             />
           </Link>
 
-          <Link href="/about">
-            <ZtsButton
-              text="Learn More"
-              className="border-none text-white bg-primary hover:border-transparent hover:bg-primary-dark hover:text-white"
-            />
-          </Link>
+          <div className="flex justify-center">
+            <Link href="/schedule">
+              <ZtsButton
+                text="Schedule a Call Today"
+                className="text-primary  border-none bg-white hover:text-white hover:shadow-lg hover:shadow-gray-200/50 hover:bg-primary-dark"
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </section>
