@@ -22,7 +22,7 @@ const HeroSection = () => {
               and drive digital success. Partner with us to bring your vision to
               life.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex justify-center md:justify-start">
               <Link href="/schedule">
                 <ZtsButton
                   icon={
@@ -33,13 +33,6 @@ const HeroSection = () => {
                   iconPlacement="after"
                   text="Get Started"
                   className="border-none text-white bg-primary hover:border-transparent hover:bg-primary-dark hover:text-white"
-                />
-              </Link>
-
-              <Link href="/about">
-                <ZtsButton
-                  text="Learn More"
-                  className="border-primary text-primary hover:bg-primary hover:border-transparent hover:text-white"
                 />
               </Link>
             </div>
