@@ -9,10 +9,10 @@ const WhatWeAreSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-2xl text-center sm:text-start md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl sm:text-start md:text-4xl font-bold text-gray-900 mb-4">
               Who We Are
             </h2>
-            <p className="md:text-xl text-gray-600 mb-6 md:mb-8 text-center sm:text-start">
+            <p className="md:text-xl text-gray-600 mb-6 md:mb-8 sm:text-start">
               Zenticsys is a forward-thinking software development company with
               a passion for innovation and excellence. We combine technical
               expertise with strategic thinking to deliver solutions that drive
@@ -32,6 +32,7 @@ const WhatWeAreSection = () => {
                 <span>Expert team of developers and consultants</span>
               </div>
             </div>
+
             <Link href="/about">
               <ZtsButton
                 text="Learn More About"

@@ -2,11 +2,11 @@ import { CheckCircle } from "@mui/icons-material";
 import Link from "next/link";
 const DigitalMarketingServices = () => {
   return (
-    <section className="text-justify">
+    <section>
       <h2 className="text-2xl md:text-4xl font-bold mb-4 text-gray-900">
         Digital Marketing Services
       </h2>
-      <p className="text-gray-600 font-medium">
+      <p className="text-gray-600 font-medium text-justify">
         Our Digital Marketing Services help businesses increase online
         visibility, attract targeted audiences, and drive measurable growth. We
         use data-driven strategies, SEO, social media marketing, content

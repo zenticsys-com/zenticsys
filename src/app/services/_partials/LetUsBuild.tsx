@@ -13,19 +13,21 @@ const LetUsBuild = () => {
           Ready to transform your business with cutting-edge technology? Our
           expert team is here to help you succeed.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/schedule">
-            <ZtsButton
-              icon={
-                <>
-                  <ArrowRight className="w-4 h-4" />
-                </>
-              }
-              iconPlacement="after"
-              text="Get Started"
-              className="text-white bg-primary-dark border-none hover:bg-white hover:text-primary shadow-lg shadow-gray-200/50"
-            />
-          </Link>
+        <div className="flex flex-col sm:flex-row gap-6 justify-center">
+          <div className="flex justify-center">
+            <Link href="/schedule">
+              <ZtsButton
+                icon={
+                  <>
+                    <ArrowRight className="w-4 h-4" />
+                  </>
+                }
+                iconPlacement="after"
+                text="Get Started"
+                className="text-white bg-primary-dark border-none hover:bg-white hover:text-primary shadow-lg shadow-gray-200/50"
+              />
+            </Link>
+          </div>
 
           <div className="flex justify-center">
             <Link href="/schedule">

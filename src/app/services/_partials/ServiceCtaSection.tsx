@@ -10,7 +10,7 @@ const ServiceCtaSection = () => {
           <h2 className="text-2xl md:text-4xl  font-bold text-gray-900 mb-6">
             Start Your Digital Journey
           </h2>
-          <p className="md:text-xl text-gray-600 max-w-4xl mx-auto mb-8">
+          <p className="md:text-xl text-gray-600 max-w-4xl mx-auto mb-8 text-justify">
             Start your digital journey with innovative solutions designed to
             grow your online presence and accelerate business success. From
             modern website design to powerful digital strategies, we help you

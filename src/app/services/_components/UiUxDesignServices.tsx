@@ -3,11 +3,11 @@ import Link from "next/link";
 
 const UiUxDesignServices = () => {
   return (
-    <section className="text-justify">
+    <section>
       <h2 className="text-2xl md:text-4xl font-bold mb-4 text-gray-900">
         UI/UX Design Services
       </h2>
-      <p className="text-gray-600 font-medium">
+      <p className="text-gray-600 font-medium text-justify">
         Our UI/UX Design Services focus on creating intuitive, visually
         appealing, and user-centered digital experiences. We design interfaces
         that improve usability, enhance customer engagement, and ensure seamless

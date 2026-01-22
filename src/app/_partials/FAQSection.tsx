@@ -6,14 +6,17 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const FAQSection = () => {
   return (
-    <section className="bg-gray-50">
+    <section className="bg-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
           Frequently Asked Questions
         </h2>
         <section className="grid grid-cols-12 gap-4 py-8">
-          <div className="col-span-12 md:col-span-4 mb-5">
-            <h3 className="text-lg md:text-2xl font-semibold text-gray-900 mb-5">
+          <div
+            className="col-span-12 md:col-span-4  md:h-screen mb-5 bg-cover bg-center"
+            // style={{ backgroundImage: "url('/assets/images/Image_3.jpg')" }}
+          >
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-5">
               <span>
                 Got Questions<span className="text-primary">?</span> <br />
                 We've Got Answers

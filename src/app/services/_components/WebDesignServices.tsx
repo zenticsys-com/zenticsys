@@ -3,11 +3,11 @@ import Link from "next/link";
 
 const WebDesignServices = () => {
   return (
-    <section className="text-justify">
+    <section>
       <h2 className="text-2xl md:text-4xl font-bold mb-4 text-gray-900">
         Web Design Services
       </h2>
-      <p className="text-gray-600 font-medium">
+      <p className="text-gray-600 font-medium text-justify">
         Our Web Design Services focus on creating visually appealing, fully
         responsive, and user-friendly websites that represent your brand
         professionally. We combine modern UI/UX principles with performance

@@ -3,11 +3,11 @@ import Link from "next/link";
 
 const MobileAppDevelopmentServices = () => {
   return (
-    <section className="text-justify">
+    <section>
       <h2 className="text-2xl md:text-4xl font-bold mb-4 text-gray-900">
         Mobile App Development Services
       </h2>
-      <p className="text-gray-600 font-medium">
+      <p className="text-gray-600 font-medium text-justify">
         Our Mobile App Development Services deliver high-quality, secure, and
         scalable mobile applications for Android and iOS platforms. We focus on
         performance, usability, and seamless user experience to ensure your app

@@ -1,5 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Rating } from "@mui/material";
+import Link from "next/link";
+import ZtsButton from "../_components/ZtButton";
 
 const ClientReviews = () => {
   /**- Data -**/
@@ -76,6 +78,14 @@ const ClientReviews = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+        <div className="mt-12  flex justify-center">
+          <Link href="/schedule">
+            <ZtsButton
+              text="Schedule a Call Today"
+              className="border-primary text-primary hover:bg-primary hover:border-transparent hover:text-white"
+            />
+          </Link>
         </div>
       </div>
     </section>

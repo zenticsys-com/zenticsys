@@ -54,7 +54,7 @@ const LatestFromOurBlog = () => {
               </div>
               <CardContent className="p-6">
                 <p className="text-sm text-gray-500 mb-2">{post.date}</p>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-3">
                   {post.title}
                 </h3>
                 <p className="text-gray-600 mb-4">{post.excerpt}</p>
@@ -70,15 +70,6 @@ const LatestFromOurBlog = () => {
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        <div className="mt-12  flex justify-center">
-          <Link href="/schedule">
-            <ZtsButton
-              text="Schedule a Call Today"
-              className="border-primary text-primary hover:bg-primary hover:border-transparent hover:text-white"
-            />
-          </Link>
         </div>
       </div>
     </section>
