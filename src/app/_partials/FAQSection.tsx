@@ -2,7 +2,6 @@ import Link from "next/link";
 import HomeFAQ from "../_components/HomeFAQ";
 import ZtsButton from "../_components/ZtButton";
 import { ArrowRight } from "@mui/icons-material";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const FAQSection = () => {
   return (
@@ -12,10 +11,7 @@ const FAQSection = () => {
           Frequently Asked Questions
         </h2>
         <section className="grid grid-cols-12 gap-4 py-8">
-          <div
-            className="col-span-12 md:col-span-4  md:h-screen mb-5 bg-cover bg-center"
-            // style={{ backgroundImage: "url('/assets/images/Image_3.jpg')" }}
-          >
+          <div className="col-span-12 md:col-span-4  md:h-screen mb-5 bg-cover bg-center">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-5">
               <span>
                 Got Questions<span className="text-primary">?</span> <br />
