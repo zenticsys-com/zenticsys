@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
-import { Navbar } from "@/components/Navbar";
+import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 const inter = Inter({
@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     "Zenticsys builds innovative software, cloud, and data solutions to help businesses scale with confidence.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+type PropsType = {
   children: React.ReactNode;
-}>) {
+};
+
+const RootLayout: React.FC<PropsType> = ({ children }) => {
   return (
     <html lang="en">
       <body className={`${inter.variable} antialiased bg-white`}>
@@ -33,4 +33,6 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

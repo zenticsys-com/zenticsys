@@ -1,5 +1,13 @@
-import { BlogPage } from "@/components/BlogPage";
+import BlogHeroSection from "./_partials/BlogHeroSection";
+import OurFeaturedPost from "./_partials/OurFeaturedPost";
 
-export default function Page() {
-  return <BlogPage />;
-}
+const BlogPage = () => {
+  return (
+    <div>
+      <BlogHeroSection />
+      <OurFeaturedPost />
+    </div>
+  );
+};
+
+export default BlogPage;
