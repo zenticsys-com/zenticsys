@@ -7,29 +7,26 @@ const LeadershipTeam = () => {
     {
       name: "NK Rafi",
       position: "CEO & Founder",
-      bio: "Visionary leader with 15+ years in software development and business strategy.",
+      bio: "Visionary leader with 7+ years in software development and business strategy.",
       image: "/assets/images/NK_Rafi (1).jpg",
     },
     {
       name: "Sarah Chen",
       position: "CTO",
       bio: "Technology expert specializing in cloud architecture and enterprise solutions.",
-      image:
-        "https://images.unsplash.com/photo-1758518731468-98e90ffd7430?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB0ZWFtJTIwcG9ydHJhaXQlMjBvZmZpY2V8ZW58MXx8fHwxNzU5MDAwMTc1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "/assets/images/NK_Rafi (1).jpg",
     },
     {
       name: "Michael Rodriguez",
       position: "Head of Development",
       bio: "Full-stack development expert with expertise in modern web and mobile technologies.",
-      image:
-        "https://images.unsplash.com/photo-1758518731468-98e90ffd7430?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB0ZWFtJTIwcG9ydHJhaXQlMjBvZmZpY2V8ZW58MXx8fHwxNzU5MDAwMTc1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "/assets/images/NK_Rafi (1).jpg",
     },
     {
       name: "Emily Watson",
       position: "Head of Design",
       bio: "UX/UI design specialist creating intuitive and engaging user experiences.",
-      image:
-        "https://images.unsplash.com/photo-1758518731468-98e90ffd7430?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB0ZWFtJTIwcG9ydHJhaXQlMjBvZmZpY2V8ZW58MXx8fHwxNzU5MDAwMTc1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: "/assets/images/NK_Rafi (1).jpg",
     },
   ];
 
@@ -37,10 +34,10 @@ const LeadershipTeam = () => {
     <section className="py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Leadership Team
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="md:text-xl text-gray-600">
             Meet the experts driving our vision forward
           </p>
         </div>

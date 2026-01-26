@@ -3,19 +3,19 @@ import { LuCircleCheck as CheckCircle } from "react-icons/lu";
 
 const MissionAndVision = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-8">
-              Our Mission & Vision
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+              Our Mission <span className="text-primary">&</span> Vision
             </h2>
 
             <div className="mb-8">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                Mission
+              <h3 className="text-xl md:text-2xl font-semibold text-primary mb-4">
+                Mission:
               </h3>
-              <p className="text-lg text-gray-600">
+              <p className="md:text-lg text-gray-600">
                 To empower businesses with innovative software solutions that
                 drive digital transformation, enhance operational efficiency,
                 and create lasting competitive advantages in an ever-evolving
@@ -24,10 +24,10 @@ const MissionAndVision = () => {
             </div>
 
             <div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                Vision
+              <h3 className="text-xl md:text-2xl font-semibold text-primary mb-4">
+                Vision:
               </h3>
-              <p className="text-lg text-gray-600">
+              <p className="md:text-lg text-gray-600">
                 To be the global leader in software innovation, recognized for
                 our ability to transform complex business challenges into
                 elegant, scalable solutions that shape the future of technology.

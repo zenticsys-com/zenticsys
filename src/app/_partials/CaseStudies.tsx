@@ -38,7 +38,7 @@ const CaseStudies = () => {
     <section className="py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-2xl text-center md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl text-center md:text-4xl font-bold text-gray-900 mb-4">
             Case Studies
           </h2>
           <p className="md:text-xl text-gray-600">
@@ -55,7 +55,7 @@ const CaseStudies = () => {
               }`}
             >
               <div className={index % 2 === 1 ? "lg:col-start-2" : ""}>
-                <h3 className="text-xl md:text-3xl font-bold text-gray-900 mb-4">
+                <h3 className="text-xl md:text-2xl md:font-bold font-semibold text-gray-900 mb-4">
                   {study.title}
                 </h3>
                 <div>
@@ -64,7 +64,7 @@ const CaseStudies = () => {
                     <span> {study.company}</span>
                   </p>
                 </div>
-                <p className="text-gray-600 text-justify py-3">
+                <p className="text-gray-600 md:text-justify py-3">
                   {study.description}
                 </p>
                 <section className="md:flex gap-4">

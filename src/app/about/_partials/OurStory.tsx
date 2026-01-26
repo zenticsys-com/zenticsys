@@ -45,8 +45,10 @@ const OurStory = () => {
     <section className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Story</h2>
-          <p className="text-xl text-gray-600">
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
+            Our Story
+          </h2>
+          <p className="md:text-xl text-gray-600">
             A decade of innovation and growth
           </p>
         </div>
@@ -63,12 +65,18 @@ const OurStory = () => {
               >
                 <div
                   className={`w-1/2 ${
-                    index % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"
+                    index % 2 === 0
+                      ? "pr-3 md:pr-8 text-right text-sm md:text-base"
+                      : "pl-3 md:pl-8 text-left text-sm md:text-base"
                   }`}
                 >
                   <Card className="shadow-sm hover:shadow-lg shadow-primary/10">
-                    <CardContent className="p-6">
-                      <div className="flex items-center mb-3">
+                    <CardContent className="p-2 md:peer-first-of-type:-5">
+                      <div
+                        className={`flex items-center mb-3 ${
+                          index % 2 === 0 ? "justify-end" : " justify-start"
+                        }`}
+                      >
                         <Calendar className="w-5 h-5 text-primary mr-2" />
                         <Chip
                           label={item.year}
@@ -76,7 +84,7 @@ const OurStory = () => {
                           className="border-primary text-primary"
                         />
                       </div>
-                      <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-2">
                         {item.title}
                       </h3>
                       <p className="text-gray-600">{item.description}</p>

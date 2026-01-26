@@ -8,14 +8,14 @@ import {
 
 const CompanyCulture = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               Our Culture
             </h2>
-            <p className="text-lg text-gray-600 mb-6">
+            <p className="md:text-lg text-gray-600 mb-6">
               We foster a collaborative, inclusive environment where innovation
               thrives. Our team is our greatest asset, and we're committed to
               creating a workplace where everyone can grow, learn, and make a
@@ -24,21 +24,21 @@ const CompanyCulture = () => {
 
             <div className="space-y-4">
               <div className="flex items-center">
-                <Users className="w-5 h-5 text-[#ef3d23] mr-3" />
+                <Users className="w-5 h-5 text-primary mr-3" />
                 <span>Collaborative and supportive team environment</span>
               </div>
               <div className="flex items-center">
-                <Zap className="w-5 h-5 text-[#ef3d23] mr-3" />
+                <Zap className="w-5 h-5 text-primary mr-3" />
                 <span>
                   Fast-paced, innovative work on cutting-edge projects
                 </span>
               </div>
               <div className="flex items-center">
-                <Award className="w-5 h-5 text-[#ef3d23] mr-3" />
+                <Award className="w-5 h-5 text-primary mr-3" />
                 <span>Recognition and rewards for outstanding performance</span>
               </div>
               <div className="flex items-center">
-                <Heart className="w-5 h-5 text-[#ef3d23] mr-3" />
+                <Heart className="w-5 h-5 text-primary mr-3" />
                 <span>
                   Commitment to work-life balance and employee wellbeing
                 </span>
