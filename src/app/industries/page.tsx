@@ -1,13 +1,17 @@
 import AutomotiveIndustrySolutions from "@/app/industries/_partials/AutomotiveIndustrySolutions";
 import ClientSuccessStories from "@/app/industries/_partials/ClientSuccessStories";
-import IndustriesWeServe from "@/app/industries/_partials/IndustriesWeServe";
 import SeeYourIndustry from "@/app/industries/_partials/SeeYourIndustry";
+import IndustriesHeroSection from "./_partials/IndustriesHeroSection";
+import OurIndustryExpertise from "../_partials/OurIndustryExpertise";
+import FAQSection from "./_partials/FAQSection";
 const IndustriesPage = () => {
   return (
     <div>
-      <IndustriesWeServe />
+      <IndustriesHeroSection />
+      <OurIndustryExpertise />
       <AutomotiveIndustrySolutions />
       <ClientSuccessStories />
+      <FAQSection />
       <SeeYourIndustry />
     </div>
   );

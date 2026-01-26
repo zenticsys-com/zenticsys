@@ -5,12 +5,6 @@ import { LuCar as Car, LuCircleCheck as CheckCircle } from "react-icons/lu";
 
 const AutomotiveIndustrySolutions = () => {
   const automotiveDetails = {
-    title: "Automotive Industry Solutions",
-    subtitle: "Driving Innovation in Connected Mobility",
-    description:
-      "The automotive industry is undergoing a digital transformation with connected vehicles, autonomous driving, and smart mobility solutions. We help automotive companies leverage technology to create safer, more efficient, and more connected transportation experiences.",
-    image:
-      "https://images.unsplash.com/photo-1603090067590-a9a0f0fa6d9d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhdXRvbW90aXZlJTIwdGVjaG5vbG9neSUyMGRhc2hib2FyZHxlbnwxfHx8fDE3NTg4ODc4OTB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     solutions: [
       {
         title: "Connected Vehicle Platforms",
@@ -60,20 +54,24 @@ const AutomotiveIndustrySolutions = () => {
                 className="border-primary text-primary"
               />
             </div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              {automotiveDetails.title}
+            <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
+              Automotive Industry Solutions
             </h2>
             <h3 className="text-xl text-primary font-semibold mb-6">
-              {automotiveDetails.subtitle}
+              Driving Innovation in Connected Mobility
             </h3>
             <p className="text-lg text-gray-600">
-              {automotiveDetails.description}
+              The automotive industry is undergoing a digital transformation
+              with connected vehicles, autonomous driving, and smart mobility
+              solutions. We help automotive companies leverage technology to
+              create safer, more efficient, and more connected transportation
+              experiences.
             </p>
           </div>
           <div>
-            <div className="w-full h-auto ">
+            <div className="w-full h-auto">
               <Image
-                src={automotiveDetails.image}
+                src={"/assets/images/industries_img.jpg"}
                 alt="image"
                 width={570}
                 height={380}

@@ -1,7 +1,7 @@
 import Link from "next/link";
-import HomeFAQ from "../_components/HomeFAQ";
-import ZtsButton from "../_components/ZtButton";
+import ZtsButton from "@/app/_components/ZtButton";
 import { ArrowRight } from "@mui/icons-material";
+import IndustriesFAQ from "../_components/IndustriesFAQ";
 
 const FAQSection = () => {
   return (
@@ -32,7 +32,7 @@ const FAQSection = () => {
             </Link>
           </div>
           <div className="space-y-4 col-span-12  md:col-span-8">
-            <HomeFAQ />
+            <IndustriesFAQ />
           </div>
         </section>
       </div>
