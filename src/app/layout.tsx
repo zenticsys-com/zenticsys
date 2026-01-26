@@ -23,7 +23,7 @@ type PropsType = {
 
 const RootLayout: React.FC<PropsType> = ({ children }) => {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} antialiased bg-white`}>
         <ThemeProvider>
           <Navbar />

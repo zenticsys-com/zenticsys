@@ -22,14 +22,14 @@ const JoinOurTeam = () => {
               }
               iconPlacement="after"
               text="Start Your Project"
-              className="border-none text-white bg-primary hover:border-transparent hover:bg-primary-dark hover:text-white"
+              className="text-white bg-primary-dark border-none hover:bg-white hover:text-primary shadow-lg shadow-gray-200/50"
             />
           </Link>
 
           <Link href="/career">
             <ZtsButton
               text="Join Our Team"
-              className="border-none text-white bg-primary hover:border-transparent hover:bg-primary-dark hover:text-white"
+              className="text-primary  border-none bg-white hover:text-white hover:shadow-lg hover:shadow-gray-200/50 hover:bg-primary-dark"
             />
           </Link>
         </div>

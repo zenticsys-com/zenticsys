@@ -3,6 +3,7 @@ import OurProcess from "./_components/OurProcess";
 import QuickCallOption from "./_components/QuickCallOption";
 import ContactForm from "./_partials/ContactForm";
 import FAQSection from "./_partials/FAQSection";
+
 import ScheduleHeroSection from "./_partials/ScheduleHeroSection";
 
 export function SchedulePage() {
@@ -20,13 +21,7 @@ export function SchedulePage() {
         </div>
       </div>
 
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-4">
-            <FAQSection />
-          </div>
-        </div>
-      </section>
+      <FAQSection />
     </div>
   );
 }

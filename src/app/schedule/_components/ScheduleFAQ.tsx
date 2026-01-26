@@ -4,7 +4,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-const IndustriesFAQ = () => {
+const ScheduleFAQ = () => {
   /**_Data_**/
   const faqs = [
     {
@@ -82,4 +82,4 @@ const IndustriesFAQ = () => {
     </div>
   );
 };
-export default IndustriesFAQ;
+export default ScheduleFAQ;
