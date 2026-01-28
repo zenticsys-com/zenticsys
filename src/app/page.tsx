@@ -8,7 +8,7 @@ import WhatWeAreSection from "@/app/_partials/WhatWeAreSection";
 import WhatWeDoSection from "@/app/_partials/WhatWeDoSection";
 import CaseStudies from "./_partials/CaseStudies";
 import FAQSection from "./_partials/FAQSection";
-import LatestFromOurBlog from "./_partials/LatestFromOurBlog";
+import OurBlogs from "./_partials/OurBlogs";
 
 const HomePage = () => {
   return (
@@ -21,7 +21,7 @@ const HomePage = () => {
       <CaseStudies />
       <TheTechnologyWeUse />
       <ClientReviews />
-      <LatestFromOurBlog />
+      <OurBlogs />
       <FAQSection />
       <CallSchedule />
     </div>

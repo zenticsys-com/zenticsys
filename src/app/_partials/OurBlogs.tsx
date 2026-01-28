@@ -3,7 +3,7 @@ import { default as Link } from "next/link";
 import ZtsButton from "../_components/ZtButton";
 import { Card, CardContent } from "@/components/ui/card";
 
-const LatestFromOurBlog = () => {
+const OurBlogs = () => {
   const blogPosts = [
     {
       title: "The Future of Software Development",
@@ -74,4 +74,4 @@ const LatestFromOurBlog = () => {
   );
 };
 
-export default LatestFromOurBlog;
+export default OurBlogs;
