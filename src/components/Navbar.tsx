@@ -21,7 +21,7 @@ import {
 
 import { Close, Menu } from "@mui/icons-material";
 import Image from "next/image";
-import ServicesDropdownMenu from "./ServicesDropdownaMenu";
+import ServicesDropdownMenu from "./ServicesDropdownMenu";
 
 const navItems = [
   { name: "Services", href: "/services" },
