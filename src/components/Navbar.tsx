@@ -20,6 +20,7 @@ import {
 } from "@mui/material";
 import { Close, Menu } from "@mui/icons-material";
 import Image from "next/image";
+import ServicesDropdownMenu from "./ServicesDropdownaMenu";
 
 const navItems = [
   { name: "Services", href: "/services" },
@@ -32,12 +33,21 @@ const navItems = [
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
-
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  /**- Active function -**/
   const isActive = (href: string) => {
     if (!pathname) return false;
     if (href === "/") return pathname === "/";
     if (href === "/blog") return pathname.startsWith("/blog");
     return pathname.startsWith(href);
+  };
+  /**- Eventhandler -**/
+  const handleOpenServices = (e: React.MouseEvent<HTMLElement>) => {
+    setAnchorEl(e.currentTarget);
+  };
+
+  const handleCloseServices = () => {
+    setAnchorEl(null);
   };
 
   return (
@@ -81,23 +91,39 @@ const Navbar = () => {
                 gap: 4,
               }}
             >
-              {navItems.map((item) => (
-                <Button
-                  key={item.href}
-                  component={Link}
-                  href={item.href}
-                  sx={{
-                    color: isActive(item.href)
-                      ? "primary.main"
-                      : "text.secondary",
-                    "&:hover": { color: "primary.main" },
-                    textTransform: "none",
-                    fontWeight: 500,
-                  }}
-                >
-                  {item.name}
-                </Button>
-              ))}
+              {navItems.map((item) =>
+                item.name === "Services" ? (
+                  <Box key={item.href} onMouseEnter={handleOpenServices}>
+                    <Button
+                      sx={{
+                        color: isActive(item.href)
+                          ? "primary.main"
+                          : "text.secondary",
+                        textTransform: "none",
+                        fontWeight: 500,
+                      }}
+                    >
+                      {item.name}
+                    </Button>
+                  </Box>
+                ) : (
+                  <Button
+                    key={item.href}
+                    component={Link}
+                    href={item.href}
+                    sx={{
+                      color: isActive(item.href)
+                        ? "primary.main"
+                        : "text.secondary",
+                      "&:hover": { color: "primary.main" },
+                      textTransform: "none",
+                      fontWeight: 500,
+                    }}
+                  >
+                    {item.name}
+                  </Button>
+                ),
+              )}
               <Button
                 variant="contained"
                 component={Link}
@@ -125,6 +151,11 @@ const Navbar = () => {
         </Container>
       </AppBar>
 
+      <ServicesDropdownMenu
+        anchorEl={anchorEl}
+        open={Boolean(anchorEl)}
+        onClose={handleCloseServices}
+      />
       <Drawer
         anchor="right"
         open={isMenuOpen}
@@ -186,3 +217,161 @@ const Navbar = () => {
   );
 };
 export default Navbar;
+
+// "use client";
+
+// import Link from "next/link";
+// import { usePathname } from "next/navigation";
+// import { useState } from "react";
+
+// import {
+//   AppBar,
+//   Box,
+//   Button,
+//   Container,
+//   Drawer,
+//   IconButton,
+//   List,
+//   ListItem,
+//   ListItemButton,
+//   ListItemText,
+//   Toolbar,
+//   Typography,
+// } from "@mui/material";
+
+// import { Close, Menu } from "@mui/icons-material";
+// import Image from "next/image";
+// import ServicesDropdownMenu from "./ServicesDropdownaMenu";
+
+// const navItems = [
+//   { name: "Services", href: "/services" },
+//   { name: "Industries", href: "/industries" },
+//   { name: "About", href: "/about" },
+//   { name: "Blog", href: "/blog" },
+//   { name: "Career", href: "/career" },
+// ];
+
+// const Navbar = () => {
+//   const pathname = usePathname();
+
+//   const [isMenuOpen, setIsMenuOpen] = useState(false);
+//   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+
+//   const isActive = (href: string) => {
+//     if (!pathname) return false;
+//     if (href === "/blog") return pathname.startsWith("/blog");
+//     return pathname.startsWith(href);
+//   };
+
+//   const handleOpenServices = (e: React.MouseEvent<HTMLElement>) => {
+//     setAnchorEl(e.currentTarget);
+//   };
+
+//   const handleCloseServices = () => {
+//     setAnchorEl(null);
+//   };
+
+//   return (
+//     <>
+//       <AppBar
+//         position="sticky"
+//         sx={{
+//           backgroundColor: "white",
+//           color: "text.primary",
+//           boxShadow: 1,
+//           borderBottom: "1px solid",
+//           borderColor: "grey.200",
+//         }}
+//       >
+//         <Container maxWidth="xl">
+//           <Toolbar sx={{ justifyContent: "space-between", py: 1 }}>
+//             <Typography component={Link} href="/">
+//               <Image
+//                 src="/assets/images/zenticsys-con-2-black.png"
+//                 alt="logo"
+//                 width={70}
+//                 height={50}
+//               />
+//             </Typography>
+
+//             <Box sx={{ display: { xs: "none", md: "flex" }, gap: 4 }}>
+//               {navItems.map((item) =>
+//                 item.name === "Services" ? (
+//                   <Box key={item.href} onMouseEnter={handleOpenServices}>
+//                     <Button
+//                       sx={{
+//                         color: isActive(item.href)
+//                           ? "primary.main"
+//                           : "text.secondary",
+//                         textTransform: "none",
+//                         fontWeight: 500,
+//                       }}
+//                     >
+//                       {item.name}
+//                     </Button>
+//                   </Box>
+//                 ) : (
+//                   <Button
+//                     key={item.href}
+//                     component={Link}
+//                     href={item.href}
+//                     sx={{
+//                       color: isActive(item.href)
+//                         ? "primary.main"
+//                         : "text.secondary",
+//                       textTransform: "none",
+//                       fontWeight: 500,
+//                     }}
+//                   >
+//                     {item.name}
+//                   </Button>
+//                 ),
+//               )}
+
+//               <Button variant="contained" component={Link} href="/schedule">
+//                 Schedule a Call
+//               </Button>
+//             </Box>
+
+//             <IconButton
+//               onClick={() => setIsMenuOpen(true)}
+//               sx={{ display: { xs: "block", md: "none" } }}
+//             >
+//               <Menu />
+//             </IconButton>
+//           </Toolbar>
+//         </Container>
+//       </AppBar>
+
+//       <ServicesDropdownMenu
+//         anchorEl={anchorEl}
+//         open={Boolean(anchorEl)}
+//         onClose={handleCloseServices}
+//       />
+
+//       <Drawer
+//         anchor="right"
+//         open={isMenuOpen}
+//         onClose={() => setIsMenuOpen(false)}
+//       >
+//         <Box sx={{ width: 220 }}>
+//           <List>
+//             {navItems.map((item) => (
+//               <ListItem key={item.href} disablePadding>
+//                 <ListItemButton
+//                   component={Link}
+//                   href={item.href}
+//                   onClick={() => setIsMenuOpen(false)}
+//                 >
+//                   <ListItemText primary={item.name} />
+//                 </ListItemButton>
+//               </ListItem>
+//             ))}
+//           </List>
+//         </Box>
+//       </Drawer>
+//     </>
+//   );
+// };
+
+// export default Navbar;
