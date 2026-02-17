@@ -18,6 +18,7 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
+
 import { Close, Menu } from "@mui/icons-material";
 import Image from "next/image";
 import ServicesDropdownMenu from "./ServicesDropdownaMenu";
@@ -31,23 +32,15 @@ const navItems = [
 ];
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
-  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
-  /**- Active function -**/
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+
   const isActive = (href: string) => {
     if (!pathname) return false;
-    if (href === "/") return pathname === "/";
     if (href === "/blog") return pathname.startsWith("/blog");
     return pathname.startsWith(href);
-  };
-  /**- Eventhandler -**/
-  const handleOpenServices = (e: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(e.currentTarget);
-  };
-
-  const handleCloseServices = () => {
-    setAnchorEl(null);
   };
 
   return (
@@ -65,22 +58,15 @@ const Navbar = () => {
         <Container maxWidth="xl">
           <Toolbar sx={{ justifyContent: "space-between", py: 1 }}>
             <Typography
-              variant="h5"
               component={Link}
               href="/"
-              sx={{
-                fontWeight: "bold",
-                color: "text.primary",
-                textDecoration: "none",
-                "&:hover": { color: "primary.main" },
-              }}
+              sx={{ textDecoration: "none" }}
             >
               <Image
-                src={"/assets/images/zenticsys-con-2-black.png"}
-                alt="image"
-                width={70}
-                height={50}
-                className="w-full h-auto"
+                src="/assets/images/zenticsys-con-2-black.png"
+                alt="logo"
+                width={120}
+                height={60}
               />
             </Typography>
 
@@ -93,8 +79,13 @@ const Navbar = () => {
             >
               {navItems.map((item) =>
                 item.name === "Services" ? (
-                  <Box key={item.href} onMouseEnter={handleOpenServices}>
+                  <Box
+                    key={item.href}
+                    onMouseEnter={() => setServicesOpen(true)}
+                  >
                     <Button
+                      component={Link}
+                      href={item.href}
                       sx={{
                         color: isActive(item.href)
                           ? "primary.main"
@@ -115,7 +106,6 @@ const Navbar = () => {
                       color: isActive(item.href)
                         ? "primary.main"
                         : "text.secondary",
-                      "&:hover": { color: "primary.main" },
                       textTransform: "none",
                       fontWeight: 500,
                     }}
@@ -124,15 +114,12 @@ const Navbar = () => {
                   </Button>
                 ),
               )}
+
               <Button
                 variant="contained"
                 component={Link}
                 href="/schedule"
-                sx={{
-                  backgroundColor: "primary.main",
-                  borderRadius: 0,
-                  "&:hover": { backgroundColor: "primary.dark" },
-                }}
+                sx={{ borderRadius: 0 }}
               >
                 Schedule a Call
               </Button>
@@ -151,11 +138,16 @@ const Navbar = () => {
         </Container>
       </AppBar>
 
-      <ServicesDropdownMenu
-        anchorEl={anchorEl}
-        open={Boolean(anchorEl)}
-        onClose={handleCloseServices}
-      />
+      <Box
+        onMouseEnter={() => setServicesOpen(true)}
+        onMouseLeave={() => setServicesOpen(false)}
+      >
+        <ServicesDropdownMenu
+          open={servicesOpen}
+          onClose={() => setServicesOpen(false)}
+        />
+      </Box>
+
       <Drawer
         anchor="right"
         open={isMenuOpen}
@@ -170,6 +162,7 @@ const Navbar = () => {
               <Close />
             </IconButton>
           </Box>
+
           <List>
             {navItems.map((item) => (
               <ListItem key={item.href} disablePadding>
@@ -178,15 +171,19 @@ const Navbar = () => {
                   href={item.href}
                   onClick={() => setIsMenuOpen(false)}
                   sx={{
-                    color: isActive(item.href) ? "white" : "text.white",
+                    color: isActive(item.href) ? "white" : "text.primary",
                     backgroundColor: isActive(item.href)
                       ? "#ef3d23"
                       : "transparent",
+
                     "&:hover": {
-                      backgroundColor: isActive(item.href)
-                        ? "primary.light"
-                        : "grey.100",
-                      color: "primary.main",
+                      backgroundColor: "grey.200",
+                      color: "#ef3d23",
+                    },
+
+                    "&:active": {
+                      backgroundColor: "#ef3d23",
+                      color: "white",
                     },
                   }}
                 >
@@ -194,6 +191,7 @@ const Navbar = () => {
                 </ListItemButton>
               </ListItem>
             ))}
+
             <ListItem sx={{ px: 2, pt: 2 }}>
               <Button
                 variant="contained"
@@ -201,11 +199,7 @@ const Navbar = () => {
                 component={Link}
                 href="/schedule"
                 onClick={() => setIsMenuOpen(false)}
-                sx={{
-                  backgroundColor: "primary.main",
-                  borderRadius: 0,
-                  "&:hover": { backgroundColor: "primary.dark" },
-                }}
+                sx={{ borderRadius: 0 }}
               >
                 Schedule a Call
               </Button>
@@ -216,162 +210,5 @@ const Navbar = () => {
     </>
   );
 };
+
 export default Navbar;
-
-// "use client";
-
-// import Link from "next/link";
-// import { usePathname } from "next/navigation";
-// import { useState } from "react";
-
-// import {
-//   AppBar,
-//   Box,
-//   Button,
-//   Container,
-//   Drawer,
-//   IconButton,
-//   List,
-//   ListItem,
-//   ListItemButton,
-//   ListItemText,
-//   Toolbar,
-//   Typography,
-// } from "@mui/material";
-
-// import { Close, Menu } from "@mui/icons-material";
-// import Image from "next/image";
-// import ServicesDropdownMenu from "./ServicesDropdownaMenu";
-
-// const navItems = [
-//   { name: "Services", href: "/services" },
-//   { name: "Industries", href: "/industries" },
-//   { name: "About", href: "/about" },
-//   { name: "Blog", href: "/blog" },
-//   { name: "Career", href: "/career" },
-// ];
-
-// const Navbar = () => {
-//   const pathname = usePathname();
-
-//   const [isMenuOpen, setIsMenuOpen] = useState(false);
-//   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
-
-//   const isActive = (href: string) => {
-//     if (!pathname) return false;
-//     if (href === "/blog") return pathname.startsWith("/blog");
-//     return pathname.startsWith(href);
-//   };
-
-//   const handleOpenServices = (e: React.MouseEvent<HTMLElement>) => {
-//     setAnchorEl(e.currentTarget);
-//   };
-
-//   const handleCloseServices = () => {
-//     setAnchorEl(null);
-//   };
-
-//   return (
-//     <>
-//       <AppBar
-//         position="sticky"
-//         sx={{
-//           backgroundColor: "white",
-//           color: "text.primary",
-//           boxShadow: 1,
-//           borderBottom: "1px solid",
-//           borderColor: "grey.200",
-//         }}
-//       >
-//         <Container maxWidth="xl">
-//           <Toolbar sx={{ justifyContent: "space-between", py: 1 }}>
-//             <Typography component={Link} href="/">
-//               <Image
-//                 src="/assets/images/zenticsys-con-2-black.png"
-//                 alt="logo"
-//                 width={70}
-//                 height={50}
-//               />
-//             </Typography>
-
-//             <Box sx={{ display: { xs: "none", md: "flex" }, gap: 4 }}>
-//               {navItems.map((item) =>
-//                 item.name === "Services" ? (
-//                   <Box key={item.href} onMouseEnter={handleOpenServices}>
-//                     <Button
-//                       sx={{
-//                         color: isActive(item.href)
-//                           ? "primary.main"
-//                           : "text.secondary",
-//                         textTransform: "none",
-//                         fontWeight: 500,
-//                       }}
-//                     >
-//                       {item.name}
-//                     </Button>
-//                   </Box>
-//                 ) : (
-//                   <Button
-//                     key={item.href}
-//                     component={Link}
-//                     href={item.href}
-//                     sx={{
-//                       color: isActive(item.href)
-//                         ? "primary.main"
-//                         : "text.secondary",
-//                       textTransform: "none",
-//                       fontWeight: 500,
-//                     }}
-//                   >
-//                     {item.name}
-//                   </Button>
-//                 ),
-//               )}
-
-//               <Button variant="contained" component={Link} href="/schedule">
-//                 Schedule a Call
-//               </Button>
-//             </Box>
-
-//             <IconButton
-//               onClick={() => setIsMenuOpen(true)}
-//               sx={{ display: { xs: "block", md: "none" } }}
-//             >
-//               <Menu />
-//             </IconButton>
-//           </Toolbar>
-//         </Container>
-//       </AppBar>
-
-//       <ServicesDropdownMenu
-//         anchorEl={anchorEl}
-//         open={Boolean(anchorEl)}
-//         onClose={handleCloseServices}
-//       />
-
-//       <Drawer
-//         anchor="right"
-//         open={isMenuOpen}
-//         onClose={() => setIsMenuOpen(false)}
-//       >
-//         <Box sx={{ width: 220 }}>
-//           <List>
-//             {navItems.map((item) => (
-//               <ListItem key={item.href} disablePadding>
-//                 <ListItemButton
-//                   component={Link}
-//                   href={item.href}
-//                   onClick={() => setIsMenuOpen(false)}
-//                 >
-//                   <ListItemText primary={item.name} />
-//                 </ListItemButton>
-//               </ListItem>
-//             ))}
-//           </List>
-//         </Box>
-//       </Drawer>
-//     </>
-//   );
-// };
-
-// export default Navbar;

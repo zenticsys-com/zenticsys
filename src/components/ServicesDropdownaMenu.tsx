@@ -4,7 +4,6 @@ import Link from "next/link";
 import { Box, Button, Menu as MuiMenu, Typography } from "@mui/material";
 
 type Props = {
-  anchorEl: HTMLElement | null;
   open: boolean;
   onClose: () => void;
 };
@@ -13,7 +12,6 @@ const servicesMenu = [
   {
     title: "UI/UX Design",
     description: "Crafting Intuitive Experiences",
-    href: "/services/ui-ux",
     items: [
       { name: "UX UI Consulting", href: "/services/ux-consulting" },
       { name: "UX Audit", href: "/services/ux-audit" },
@@ -23,7 +21,6 @@ const servicesMenu = [
   {
     title: "Brand Design",
     description: "Crafting Timeless Visuals",
-    href: "/services/brand",
     items: [
       { name: "Brand Identity", href: "/services/brand-identity" },
       { name: "Corporate Identity", href: "/services/corporate" },
@@ -31,27 +28,46 @@ const servicesMenu = [
   },
 ];
 
-const ServicesDropdownMenu = ({ anchorEl, open, onClose }: Props) => {
+const ServicesDropdownMenu = ({ open, onClose }: Props) => {
   return (
     <MuiMenu
-      anchorEl={anchorEl}
       open={open}
       onClose={onClose}
-      MenuListProps={{ onMouseLeave: onClose }}
-      PaperProps={{ sx: { width: 1100, p: 4 } }}
+      anchorReference="anchorPosition"
+      anchorPosition={{
+        top: 64,
+        left: window.innerWidth / 2,
+      }}
+      transformOrigin={{
+        vertical: "top",
+        horizontal: "center",
+      }}
+      MenuListProps={{
+        onMouseLeave: onClose,
+      }}
+      PaperProps={{
+        sx: {
+          width: "75vw",
+          transform: "translateX(-50%)",
+          borderRadius: 0,
+          p: 4,
+        },
+      }}
     >
       <Box
         sx={{
           display: "grid",
-          gridTemplateColumns: "repeat(2,1fr)",
+          gridTemplateColumns: {
+            xs: "repeat(1, 1fr)",
+            sm: "repeat(2, 1fr)",
+            md: "repeat(4, 1fr)",
+          },
           gap: 4,
         }}
       >
         {servicesMenu.map((category) => (
           <Box key={category.title}>
-            <Link href={category.href}>
-              <Typography fontWeight={600}>{category.title} →</Typography>
-            </Link>
+            <Typography fontWeight={600}>{category.title} →</Typography>
 
             <Typography variant="body2" color="text.secondary" mb={2}>
               {category.description}
@@ -66,7 +82,7 @@ const ServicesDropdownMenu = ({ anchorEl, open, onClose }: Props) => {
                   display: "block",
                   textAlign: "left",
                   textTransform: "none",
-                  backgroundColor: "#f5f5f5",
+                  borderRadius: 0,
                   mb: 1,
                 }}
               >
