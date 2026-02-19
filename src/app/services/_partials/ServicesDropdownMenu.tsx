@@ -10,12 +10,28 @@ type Props = {
 
 const servicesMenu = [
   {
-    title: "UI/UX Design",
+    title: "Web Design Services",
     description: "Crafting Intuitive Experiences",
     items: [
-      { name: "UX UI Consulting", href: "/services/ux-consulting" },
+      { name: "Web Design Services", href: "/services/web-design-services" },
       { name: "UX Audit", href: "/services/ux-audit" },
       { name: "UX Research", href: "/services/ux-research" },
+    ],
+  },
+  {
+    title: "Brand Design",
+    description: "Crafting Timeless Visuals",
+    items: [
+      { name: "Brand Identity", href: "/services/brand-identity" },
+      { name: "Corporate Identity", href: "/services/corporate" },
+    ],
+  },
+  {
+    title: "Brand Design",
+    description: "Crafting Timeless Visuals",
+    items: [
+      { name: "Brand Identity", href: "/services/brand-identity" },
+      { name: "Corporate Identity", href: "/services/corporate" },
     ],
   },
   {
@@ -35,12 +51,12 @@ const ServicesDropdownMenu = ({ open, onClose }: Props) => {
       onClose={onClose}
       anchorReference="anchorPosition"
       anchorPosition={{
-        top: 64,
+        top: 100,
         left: window.innerWidth / 2,
       }}
       transformOrigin={{
-        vertical: "top",
         horizontal: "center",
+        vertical: "top",
       }}
       MenuListProps={{
         onMouseLeave: onClose,
@@ -50,6 +66,7 @@ const ServicesDropdownMenu = ({ open, onClose }: Props) => {
           width: "75vw",
           transform: "translateX(-50%)",
           borderRadius: 0,
+          cursor: "pointer",
           p: 4,
         },
       }}

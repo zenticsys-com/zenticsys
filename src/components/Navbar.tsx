@@ -21,14 +21,68 @@ import {
 
 import { Close, Menu } from "@mui/icons-material";
 import Image from "next/image";
-import ServicesDropdownMenu from "./ServicesDropdownMenu";
+import ServicesDropdownMenu from "../app/services/_partials/ServicesDropdownMenu";
+import SubmenuDropdown from "@/app/_components/SubmenuDropdown";
 
-const navItems = [
-  { name: "Services", href: "/services" },
-  { name: "Industries", href: "/industries" },
-  { name: "About", href: "/about" },
-  { name: "Blog", href: "/blog" },
-  { name: "Career", href: "/career" },
+type MenuType = {
+  name: string;
+  href: string;
+  menu: SubmenuType[];
+};
+
+export type SubmenuType = {
+  title: string;
+  href: string;
+  description: string;
+  items: { name: string; href: string }[];
+};
+
+const servicesMenu: SubmenuType[] = [
+  {
+    title: "Web Design Services",
+    href: "/services/web-design-services",
+    description: "Crafting Intuitive Experiences",
+    items: [
+      { name: "Web Design Services", href: "/services/web-design-services" },
+      { name: "UX Audit", href: "/services/ux-audit" },
+      { name: "UX Research", href: "/services/ux-research" },
+    ],
+  },
+  {
+    title: "Brand Design",
+    href: "#",
+    description: "Crafting Timeless Visuals",
+    items: [
+      { name: "Brand Identity", href: "/services/brand-identity" },
+      { name: "Corporate Identity", href: "/services/corporate" },
+    ],
+  },
+  {
+    title: "Brand Design",
+    href: "#",
+    description: "Crafting Timeless Visuals",
+    items: [
+      { name: "Brand Identity", href: "/services/brand-identity" },
+      { name: "Corporate Identity", href: "/services/corporate" },
+    ],
+  },
+  {
+    title: "Brand Design",
+    href: "#",
+    description: "Crafting Timeless Visuals",
+    items: [
+      { name: "Brand Identity", href: "/services/brand-identity" },
+      { name: "Corporate Identity", href: "/services/corporate" },
+    ],
+  },
+];
+
+const navItems: MenuType[] = [
+  { name: "Services", href: "/services", menu: servicesMenu },
+  { name: "Industries", href: "/industries", menu: [] },
+  { name: "About", href: "/about", menu: [] },
+  { name: "Blog", href: "/blog", menu: [] },
+  { name: "Career", href: "/career", menu: [] },
 ];
 
 const Navbar = () => {
@@ -55,7 +109,7 @@ const Navbar = () => {
           borderColor: "grey.200",
         }}
       >
-        <Container maxWidth="xl">
+        <Container maxWidth="xl" className="relative">
           <Toolbar sx={{ justifyContent: "space-between", py: 1 }}>
             <Typography
               component={Link}
@@ -77,26 +131,33 @@ const Navbar = () => {
                 gap: 4,
               }}
             >
-              {navItems.map((item) =>
-                item.name === "Services" ? (
-                  <Box
+              {navItems?.map((item) =>
+                item?.menu?.length ? (
+                  <Button
                     key={item.href}
-                    onMouseEnter={() => setServicesOpen(true)}
+                    component={Link}
+                    href={item.href}
+                    sx={{
+                      color: isActive(item.href)
+                        ? "primary.main"
+                        : "text.secondary",
+                      textTransform: "none",
+                      fontWeight: 500,
+                    }}
+                    className="group static!"
                   >
-                    <Button
-                      component={Link}
-                      href={item.href}
-                      sx={{
-                        color: isActive(item.href)
-                          ? "primary.main"
-                          : "text.secondary",
-                        textTransform: "none",
-                        fontWeight: 500,
-                      }}
+                    <span>{item.name}</span>
+                    <div
+                      className="absolute top-[80%] left-0 w-full
+                   opacity-0 invisible scale-0
+                   group-hover:opacity-100
+                   group-hover:visible
+                   group-hover:scale-100
+                   transition duration-300 ease-in-out"
                     >
-                      {item.name}
-                    </Button>
-                  </Box>
+                      <SubmenuDropdown submenus={item?.menu} />
+                    </div>
+                  </Button>
                 ) : (
                   <Button
                     key={item.href}
@@ -114,7 +175,6 @@ const Navbar = () => {
                   </Button>
                 ),
               )}
-
               <Button
                 variant="contained"
                 component={Link}
