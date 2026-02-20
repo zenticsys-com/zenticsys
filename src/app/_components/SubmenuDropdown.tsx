@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { BsArrow90DegLeft } from "react-icons/bs";
 import SpecificMenuItems from "./SpecificMenuItems";
+
 type PropsType = {
   submenus: SubmenuType[];
 };
@@ -40,8 +41,8 @@ const SubmenuDropdown: React.FC<PropsType> = ({ submenus }) => {
             </div>
           </div>
         ))}
-        <div className="col-span-3">
-          <SpecificMenuItems />
+        <div className="col-s">
+          <SpecificMenuItems submenus={submenus} />
         </div>
       </section>
     </Box>

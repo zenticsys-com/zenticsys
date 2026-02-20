@@ -1,5 +1,10 @@
+import { SubmenuType } from "@/components/Navbar";
 import Link from "next/link";
 import { BsArrow90DegLeft } from "react-icons/bs";
+
+type PropsType = {
+  submenus: SubmenuType[];
+};
 
 const specificMenuItems = [
   {
@@ -21,7 +26,7 @@ const specificMenuItems = [
     ],
   },
 ];
-const SpecificMenuItems = () => {
+const SpecificMenuItems: React.FC<PropsType> = () => {
   return (
     <section className=" grid grid-cols-12 py-3">
       {specificMenuItems?.map((submenu) => (
