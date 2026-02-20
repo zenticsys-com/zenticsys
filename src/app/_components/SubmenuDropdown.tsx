@@ -2,7 +2,7 @@ import { SubmenuType } from "@/components/Navbar";
 import { Box } from "@mui/material";
 import Link from "next/link";
 import React from "react";
-
+import { BsArrow90DegLeft } from "react-icons/bs";
 type PropsType = {
   submenus: SubmenuType[];
 };
@@ -17,9 +17,14 @@ const SubmenuDropdown: React.FC<PropsType> = ({ submenus }) => {
             className="md:col-span-6 lg:col-span-3 gap-2 p-5"
           >
             <h2 className="text-gray-900 text-xl font-semibold transition duration-300 border-b inline-block border-b-white hover:border-b hover:border-b-green-600">
-              <Link href={submenu?.href}>{submenu?.title} →</Link>
+              <Link href={submenu?.href}>
+                <p className="flex justify-between">
+                  {submenu?.title}
+                  <BsArrow90DegLeft className="-scale-x-100 rotate-90 mt-2 ml-6" />
+                </p>
+              </Link>
             </h2>
-            <p className="text-gray-600">{submenu?.description}</p>
+            <p className="text-gray-600 mt-0.5">{submenu?.description}</p>
 
             <div className="mt-3">
               {submenu?.items?.map((item) => (
