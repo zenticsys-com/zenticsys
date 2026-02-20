@@ -21,7 +21,6 @@ import {
 
 import { Close, Menu } from "@mui/icons-material";
 import Image from "next/image";
-import ServicesDropdownMenu from "../app/services/_partials/ServicesDropdownMenu";
 import SubmenuDropdown from "@/app/_components/SubmenuDropdown";
 
 type MenuType = {
@@ -89,7 +88,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
+  // const [servicesOpen, setServicesOpen] = useState(false);
 
   const isActive = (href: string) => {
     if (!pathname) return false;
@@ -199,13 +198,13 @@ const Navbar = () => {
       </AppBar>
 
       <Box
-        onMouseEnter={() => setServicesOpen(true)}
-        onMouseLeave={() => setServicesOpen(false)}
+      // onMouseEnter={() => setServicesOpen(true)}
+      // onMouseLeave={() => setServicesOpen(false)}
       >
-        <ServicesDropdownMenu
+        {/* <ServicesDropdownMenu
           open={servicesOpen}
           onClose={() => setServicesOpen(false)}
-        />
+        /> */}
       </Box>
 
       <Drawer
