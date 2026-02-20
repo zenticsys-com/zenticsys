@@ -88,7 +88,6 @@ const Navbar = () => {
   const pathname = usePathname();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // const [servicesOpen, setServicesOpen] = useState(false);
 
   const isActive = (href: string) => {
     if (!pathname) return false;
@@ -130,6 +129,7 @@ const Navbar = () => {
                 gap: 4,
               }}
             >
+              {/*_ Dropdown Menu_*/}
               {navItems?.map((item) =>
                 item?.menu?.length ? (
                   <Button
@@ -196,16 +196,6 @@ const Navbar = () => {
           </Toolbar>
         </Container>
       </AppBar>
-
-      <Box
-      // onMouseEnter={() => setServicesOpen(true)}
-      // onMouseLeave={() => setServicesOpen(false)}
-      >
-        {/* <ServicesDropdownMenu
-          open={servicesOpen}
-          onClose={() => setServicesOpen(false)}
-        /> */}
-      </Box>
 
       <Drawer
         anchor="right"

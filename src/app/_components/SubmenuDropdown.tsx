@@ -1,5 +1,5 @@
 import { SubmenuType } from "@/components/Navbar";
-import { Box, Button, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import Link from "next/link";
 import React from "react";
 
@@ -9,13 +9,12 @@ type PropsType = {
 
 const SubmenuDropdown: React.FC<PropsType> = ({ submenus }) => {
   return (
-    <div className="bg-white xl:w-6/7 mx-auto">
-      {/* New section */}
+    <Box className="bg-white xl:w-6/7 mx-auto">
       <section className=" grid grid-cols-12">
         {submenus?.map((submenu) => (
           <div key={submenu?.title} className="col-span-3 gap-2 p-5">
             <Link href={submenu?.href}>
-              <h2 className="text-gray-900 text-xl font-semibold">
+              <h2 className="text-gray-900 text-xl font-semibold transition duration-300 border-b inline-block border-b-white hover:border-b hover:border-b-green-600">
                 {submenu?.title} →
               </h2>
             </Link>
@@ -31,48 +30,7 @@ const SubmenuDropdown: React.FC<PropsType> = ({ submenus }) => {
           </div>
         ))}
       </section>
-
-      {/* <Box
-        sx={{
-          backgroundColor: "white",
-          display: "grid",
-          paddingTop: "40px",
-          gridTemplateColumns: {
-            xs: "repeat(1, 1fr)",
-            sm: "repeat(2, 1fr)",
-            md: "repeat(4, 1fr)",
-          },
-          gap: 4,
-        }}
-      >
-        {submenus?.map((submenu) => (
-          <Box key={submenu?.title}>
-            <Typography fontWeight={600}>{submenu?.title} →</Typography>
-
-            <Typography variant="body2" color="text.secondary" mb={2}>
-              {submenu?.description}
-            </Typography>
-
-            {submenu?.items?.map((item) => (
-              <Button
-                key={item.href}
-                component={Link}
-                href={item.href}
-                sx={{
-                  display: "block",
-                  textAlign: "left",
-                  textTransform: "none",
-                  borderRadius: 0,
-                  mb: 1,
-                }}
-              >
-                {item.name}
-              </Button>
-            ))}
-          </Box>
-        ))}
-      </Box> */}
-    </div>
+    </Box>
   );
 };
 
