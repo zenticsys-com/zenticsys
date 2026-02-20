@@ -64,14 +64,6 @@ const servicesMenu: SubmenuType[] = [
     items: [
       { name: "Brand Identity", href: "/services/brand-identity" },
       { name: "Corporate Identity", href: "/services/corporate" },
-    ],
-  },
-  {
-    title: "Brand Design",
-    href: "#",
-    description: "Crafting Timeless Visuals",
-    items: [
-      { name: "Brand Identity", href: "/services/brand-identity" },
       { name: "Corporate Identity", href: "/services/corporate" },
     ],
   },
