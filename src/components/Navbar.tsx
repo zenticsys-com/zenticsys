@@ -54,6 +54,7 @@ const servicesMenu: SubmenuType[] = [
     items: [
       { name: "Brand Identity", href: "/services/brand-identity" },
       { name: "Corporate Identity", href: "/services/corporate" },
+      { name: "Corporate", href: "/services/corporate" },
     ],
   },
   {
