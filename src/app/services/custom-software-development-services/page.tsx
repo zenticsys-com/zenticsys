@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import CustomSoftwareDevelopmentServices from "../_components/CustomSoftwareDevelopmentServices";
 
-const CustomDevelopmentServices = () => {
+const CustomDevelopmentServicesPage = () => {
   return (
     <section className="to-white py-4 px-4 lg:px-2">
       <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-12 gap-6 py-12">
@@ -23,4 +23,4 @@ const CustomDevelopmentServices = () => {
   );
 };
 
-export default CustomDevelopmentServices;
+export default CustomDevelopmentServicesPage;

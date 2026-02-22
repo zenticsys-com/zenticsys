@@ -62,12 +62,12 @@ const servicesMenu: SubmenuType[] = [
   },
   {
     title: "UI/UX Design Services",
-    href: "#",
+    href: "/services/ui-ux-design-services",
     description: "Crafting Timeless Visuals",
     items: [
-      { name: "Brand Identity", href: "/services/brand-identity" },
-      { name: "Corporate Identity", href: "/services/corporate" },
-      { name: "Corporate Identity", href: "/services/corporate" },
+      { name: "Brand Identity", href: "/services/ui-ux-design-services" },
+      { name: "Corporate Identity", href: "/services/ui-ux-design-services" },
+      { name: "Corporate Identity", href: "#" },
     ],
   },
 ];
