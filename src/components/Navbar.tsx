@@ -48,17 +48,20 @@ const servicesMenu: SubmenuType[] = [
     ],
   },
   {
-    title: "Brand Design",
-    href: "#",
+    title: "Custom Software Development Services",
+    href: "/services/custom-software-development-services",
     description: "Crafting Timeless Visuals",
     items: [
-      { name: "Brand Identity", href: "/services/brand-identity" },
+      {
+        name: "Brand Identity",
+        href: "/services/custom-software-development-services",
+      },
       { name: "Corporate Identity", href: "/services/corporate" },
       { name: "Corporate", href: "/services/corporate" },
     ],
   },
   {
-    title: "Brand Design",
+    title: "UI/UX Design Services",
     href: "#",
     description: "Crafting Timeless Visuals",
     items: [
@@ -79,7 +82,6 @@ const navItems: MenuType[] = [
 
 const Navbar = () => {
   const pathname = usePathname();
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const isActive = (href: string) => {

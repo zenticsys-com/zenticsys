@@ -8,7 +8,7 @@ type PropsType = {
 
 const specificMenuItems = [
   {
-    title: "Brand Design",
+    title: "Mobile App Development Services",
     href: "#",
     description: "Crafting Timeless Visuals",
     items: [
@@ -17,9 +17,9 @@ const specificMenuItems = [
     ],
   },
   {
-    title: "Brand Design",
+    title: "Digital Marketing Services",
     href: "#",
-    description: "Crafting Timeless Visuals",
+    description: "Crafting Timeles",
     items: [
       { name: "Brand Identity", href: "/services/brand-identity" },
       { name: "Corporate Identity", href: "/services/corporate" },
