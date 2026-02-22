@@ -9,20 +9,26 @@ type PropsType = {
 const specificMenuItems = [
   {
     title: "Mobile App Development Services",
-    href: "#",
+    href: "/services/mobile-app-development-services",
     description: "Crafting Timeless Visuals",
     items: [
-      { name: "Brand Identity", href: "/services/brand-identity" },
+      {
+        name: "Brand Identity",
+        href: "/services/mobile-app-development-services",
+      },
       { name: "Corporate Identity", href: "/services/corporate" },
     ],
   },
   {
     title: "Digital Marketing Services",
-    href: "#",
+    href: "/services/digital-marketing-services",
     description: "Crafting Timeles",
     items: [
-      { name: "Brand Identity", href: "/services/brand-identity" },
-      { name: "Corporate Identity", href: "/services/corporate" },
+      { name: "Brand Identity", href: "/services/digital-marketing-services" },
+      {
+        name: "Corporate Identity",
+        href: "/services/digital-marketing-services",
+      },
     ],
   },
 ];
