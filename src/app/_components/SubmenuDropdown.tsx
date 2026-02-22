@@ -41,7 +41,7 @@ const SubmenuDropdown: React.FC<PropsType> = ({ submenus }) => {
             </div>
           </div>
         ))}
-        <div className="col-s">
+        <div className="col-span-1 md:col-span-6 lg:col-span-3">
           <SpecificMenuItems submenus={submenus} />
         </div>
       </section>
