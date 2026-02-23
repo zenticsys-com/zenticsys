@@ -14,7 +14,7 @@ const WebDesignServicesPage = () => {
             className="w-full h-full"
           />
         </div>
-        <div className="order-2 lg:order-1 col-span-6 ">
+        <div className="order-2 lg:order-1 col-span-6">
           <WebDesignServices />
         </div>
       </div>
