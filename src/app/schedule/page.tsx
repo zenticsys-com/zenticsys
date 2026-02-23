@@ -3,6 +3,7 @@ import OurProcess from "./_components/OurProcess";
 import QuickCallOption from "./_components/QuickCallOption";
 import ContactForm from "./_partials/ContactForm";
 import FAQSection from "./_partials/FAQSection";
+import PreFooter from "./_partials/PreFooter";
 
 import ScheduleHeroSection from "./_partials/ScheduleHeroSection";
 
@@ -22,6 +23,7 @@ export function SchedulePage() {
       </div>
 
       <FAQSection />
+      <PreFooter />
     </div>
   );
 }
