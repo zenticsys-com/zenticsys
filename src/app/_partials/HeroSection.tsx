@@ -9,11 +9,14 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-16 gap-10 items-center">
           <div>
-            <h1 className="text-4xl md:text-start md:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-3xl md:text-start md:text-[44px] font-bold text-gray-900 mb-6">
               Building Reliable
-              <span className="text-primary"> Custom</span>
+              <span className="text-primary"> Custom </span>
               Software Solution
             </h1>
+            <h2 className="text-[22px] md:text-start md:text-3xl -mt-5 text-primary font-semibold  mb-6">
+              Secure. Scalable. Future-Ready.
+            </h2>
             <h3 className="text-lg md:text-xl mb-2 font-semibold ">
               Global Custom Software Development Agency
             </h3>
