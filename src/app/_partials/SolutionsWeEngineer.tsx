@@ -14,7 +14,7 @@ type ServicePropsType = {
   title: string;
   description: string;
 };
-const WhatWeDoSection = () => {
+const SolutionsWeEngineer = () => {
   /**_Services Data_**/
   const services: ServicePropsType[] = [
     {
@@ -90,4 +90,4 @@ const WhatWeDoSection = () => {
   );
 };
 
-export default WhatWeDoSection;
+export default SolutionsWeEngineer;

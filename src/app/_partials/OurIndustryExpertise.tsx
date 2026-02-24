@@ -74,12 +74,14 @@ const OurIndustryExpertise = () => {
   return (
     <section className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12  max-w-230 mx-auto">
           <h2 className="text-3xl text-center md:text-4xl font-bold text-gray-900 mb-4">
-            Our Industry Expertise
+            Industries We Serve
           </h2>
           <p className="md:text-xl text-gray-600">
-            Specialized solutions across diverse industries
+            We deliver custom software development, SaaS solutions, and
+            industry-specific digital platforms engineered for scalability,
+            security, and measurable business growth.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

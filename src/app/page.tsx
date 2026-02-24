@@ -5,7 +5,7 @@ import OurIndustryExpertise from "@/app/_partials/OurIndustryExpertise";
 import OurPartnerships from "@/app/_partials/OurPartnerships";
 import TheTechnologyWeUse from "@/app/_partials/TheTechnologyWeUse";
 import InsideZenticsys from "@/app/_partials/InsideZenticsys";
-import WhatWeDoSection from "@/app/_partials/WhatWeDoSection";
+import SolutionsWeEngineer from "@/app/_partials/SolutionsWeEngineer";
 import CaseStudies from "./_partials/CaseStudies";
 import FAQSection from "./_partials/FAQSection";
 import OurBlogs from "./_partials/OurBlogs";
@@ -16,7 +16,7 @@ const HomePage = () => {
       <HeroSection />
       <OurPartnerships />
       <InsideZenticsys />
-      <WhatWeDoSection />
+      <SolutionsWeEngineer />
       <OurIndustryExpertise />
       <CaseStudies />
       <TheTechnologyWeUse />
