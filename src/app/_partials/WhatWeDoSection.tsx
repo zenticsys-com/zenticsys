@@ -43,15 +43,15 @@ const WhatWeDoSection = () => {
     },
     {
       icon: <FiLayers className="w-8 h-8 text-primary" />,
-      title: "SaaS Design",
+      title: "SaaS Design & Development",
       description:
-        "We design scalable SaaS interfaces focused on usability, workflow clarity, and product adoption, combining research, system thinking, and intuitive design principles to create consistent, efficient, and growth-oriented digital experiences.",
+        "We develop scalable SaaS platforms that turn business ideas into reliable Software as a Service products, combining structured product design, UI design, efficient SaaS management principles, and performance-focused SaaS software development architecture.",
     },
     {
       icon: <FiTarget className="w-8 h-8 text-primary" />,
-      title: "Digital Marketing",
+      title: "360 Digital Marketing Solution",
       description:
-        "Complete digital marketing services including SEO, ads, content marketing, and social media growth.",
+        "We deliver best digital marketing strategies combining SEO, paid advertising, content marketing, analytics, and performance optimization to build brand authority, generate qualified leads, increase conversions, and drive sustainable long-term business growth.",
     },
   ];
 
