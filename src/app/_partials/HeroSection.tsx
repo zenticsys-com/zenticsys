@@ -10,17 +10,17 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-16 gap-10 items-center">
           <div>
             <h1 className="text-4xl md:text-start md:text-5xl font-bold text-gray-900 mb-6">
-              Building the
-              <span className="text-primary"> Future </span>
-              of Software
+              Building Reliable
+              <span className="text-primary"> Custom</span>
+              Software Solution
             </h1>
             <h3 className="text-lg md:text-xl mb-2 font-semibold ">
-              Best Software Development Company
+              Global Custom Software Development Agency
             </h3>
             <p className="text- text-gray-600 mb-8 ">
-              We create innovative software solutions that transform businesses
-              and drive digital success. Partner with us to bring your vision to
-              life.
+              We design and engineer modern digital products and SaaS platforms,
+              combining strategic thinking, clean architecture, and scalable
+              technology to power ambitious businesses worldwide.
             </p>
             <div className="flex justify-center md:justify-start">
               <Link href="/schedule">

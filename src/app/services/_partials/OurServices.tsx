@@ -10,7 +10,6 @@ const OurServices = () => {
     <section className="to-white py-4 px-4 lg:px-2">
       <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-12 gap-6 py-12">
         <div className="order-1 lg:order-2 col-span-6 w-full">
-          {/* <div className="order-1 lg:order-2 col-span-6 py-8 lg:max-h-[710px] w-full"> */}
           <Image
             src={"/assets/images/Web_design_img.jpg"}
             alt="image"
@@ -25,7 +24,6 @@ const OurServices = () => {
       </div>
       <section className="w-full bg-gray-50">
         <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-12 gap-6 py-12">
-          {/* <div className="col-span-6 py-8 lg:max-h-[550px] w-full"> */}
           <div className="col-span-6 w-full">
             <Image
               src={"/assets/images/Image_2.jpg"}
@@ -42,7 +40,6 @@ const OurServices = () => {
       </section>
       <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-12 gap-6 py-12">
         <div className="order-1 lg:order-2 col-span-6 w-full">
-          {/* <div className="order-1 lg:order-2 col-span-6 py-8 lg:max-h-[600px] w-full"> */}
           <Image
             src={"/assets/images/Ui_Ux_design_img.jpg"}
             alt="image"
@@ -57,7 +54,6 @@ const OurServices = () => {
       </div>
       <section className="w-full bg-gray-50">
         <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-12 gap-6 py-12">
-          {/* <div className="col-span-6 py-8 lg:max-h-[310px] w-full"> */}
           <div className="col-span-6 w-full">
             <Image
               src={"/assets/images/Mobile_app_development_img.jpg"}

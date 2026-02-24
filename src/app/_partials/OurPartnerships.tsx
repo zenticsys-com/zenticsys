@@ -24,7 +24,8 @@ const OurPartnerships = () => {
             Our Partnerships
           </h2>
           <p className="md:text-xl text-gray-600">
-            Trusted by leading companies worldwide
+            Collaborating with world-class technology providers to build
+            enterprise-grade digital systems.
           </p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-4">

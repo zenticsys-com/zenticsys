@@ -10,32 +10,43 @@ const WhatWeAreSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl sm:text-start md:text-4xl font-bold text-gray-900 mb-4">
-              Who We Are
+              Inside Zenticsys
             </h2>
             <p className="md:text-xl text-gray-600 mb-6 md:mb-8 sm:text-start">
-              Zenticsys is a forward-thinking software development company with
-              a passion for innovation and excellence. We combine technical
-              expertise with strategic thinking to deliver solutions that drive
-              real business value.
+              Zenticsys is a custom software engineering company specializing in
+              scalable web applications, SaaS platforms, and enterprise software
+              solutions. We focus on clean architecture, secure backend systems,
+              modern frontend development, and cloud infrastructure to build
+              reliable digital products that support long-term business growth.
+              Our approach combines technical expertise, product strategy, and
+              performance-driven development to deliver high-quality, scalable
+              software systems.
             </p>
             <div className="space-y-4">
               <div className="flex items-center">
                 <CheckCircle className="w-5 h-5 text-primary mr-3" />
-                <span>7+ years of industry experience</span>
+                <span>
+                  A Scalable SaaS & Web Application Engineering Company
+                </span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="w-5 h-5 text-primary mr-3" />
-                <span>100+ successful projects delivered</span>
+                <span>
+                  Specialists in Enterprise Software & Robust Backend
+                  Architecture
+                </span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="w-5 h-5 text-primary mr-3" />
-                <span>Expert team of developers and consultants</span>
+                <span>
+                  Experts in Cloud Infrastructure & Modern Frontend Technologies
+                </span>
               </div>
             </div>
 
             <Link href="/about">
               <ZtsButton
-                text="Learn More About"
+                text="Explore Our Story"
                 className="border-none text-white bg-primary hover:border-transparent hover:bg-primary-dark hover:text-white mt-8"
               />
             </Link>
