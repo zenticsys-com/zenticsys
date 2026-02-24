@@ -1,4 +1,4 @@
-import { SubmenuType } from "@/components/Navbar";
+import { specificMenuItems, SubmenuType } from "@/data/navBarData";
 import Link from "next/link";
 import { BsArrow90DegLeft } from "react-icons/bs";
 
@@ -6,32 +6,6 @@ type PropsType = {
   submenus: SubmenuType[];
 };
 
-const specificMenuItems = [
-  {
-    title: "Mobile App Development Services",
-    href: "/services/mobile-app-development-services",
-    description: "Crafting Timeless Visuals",
-    items: [
-      {
-        name: "Brand Identity",
-        href: "/services/mobile-app-development-services",
-      },
-      { name: "Corporate Identity", href: "/services/corporate" },
-    ],
-  },
-  {
-    title: "Digital Marketing Services",
-    href: "/services/digital-marketing-services",
-    description: "Crafting Timeles",
-    items: [
-      { name: "Brand Identity", href: "/services/digital-marketing-services" },
-      {
-        name: "Corporate Identity",
-        href: "/services/digital-marketing-services",
-      },
-    ],
-  },
-];
 const SpecificMenuItems: React.FC<PropsType> = () => {
   return (
     <section className=" grid grid-cols-12 py-3">
