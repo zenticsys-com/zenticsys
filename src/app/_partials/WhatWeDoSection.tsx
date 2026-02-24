@@ -8,38 +8,44 @@ import {
   FiTarget,
 } from "react-icons/fi";
 
+/**- Data type -**/
+type ServicePropsType = {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+};
 const WhatWeDoSection = () => {
-  /**_Data_**/
-  const services = [
+  /**_Services Data_**/
+  const services: ServicePropsType[] = [
     {
       icon: <FiCode className="w-8 h-8 text-primary" />,
-      title: "Website design & Development",
+      title: "Website Design & Development",
       description:
-        "We create user-friendly and scalable websites that help your brand stand out and convert visitors into customers.",
+        "As a website design and development company, we deliver responsive web design, custom web development, ecommerce website development, and web application development services tailored for performance, scalability, and business growth.	",
     },
     {
       icon: <FiPenTool className="w-8 h-8 text-primary" />,
       title: "UI/UX Design",
       description:
-        "Creating clean and effective UI/UX designs that help users navigate easily and boost customer satisfaction.",
+        "Our UI/UX design services focus on user interface design, UX strategy, and digital product design for web applications and SaaS platforms. As a user interface design company, we create intuitive, scalable experiences that improve usability, engagement, and product performance.",
     },
     {
       icon: <FaCode className="w-8 h-8 text-primary" />,
       title: "Custom Software Development",
       description:
-        "We build scalable, secure, and custom software solutions tailored to your business needs and workflows.",
+        "As a custom software development company, we deliver scalable SaaS software development, enterprise software solutions, and MVP development, building secure, high-performance applications designed for complex business requirements and long-term growth.",
     },
     {
       icon: <FiSmartphone className="w-8 h-8 text-primary" />,
       title: "Mobile App Development",
       description:
-        "Native and cross-platform mobile apps built using modern technologies for speed, security, and scalability.",
+        "We build reliable mobile applications for iOS and Android, combining native and cross-platform development with strong architecture, performance optimization, and security to deliver scalable apps that support real business growth.",
     },
     {
       icon: <FiLayers className="w-8 h-8 text-primary" />,
       title: "SaaS Design",
       description:
-        "We design modern, scalable, and user-friendly SaaS interfaces that improve usability and drive user adoption.",
+        "We design scalable SaaS interfaces focused on usability, workflow clarity, and product adoption, combining research, system thinking, and intuitive design principles to create consistent, efficient, and growth-oriented digital experiences.",
     },
     {
       icon: <FiTarget className="w-8 h-8 text-primary" />,
@@ -54,10 +60,11 @@ const WhatWeDoSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            What We Do
+            Solutions We Engineer
           </h2>
           <p className="md:text-lg text-xl text-gray-600">
-            Comprehensive software solutions for modern businesses
+            Strategic design and development services built to power modern
+            businesses.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

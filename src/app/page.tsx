@@ -4,7 +4,7 @@ import HeroSection from "@/app/_partials/HeroSection";
 import OurIndustryExpertise from "@/app/_partials/OurIndustryExpertise";
 import OurPartnerships from "@/app/_partials/OurPartnerships";
 import TheTechnologyWeUse from "@/app/_partials/TheTechnologyWeUse";
-import WhatWeAreSection from "@/app/_partials/WhatWeAreSection";
+import InsideZenticsys from "@/app/_partials/InsideZenticsys";
 import WhatWeDoSection from "@/app/_partials/WhatWeDoSection";
 import CaseStudies from "./_partials/CaseStudies";
 import FAQSection from "./_partials/FAQSection";
@@ -15,7 +15,7 @@ const HomePage = () => {
     <div className="min-h-screen">
       <HeroSection />
       <OurPartnerships />
-      <WhatWeAreSection />
+      <InsideZenticsys />
       <WhatWeDoSection />
       <OurIndustryExpertise />
       <CaseStudies />

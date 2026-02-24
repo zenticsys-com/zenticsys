@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ZtsButton from "../_components/ZtButton";
 
-const WhatWeAreSection = () => {
+const InsideZenticsys = () => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -65,4 +65,4 @@ const WhatWeAreSection = () => {
   );
 };
 
-export default WhatWeAreSection;
+export default InsideZenticsys;

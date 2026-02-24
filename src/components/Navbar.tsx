@@ -162,7 +162,7 @@ const Navbar = () => {
       >
         <Box sx={{ width: "100%", pt: 2 }}>
           <Box
-            sx={{ display: "flex", justifyContent: "flex-end", px: 3, pb: 2 }}
+            sx={{ display: "flex", justifyContent: "flex-end", px: 3, pb: 0 }}
           >
             <IconButton onClick={() => setIsMenuOpen(false)}>
               <Close />
