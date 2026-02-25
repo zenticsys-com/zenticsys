@@ -26,7 +26,7 @@ const OurServices = () => {
         <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-12 gap-6 py-12">
           <div className="col-span-6 w-full">
             <Image
-              src={"/assets/images/Image_2.jpg"}
+              src={"/assets/images/Web_design_img.jpg"}
               alt="image"
               width={670}
               height={680}
