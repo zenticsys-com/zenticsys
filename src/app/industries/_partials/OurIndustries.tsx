@@ -17,9 +17,9 @@ const OurIndustries = () => {
     {
       id: "automotive",
       icon: <FaCar className="w-8 h-8 text-primary" />,
-      title: "Automotive",
+      title: "Automotive Technology",
       description:
-        "Smart digital solutions for vehicle management, and connected car platforms that improve performance, safety, and customer experience.",
+        "We develop automotive software solutions including vehicle management systems, dealer platforms, automotive SaaS, and connected car marketplace applications.",
       services: [
         "Connected car platforms",
         "Fleet management systems",
@@ -31,9 +31,9 @@ const OurIndustries = () => {
     {
       id: "fintech",
       icon: <FaMoneyCheckAlt className="w-8 h-8 text-primary" />,
-      title: "Fintech",
+      title: "Fintech & Banking",
       description:
-        "Advanced financial technology solutions including digital wallets, secure payment gateways, and banking integrations for scalable business growth.",
+        "We build secure fintech software solutions, payment systems, digital wallets, and banking integrations, financial SaaS systems, and compliant transaction management solutions.",
       services: [
         "Digital wallet development",
         "Secure payment gateway integration",
@@ -45,9 +45,9 @@ const OurIndustries = () => {
     {
       id: "ecommerce",
       icon: <MdShoppingCart className="w-8 h-8 text-primary" />,
-      title: "E-commerce",
+      title: "Ecommerce & Retail",
       description:
-        "High-performance online stores with secure payments, inventory management, and user-friendly shopping experiences that boost sales and conversions.",
+        "We create e-commerce website development solutions with secure payments, inventory management systems, scalable architecture, and conversion-focused online stores.",
       services: [
         "Custom e-commerce platforms",
         "Payment & checkout optimization",
@@ -61,7 +61,7 @@ const OurIndustries = () => {
       icon: <FaHeartPulse className="w-8 h-8 text-primary" />,
       title: "HealthTech & MedTech",
       description:
-        "Advanced healthcare technology solutions for patient management, remote monitoring, and secure medical data systems that improve care delivery.",
+        "We deliver healthcare software development solutions covering AI-powered diagnostics, patient management systems, telemedicine platforms, medical SaaS, and secure clinical data infrastructure.",
       services: [
         "Patient management systems",
         "Telemedicine platforms",
@@ -75,7 +75,7 @@ const OurIndustries = () => {
       icon: <FaBuildingColumns className="w-8 h-8 text-primary" />,
       title: "Real Estate & Construction Tech",
       description:
-        "Smart digital solutions for property management, construction planning, and project tracking that improve efficiency and reduce operational costs.",
+        "We build real estate software solutions, property management platforms, construction management systems, and scalable digital marketplace applications.",
       services: [
         "Property management systems",
         "Construction project tracking",
@@ -89,7 +89,7 @@ const OurIndustries = () => {
       icon: <FaBusinessTime className="w-8 h-8 text-primary" />,
       title: "Corporate / Business",
       description:
-        "Scalable business technology platforms designed to streamline operations, enhance collaboration, and drive long-term organizational growth.",
+        "We design enterprise software development solutions, business automation systems, CRM platforms, and scalable corporate technology infrastructure.",
       services: [
         "Enterprise software solutions",
         "Business process automation",
@@ -99,11 +99,11 @@ const OurIndustries = () => {
       caseStudy: "Case study Title",
     },
     {
-      id: "saas",
+      id: "Logistics",
       icon: <IoLayersSharp className="w-8 h-8 text-primary" />,
-      title: "SaaS (Vertical SaaS)",
+      title: "Logistics & Supply Chain",
       description:
-        "Industry-focused SaaS platforms built for scalability, performance, and security that help businesses automate workflows and grow faster.",
+        "We design logistics software solutions, inventory systems, and supply chain management platforms that improve tracking, automation, and operational visibility.",
       services: [
         "Custom SaaS development",
         "Multi-tenant architecture",
@@ -117,7 +117,7 @@ const OurIndustries = () => {
       icon: <IoSettingsSharp className="w-8 h-8 text-primary" />,
       title: "Manufacturing Software",
       description:
-        "Smart manufacturing software solutions for production planning, inventory tracking, and process automation that improve efficiency and reduce costs.",
+        "We develop manufacturing software solutions for production planning, inventory management, supply chain automation, and real-time operational monitoring systems, improving efficiency.",
       services: [
         "Production planning systems",
         "Inventory & supply chain tracking",
@@ -129,9 +129,9 @@ const OurIndustries = () => {
     {
       id: "non-profit",
       icon: <PiHandHeartFill className="w-8 h-8 text-primary" />,
-      title: "Non-profit",
+      title: "Nonprofit Sector",
       description:
-        "Digital solutions for non-profit organizations including donation platforms, volunteer management, and community engagement tools that maximize social impact.",
+        "We develop nonprofit software solutions, donation management systems, CRM platforms, volunteer management tools, and community engagement applications supporting long-term fundraising operations.",
       services: [
         "Donation & fundraising platforms",
         "Volunteer management systems",
