@@ -21,7 +21,7 @@ const SolutionsWeEngineer = () => {
       icon: <FiCode className="w-8 h-8 text-primary" />,
       title: "Website Design & Development",
       description:
-        "As a website design and development company, we deliver responsive web design, custom web development, ecommerce website development, and web application development services tailored for performance, scalability, and business growth.	",
+        "As a website design and development company, we deliver responsive web design, custom web development, e-commerce website development, and web application development services tailored for performance, scalability, and business growth.	",
     },
     {
       icon: <FiPenTool className="w-8 h-8 text-primary" />,
@@ -77,7 +77,7 @@ const SolutionsWeEngineer = () => {
                 <div className="mb-6 transition-transform duration-300">
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4 hover:text-primary transition duration-300">
                   {service.title}
                 </h3>
                 <p className="text-gray-600">{service.description}</p>
