@@ -11,7 +11,7 @@ const SpecificMenuItems: React.FC<PropsType> = () => {
     <section className=" grid grid-cols-12 py-3">
       {specificMenuItems?.map((submenu) => (
         <div key={submenu?.title} className="md:col-span-12 gap-2 px-5 py-2">
-          <h2 className="text-gray-900 text-xl font-semibold transition duration-300 border-b inline-block border-b-white hover:border-b hover:border-b-green-600">
+          <h2 className="text-gray-900 text-xl font-semibold transition duration-300 border-b inline-block border-b-white hover:border-b hover:border-b-primary">
             <Link href={submenu?.href}>
               <p className="flex justify-between">
                 {submenu?.title}
@@ -23,9 +23,9 @@ const SpecificMenuItems: React.FC<PropsType> = () => {
 
           <div className="mt-3">
             {submenu?.items?.map((item) => (
-              <p className="py-1 font-medium text-primary text-lg">
+              <p className="py-1 font-medium text-base text-gray-600">
                 <Link key={item?.href} href={item?.href}>
-                  <span className=" inline-block transition duration-300 border-b border-b-white hover:border-b hover:border-b-green-600 ">
+                  <span className=" inline-block transition duration-300 border-b border-b-white hover:border-b hover:border-b-primary ">
                     {item.name}
                   </span>
                 </Link>

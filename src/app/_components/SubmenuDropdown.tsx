@@ -18,7 +18,7 @@ const SubmenuDropdown: React.FC<PropsType> = ({ submenus }) => {
             key={submenu?.title}
             className="md:col-span-6 lg:col-span-3 gap-2 p-5"
           >
-            <h2 className="text-gray-900 text-xl font-semibold transition duration-300 border-b inline-block border-b-white hover:border-b hover:border-b-green-600">
+            <h2 className="text-gray-900 text-xl font-semibold transition duration-300 border-b inline-block border-b-white hover:border-b hover:border-b-primary">
               <Link href={submenu?.href}>
                 <p className="flex justify-between">
                   {submenu?.title}
@@ -30,9 +30,9 @@ const SubmenuDropdown: React.FC<PropsType> = ({ submenus }) => {
 
             <div className="mt-3">
               {submenu?.items?.map((item) => (
-                <p className="py-1 font-medium text-primary text-lg">
+                <p className="py-1 font-medium text-base text-gray-600">
                   <Link key={item?.href} href={item?.href}>
-                    <span className=" inline-block transition duration-300 border-b border-b-white hover:border-b hover:border-b-green-600 ">
+                    <span className=" inline-block transition duration-300 border-b border-b-white hover:border-b hover:border-b-primary ">
                       {item.name}
                     </span>
                   </Link>
