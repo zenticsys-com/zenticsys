@@ -8,34 +8,41 @@ const HomeFAQ = () => {
   /**_Data_**/
   const faqs = [
     {
-      question: "How long does a typical consultation take?",
+      question:
+        "Why should I choose Zenticsys for custom software development?",
       answer:
-        "Initial consultations usually last 30-60 minutes, depending on project complexity.",
+        "Zenticsys focuses on architecture-first engineering, high-performance system design, and clean code standards. We build custom software solutions aligned with long-term business growth, ensuring performance, security, and maintainability from day one.",
     },
     {
-      question: "Is the consultation free?",
+      question:
+        "What makes Zenticsys different from other software development companies?",
       answer:
-        "Yes, we offer free initial consultations to understand your needs and explore how we can help.",
+        "We don’t rush projects or overpromise. We take time to understand your business, define the right structure, and build software that actually works in day-to-day operations. Our focus is clarity, clean implementation, and systems that remain stable as your company grows. No unnecessary complexity, no shortcuts, just solid engineering.",
     },
     {
-      question: "What happens after the consultation?",
+      question: "What services does Zenticsys provide?",
       answer:
-        "We'll provide a detailed proposal with timeline, costs, and next steps within 48 hours.",
+        "We provide custom software development, SaaS product development, website design and development, mobile app development, website redesign, UI/UX design, and enterprise software solutions",
     },
     {
-      question: "Do you work with startups?",
+      question: "What is your software development process?",
       answer:
-        "Absolutely! We work with businesses of all sizes, from startups to enterprise organizations.",
+        "Our process starts with understanding your business goals, defining clear requirements and planning, UI/UX design, system architecture setup, backend and frontend development, testing and QA, deployment, and ongoing optimization. We follow agile principles for transparency and flexibility",
     },
     {
-      question: "What information should I prepare for the consultation?",
+      question: "How long does it take to build a custom software solution?",
       answer:
-        "Come prepared with your project goals, timeline, budget range, and any existing documentation or requirements.",
+        "Project timelines depend on complexity and scope. MVP projects typically take 6–10 weeks, while full-scale enterprise systems may require 12–20 weeks or more.",
     },
     {
-      question: "Can we schedule follow-up meetings?",
+      question: "Do you provide ongoing support and maintenance?",
       answer:
-        "Yes, we're happy to schedule additional meetings as needed throughout the project planning and development process.",
+        "Yes. We offer post-launch support, performance optimization, security updates, and feature enhancements. After successful project delivery, we provide 6 months of complimentary support to ensure system stability and smooth operation. Following that period, we offer affordable maintenance plans for continued reliability and long-term performance.",
+    },
+    {
+      question: "How can I get a project quote?",
+      answer:
+        "You can contact us through our website or schedule a consultation call. After understanding your requirements, we prepare a detailed proposal outlining the project scope, timeline, and cost estimation, ensuring everything is clearly defined before we move forward.",
     },
   ];
   return (
