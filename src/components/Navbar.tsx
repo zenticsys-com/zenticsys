@@ -35,6 +35,7 @@ import { Close, Menu } from "@mui/icons-material";
 import Image from "next/image";
 import { BsArrow90DegLeft } from "react-icons/bs";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import MobileServicesMenu from "@/app/_components/MobileServicesMenu";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -217,7 +218,6 @@ const Navbar = () => {
                                   backgroundColor: "#d62c14",
                                   color: "white",
                                 },
-                                // padding: 0,
                               }}
                             >
                               <ListItemText primary={item.name} />
@@ -229,7 +229,7 @@ const Navbar = () => {
                                 handleDropdownMenu(item?.name);
                               }}
                             >
-                              <span className="px-2">
+                              <span>
                                 {openDropdown ? (
                                   <MdKeyboardArrowDown className="text-3xl transition duration-300 rotate-180 text-primary" />
                                 ) : (
@@ -239,7 +239,8 @@ const Navbar = () => {
                             </IconButton>
                           </AccordionSummary>
                           <AccordionDetails>
-                            <section className="">
+                            {/*  ---------------Start services menu items------------------- */}
+                            {/* <section className="">
                               {allServicesMenuItems?.map((submenu) => (
                                 <div
                                   key={submenu?.title}
@@ -273,7 +274,9 @@ const Navbar = () => {
                                   </div>
                                 </div>
                               ))}
-                            </section>
+                            </section> */}
+                            <MobileServicesMenu />
+                            {/*  ---------------End services menu items------------------- */}
                           </AccordionDetails>
                         </Accordion>
                       </ListItem>
