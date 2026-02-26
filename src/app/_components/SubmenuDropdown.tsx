@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { BsArrow90DegLeft } from "react-icons/bs";
 import SpecificMenuItems from "./SpecificMenuItems";
-import { SubmenuType } from "@/data/navBarData";
+import { SubmenuType } from "@/data/nav-items-data";
 
 type PropsType = {
   submenus: SubmenuType[];

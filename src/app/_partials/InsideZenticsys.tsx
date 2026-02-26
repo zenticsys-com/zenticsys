@@ -47,7 +47,8 @@ const InsideZenticsys = () => {
             <Link href="/about">
               <ZtsButton
                 text="Explore Our Story"
-                className="border-none text-white bg-primary hover:border-transparent hover:bg-primary-dark hover:text-white mt-8"
+                // className="border-none text-white bg-primary hover:border-transparent hover:bg-primary-dark hover:text-white mt-8"
+                className="text-white bg-primary-dark border-none hover:bg-white hover:text-primary shadow-lg hover:shadow-primary-dark/50 mt-8"
               />
             </Link>
           </div>

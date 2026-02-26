@@ -30,7 +30,7 @@ import {
   allServicesMenuItems,
   navItems,
   servicesMenu,
-} from "@/data/navBarData";
+} from "@/data/nav-items-data";
 import { Close, Menu } from "@mui/icons-material";
 import Image from "next/image";
 import { BsArrow90DegLeft } from "react-icons/bs";

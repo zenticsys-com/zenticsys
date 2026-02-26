@@ -1,4 +1,4 @@
-import { specificMenuItems, SubmenuType } from "@/data/navBarData";
+import { specificMenuItems, SubmenuType } from "@/data/nav-items-data";
 import Link from "next/link";
 import { BsArrow90DegLeft } from "react-icons/bs";
 
