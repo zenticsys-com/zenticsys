@@ -102,7 +102,8 @@ const Navbar = () => {
                     }}
                     className="group static!"
                   >
-                    <span>{item.name}</span>
+                    <span>{item.name} </span>
+                    <MdKeyboardArrowDown className="text-2xl" />
                     <div
                       className="absolute top-[80%] left-0 w-full
                    opacity-0 invisible scale-0
