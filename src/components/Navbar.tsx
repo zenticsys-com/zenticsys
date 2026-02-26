@@ -191,6 +191,9 @@ const Navbar = () => {
                             expandIcon={null}
                             aria-controls="panel2-content"
                             id="panel2-header"
+                            sx={{
+                              padding: 0,
+                            }}
                           >
                             {/* Start */}
                             <ListItemButton
@@ -202,7 +205,7 @@ const Navbar = () => {
                                   ? "white"
                                   : "text.primary",
                                 backgroundColor: isActive(item.href)
-                                  ? "#ef3d23"
+                                  ? "#d62c14"
                                   : "transparent",
 
                                 "&:hover": {
@@ -211,9 +214,10 @@ const Navbar = () => {
                                 },
 
                                 "&:active": {
-                                  backgroundColor: "#ef3d23",
+                                  backgroundColor: "#d62c14",
                                   color: "white",
                                 },
+                                // padding: 0,
                               }}
                             >
                               <ListItemText primary={item.name} />
@@ -283,7 +287,7 @@ const Navbar = () => {
                         sx={{
                           color: isActive(item.href) ? "white" : "text.primary",
                           backgroundColor: isActive(item.href)
-                            ? "#ef3d23"
+                            ? "#d62c14"
                             : "transparent",
 
                           "&:hover": {
@@ -292,7 +296,7 @@ const Navbar = () => {
                           },
 
                           "&:active": {
-                            backgroundColor: "#ef3d23",
+                            backgroundColor: "#d62c14",
                             color: "white",
                           },
                         }}
@@ -312,7 +316,11 @@ const Navbar = () => {
                 component={Link}
                 href="/schedule"
                 onClick={() => setIsMenuOpen(false)}
-                sx={{ borderRadius: 0, padding: 1.5 }}
+                sx={{
+                  borderRadius: 0,
+                  padding: 1.5,
+                  backgroundColor: "#d62c14",
+                }}
               >
                 Schedule a Call
               </Button>
