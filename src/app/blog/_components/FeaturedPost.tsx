@@ -76,12 +76,13 @@ const FeaturedPost = ({ post }: FeaturedPostProps) => {
             </div>
 
             <Link
-              href={`/blog/${post.id}`}
+              // href={`/blog/${post.id}`}
+              href={`#`}
               className="inline-flex items-center"
             >
               <ZtsButton
                 text="Read More"
-                className="border-none text-white bg-primary hover:border-transparent hover:bg-primary-dark hover:text-white"
+                className="border-primary text-primary hover:text-white hover:bg-primary hover:border-transparent hover:shadow-lg hover:shadow-primary-dark/60 transition duration-300 "
                 icon={<ArrowRight className="ml-2 h-4 w-4" />}
                 iconPlacement="after"
               />

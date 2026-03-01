@@ -85,7 +85,7 @@ const BlogPosts = ({ posts, heading }: BlogPostsGridProps) => {
               <Link href={`/blog/${post.id}`}>
                 <ZtsButton
                   text="Read More"
-                  className="w-full border-primary text-primary hover:bg-primary hover:border-transparent hover:text-white"
+                  className="w-full border-primary text-primary hover:text-white hover:bg-primary hover:border-transparent hover:shadow-lg hover:shadow-primary-dark/60 transition duration-300 "
                 />
               </Link>
             </CardContent>
