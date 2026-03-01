@@ -84,7 +84,7 @@ const Navbar = () => {
               sx={{
                 display: { xs: "none", md: "flex" },
                 alignItems: "center",
-                gap: 4,
+                gap: { xs: 4, md: 2, lg: 4 },
               }}
             >
               {/*_ Dropdown Menu_*/}
@@ -127,6 +127,7 @@ const Navbar = () => {
                         : "text.secondary",
                       textTransform: "none",
                       fontWeight: 500,
+                      paddingX: { md: "12px", lg: "20px" },
                     }}
                   >
                     {item.name}
@@ -137,7 +138,14 @@ const Navbar = () => {
                 variant="contained"
                 component={Link}
                 href="/schedule"
-                sx={{ borderRadius: 0 }}
+                sx={{
+                  borderRadius: 0,
+                  transition: "0.3s ease",
+                  "&:hover": {
+                    boxShadow: (theme) =>
+                      `0px 7px 20px ${theme.palette.primary.main}99`,
+                  },
+                }}
               >
                 Schedule a Call
               </Button>
@@ -265,12 +273,10 @@ const Navbar = () => {
                           backgroundColor: isActive(item.href)
                             ? "#d62c14"
                             : "transparent",
-
                           "&:hover": {
                             backgroundColor: "grey.200",
                             color: "#ef3d23",
                           },
-
                           "&:active": {
                             backgroundColor: "#d62c14",
                             color: "white",

@@ -50,7 +50,12 @@ export function Footer() {
             </Typography>
             <Typography
               variant="body1"
-              sx={{ color: "grey.300", mb: 3, maxWidth: 400 }}
+              sx={{
+                color: "grey.300",
+                mb: 3,
+                maxWidth: 400,
+                textAlign: { xs: "center", md: "left" },
+              }}
             >
               We are a software development company dedicated to creating
               innovative solutions that transform businesses and drive digital

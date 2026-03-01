@@ -13,21 +13,19 @@ const InsideZenticsys = () => {
               Inside Zenticsys
             </h2>
             <p className="md:text-xl text-gray-600 mb-6 md:mb-8 sm:text-start">
-              Zenticsys is a custom software engineering company specializing in
-              scalable web applications, SaaS platforms, and enterprise software
+              Zenticsys is a custom software development company specializing in
+              advanced web applications, SaaS platforms, and enterprise software
               solutions. We focus on clean architecture, secure backend systems,
               modern frontend development, and cloud infrastructure to build
               reliable digital products that support long-term business growth.
               Our approach combines technical expertise, product strategy, and
-              performance-driven development to deliver high-quality, scalable
-              software systems.
+              performance-driven development to deliver high-quality,
+              enterprise-ready software systems.
             </p>
             <div className="space-y-4">
               <div className="flex items-center">
                 <CheckCircle className="w-5 h-5 text-primary mr-3" />
-                <span>
-                  A Scalable SaaS & Web Application Engineering Company
-                </span>
+                <span>A Global SaaS & Web Application Engineering Company</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="w-5 h-5 text-primary mr-3" />

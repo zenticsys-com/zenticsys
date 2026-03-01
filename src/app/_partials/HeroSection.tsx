@@ -21,9 +21,10 @@ const HeroSection = () => {
               Global Custom Software Development Agency
             </h3>
             <p className="text- text-gray-600 mb-8 ">
-              We design and engineer modern digital products and SaaS platforms,
-              combining strategic thinking, clean architecture, and scalable
-              technology to power ambitious businesses worldwide.
+              We are a global software development company delivering custom
+              software development services, SaaS platforms, web application
+              development, and enterprise software solutions for growth-driven
+              businesses.
             </p>
             <div className="flex justify-center md:justify-start">
               <Link href="/schedule">
