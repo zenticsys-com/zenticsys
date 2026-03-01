@@ -15,11 +15,14 @@ const CustomSoftwareDevelopmentServices = () => {
         designs database structures, API layers, and secure authentication
         systems before proceeding with backend and frontend development. We
         build each module in phases, carefully test them, and integrate them
-        systematically to ensure stability and performance. We focus on clean
-        code practices, role-based access control, optimized database
-        management, and scalable infrastructure. From SaaS product development
-        to enterprise software systems and API design, every solution is
-        engineered for practical business use, not just feature completion.
+        systematically to ensure stability and performance.
+        <span className="mt-3 block ">
+          We focus on clean code practices, role-based access control, optimized
+          database management, and scalable infrastructure. From SaaS product
+          development to enterprise software systems and API design, every
+          solution is engineered for practical business use, not just feature
+          completion.
+        </span>
       </p>
       <div className="flex flex-col gap-3 font-semibold md:text-lg xl:text-2xl p-4 text-gray-900">
         <Link href={"#"} className="flex gap-3 items-center ">

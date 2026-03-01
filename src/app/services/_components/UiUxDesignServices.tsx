@@ -15,11 +15,13 @@ const UiUxDesignServices = () => {
         wireframing, user journey mapping, and interface prototyping to validate
         usability before development begins. We focus on clean visual hierarchy,
         intuitive navigation, responsive layouts, and consistent design systems
-        across web and mobile platforms. After design validation, we conduct
-        usability testing and design QA to ensure clarity, accessibility, and
-        practicality in the real world. Whether it’s SaaS UI design, dashboard
-        interfaces, mobile app UI, or product UX optimization, every design
-        decision is made to improve usability and long-term product efficiency.
+        across web and mobile platforms.
+        <span className="mt-3 block">
+          After design validation, we conduct usability testing and design QA to
+          ensure clarity, accessibility, and practicality in the real world.
+          Whether it’s SaaS UI design, dashboard interfaces, mobile app UI, or
+          product UX optimization, every design decision is made to improve
+        </span>
       </p>
       <div className="flex flex-col gap-3 font-semibold md:text-lg xl:text-2xl p-4 text-gray-900">
         <Link href={"#"} className="flex gap-3 items-center ">

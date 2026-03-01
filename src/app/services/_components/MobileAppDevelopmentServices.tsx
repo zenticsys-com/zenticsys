@@ -17,11 +17,13 @@ const MobileAppDevelopmentServices = () => {
         cross-platform mobile app development, depending on project
         requirements. We implement backend API integration, secure
         authentication, database structuring, and performance optimization
-        alongside frontend development to ensure system consistency. Each
-        application undergoes structured testing, device compatibility
-        validation, and performance refinement before deployment. We build
-        enterprise mobile app development solutions designed for stability,
-        security, and real business usability, not just app store presence
+        alongside frontend development to ensure system consistency.
+        <span className="mt-3 block">
+          Each application undergoes structured testing, device compatibility
+          validation, and performance refinement before deployment. We build
+          enterprise mobile app development solutions designed for stability,
+          security, and real business usability, not just app store presence.
+        </span>
       </p>
       <div className="flex flex-col gap-3 font-semibold md:text-lg xl:text-2xl p-4 text-gray-900">
         <Link href={"#"} className="flex gap-3 items-center ">
