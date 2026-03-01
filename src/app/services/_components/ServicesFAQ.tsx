@@ -8,34 +8,44 @@ const ServicesFAQ = () => {
   /**_Data_**/
   const servicesFaqs = [
     {
-      question: "How long does a typical consultation take?",
+      question: "What types of custom software do you develop?",
       answer:
-        "Initial consultations usually last 30-60 minutes, depending on project complexity.",
+        "We develop enterprise software systems, SaaS platforms, web applications, internal business tools, automation systems, dashboards, and industry-specific digital platforms tailored to operational requirements.",
     },
     {
-      question: "Is the consultation free?",
+      question: "Do you build software from scratch?",
       answer:
-        "Yes, we offer free initial consultations to understand your needs and explore how we can help.",
+        "Yes. We design and engineer systems from the ground up, starting with architecture planning, database design, and structured development to ensure long-term maintainability.",
     },
     {
-      question: "What happens after the consultation?",
+      question: "What development methodology do you follow?",
       answer:
-        "We'll provide a detailed proposal with timeline, costs, and next steps within 48 hours.",
+        "We follow an agile development approach with milestone-based delivery, sprint cycles, continuous feedback, and transparent reporting",
     },
     {
-      question: "Do you work with startups?",
+      question: "Do you provide system architecture planning?",
       answer:
-        "Absolutely! We work with businesses of all sizes, from startups to enterprise organizations.",
+        "Yes. Architecture planning is a core part of our process. We design backend systems, API layers, database schemas, and infrastructure models before development begins..",
     },
     {
-      question: "What information should I prepare for the consultation?",
+      question: "Can you integrate third-party services?",
       answer:
-        "Come prepared with your project goals, timeline, budget range, and any existing documentation or requirements.",
+        "Yes. We integrate payment gateways, CRMs, ERPs, identity providers, cloud services, analytics tools, and other enterprise systems.",
     },
     {
-      question: "Can we schedule follow-up meetings?",
+      question: "Do you provide system performance benchmarking?",
       answer:
-        "Yes, we're happy to schedule additional meetings as needed throughout the project planning and development process.",
+        "Yes. We measure response times, database efficiency, and infrastructure load capacity to ensure optimal performance.",
+    },
+    {
+      question: "Do you provide code ownership to clients?",
+      answer:
+        "Yes. Upon project completion and agreement terms, clients receive full access and ownership rights.",
+    },
+    {
+      question: "Can you redesign and improve existing software?",
+      answer:
+        "Yes. We audit, refactor, and modernize outdated systems to improve performance, architecture, and user experience. This includes backend optimization, UI redesign, database tuning, and cloud migration implemented without disrupting business operations.",
     },
   ];
   return (

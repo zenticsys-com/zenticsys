@@ -1,8 +1,5 @@
-import Button from "@/app/_components/Button";
-import { LuPhone as Phone } from "react-icons/lu";
-
-import { Card, CardContent } from "@/components/ui/card";
 import ZtsButton from "@/app/_components/ZtButton";
+import { Card, CardContent } from "@/components/ui/card";
 
 const QuickCallOption = () => {
   return (
@@ -18,7 +15,7 @@ const QuickCallOption = () => {
           </p>
           <ZtsButton
             text="  Call Now: +88016 2940 3203"
-            className="w-full border-white  text-white hover:bg-white hover:border-transparent hover:text-primary "
+            className="w-full text-primary bg-white border-none hover:text-white hover:shadow-lg hover:shadow-gray-200/50 hover:bg-primary-dark"
           />
         </CardContent>
       </Card>

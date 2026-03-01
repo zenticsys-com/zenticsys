@@ -12,6 +12,7 @@ import {
   Typography,
 } from "@mui/material";
 import NextLink from "next/link";
+import { theme } from "./ThemeProvider";
 
 const quickLinks = [
   { name: "Services", href: "/services" },
@@ -51,10 +52,9 @@ export function Footer() {
             <Typography
               variant="body1"
               sx={{
-                color: "grey.300",
-                mb: 3,
-                maxWidth: 400,
                 textAlign: { xs: "center", md: "left" },
+                maxWidth: 400,
+                mx: { xs: "auto", md: 0 },
               }}
             >
               We are a software development company dedicated to creating
@@ -157,7 +157,10 @@ export function Footer() {
                 sx={{
                   backgroundColor: "primary.main",
                   borderRadius: 0,
-                  "&:hover": { backgroundColor: "primary.dark" },
+                  "&:hover": {
+                    backgroundColor: "primary.dark",
+                    boxShadow: (theme) => `0px 2px 12px gray`,
+                  },
                 }}
               >
                 Subscribe

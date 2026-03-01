@@ -11,11 +11,12 @@ const ServiceCtaSection = () => {
             Start Your Digital Journey
           </h2>
           <p className="md:text-xl text-gray-600 max-w-4xl mx-auto mb-8 text-justify">
-            Start your digital journey with innovative solutions designed to
-            grow your online presence and accelerate business success. From
-            modern website design to powerful digital strategies, we help you
-            transform ideas into impactful digital experiences. Partner with us
-            to build, scale, and succeed in today’s competitive digital world.
+            Build your next digital platform with a trusted custom software
+            development company. From enterprise software solutions and SaaS
+            application development to modern web and mobile app engineering, we
+            design and develop high-performance systems that drive measurable
+            business growth. Partner with Zenticsys to architect, build, and
+            launch technology that powers long-term success.
           </p>
 
           <Link href="/schedule" className="flex justify-center">
