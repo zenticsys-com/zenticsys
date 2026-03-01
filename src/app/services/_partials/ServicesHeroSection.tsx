@@ -11,9 +11,11 @@ const ServicesHeroSection = () => {
             Our <span className="text-primary">Services</span>
           </h1>
           <p className="md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Comprehensive software solutions designed to transform your business
-            and drive innovation. From custom development to digital
-            transformation, we have the expertise to deliver results.
+            Custom software development company Zenticsys delivers SaaS, web
+            design, mobile app development, and UI/UX design services to build
+            secure, high-performance enterprise software solutions. We engineer
+            structured digital systems that support real business operations,
+            not just features, but long-term functionality.
           </p>
 
           <Link href="/schedule" className="flex justify-center">
@@ -24,7 +26,7 @@ const ServicesHeroSection = () => {
                 </>
               }
               iconPlacement="after"
-              text="Discuss Your Project"
+              text="Request a Consultation"
               className="text-white bg-primary-dark border-none hover:bg-white hover:text-primary shadow-lg hover:shadow-primary-dark/50"
             />
           </Link>

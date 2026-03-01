@@ -8,12 +8,16 @@ const WebDesignServices = () => {
         Web Design Services
       </h2>
       <p className="text-gray-600 font-medium text-justify">
-        Our Web Design Services focus on creating visually appealing, fully
-        responsive, and user-friendly websites that represent your brand
-        professionally. We combine modern UI/UX principles with performance
-        optimization to ensure fast loading speeds, smooth navigation, and
-        higher engagement. Our goal is to deliver scalable, secure, and
-        conversion-focused designs that help your business grow online.
+        Zenticsys provides professional website design and development services
+        focused on performance, structure, and user experience. As a custom web
+        design and web development company, we begin with requirement analysis
+        and user research, followed by wireframing and UI design to define
+        layout, structure, and content flow. After design validation, we move to
+        structured frontend and backend development, ensuring responsive web
+        design, secure integration, and performance optimization. From eCommerce
+        website design to SaaS web platforms and web application development,
+        every project is built with clean architecture, practical usability, and
+        long-term maintainability in mind.
       </p>
       <div className="flex flex-col gap-3 font-semibold md:text-lg xl:text-2xl p-4 text-gray-900">
         <Link href={"#"} className="flex gap-3 items-center ">
