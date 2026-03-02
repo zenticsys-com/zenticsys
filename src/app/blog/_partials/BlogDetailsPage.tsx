@@ -96,14 +96,6 @@ const BlogDetailsPage = ({ blog }: BlogDetailsPageProps) => {
             </div>
           </div>
 
-          {/* Featured Image */}
-          {/* <div className="mb-12">
-            <ImageWithFallback
-              src={blog.image}
-              alt={blog.title}
-              className="w-full h-96 object-cover rounded-lg shadow-lg"
-            />
-          </div> */}
           <div className="relative h-auto">
             <Image
               src={blog.image}
@@ -146,13 +138,6 @@ const BlogDetailsPage = ({ blog }: BlogDetailsPageProps) => {
           <Card className="border-none shadow-lg">
             <CardContent className="p-8">
               <div className="flex flex-col md:flex-row gap-6">
-                {/* <div className="">
-                  <ImageWithFallback
-                    src={blog.authorImage}
-                    alt={blog.author}
-                    className="w-24 h-24 rounded-full object-cover"
-                  />
-                </div> */}
                 <div className="relative h-auto">
                   <Image
                     src={blog.authorImage}
@@ -167,9 +152,6 @@ const BlogDetailsPage = ({ blog }: BlogDetailsPageProps) => {
                     About {blog.author}
                   </h3>
                   <p className="text-gray-600 mb-4">{blog.authorBio}</p>
-                  {/* <Button variant="outline" asChild>
-                    <NextLink href="/about">View Profile</NextLink>
-                  </Button> */}
                   <Link href={"/about"}>
                     <ZtsButton text="View Profile" />
                   </Link>
@@ -192,13 +174,6 @@ const BlogDetailsPage = ({ blog }: BlogDetailsPageProps) => {
                 key={post.id}
                 className="border-none shadow-lg hover:shadow-xl transition-shadow overflow-hidden"
               >
-                {/* <div className="relative h-48">
-                  <ImageWithFallback
-                    src={post.image}
-                    alt={post.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div> */}
                 <div className="relative h-auto">
                   <Image
                     src={post.image}
