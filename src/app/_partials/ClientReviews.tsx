@@ -83,7 +83,7 @@ const ClientReviews = () => {
           <Link href="/schedule">
             <ZtsButton
               text="Schedule a Call Today"
-              className="border-primary-dark text-primary-dark hover:bg-primary-dark hover:border-transparent  hover:shadow-lg hover:shadow-primary-dark/60 hover:text-white"
+              className="border-primary text-primary hover:bg-primary hover:border-transparent  hover:shadow-lg hover:shadow-primary-dark/60 hover:text-white"
             />
           </Link>
         </div>
