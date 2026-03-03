@@ -155,7 +155,7 @@ export function Footer() {
               <Link href="#">
                 <ZtsButton
                   text="Subscribe"
-                  className="w-full text-white bg-primary-dark border-none hover:bg-white hover:text-primary-dark shadow-lg hover:shadow-primary-dark/50"
+                  className="w-full text-white bg-primary border-none hover:bg-white hover:text-primary shadow-lg hover:shadow-primary-dark/50"
                 />
               </Link>
             </Box>

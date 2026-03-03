@@ -28,7 +28,7 @@ const CareerHeroSection = () => {
                     }
                     iconPlacement="after"
                     text="View Open Positions"
-                    className="text-white bg-primary-dark border-none hover:bg-white hover:text-primary-dark shadow-lg hover:shadow-primary-dark/50"
+                    className="text-white bg-primary border-none hover:bg-white hover:text-primary shadow-lg hover:shadow-primary-dark/50"
                   />
                 </Link>
               </div>
@@ -37,7 +37,7 @@ const CareerHeroSection = () => {
                 <Link href="/about">
                   <ZtsButton
                     text="Learn About Our Culture"
-                    className="border-primary-dark text-primary-dark hover:text-white hover:bg-primary-dark hover:border-transparent hover:shadow-lg hover:shadow-primary-dark/60 transition duration-300"
+                    className="border-primary text-primary hover:text-white hover:bg-primary hover:border-transparent hover:shadow-lg hover:shadow-primary-dark/60 transition duration-300"
                   />
                 </Link>
               </div>
