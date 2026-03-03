@@ -61,7 +61,7 @@ const OurBlogs = () => {
                   <Link href="/blog">
                     <ZtsButton
                       text="Read More"
-                      className="border-primary text-primary hover:text-white hover:bg-primary hover:border-transparent hover:shadow-lg hover:shadow-primary-dark/60 transition duration-300"
+                      className="border-primary-dark text-primary-dark hover:text-white hover:bg-primary-dark hover:border-transparent hover:shadow-lg hover:shadow-primary-dark/60 transition duration-300"
                     />
                   </Link>
                 </div>

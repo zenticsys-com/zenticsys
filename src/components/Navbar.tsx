@@ -5,10 +5,8 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 /**- Menu Items import -**/
 import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import AccordionSummary from "@mui/material/AccordionSummary";
 
 import {
   AppBar,
@@ -25,17 +23,13 @@ import {
   Typography,
 } from "@mui/material";
 
+import MobileServicesMenu from "@/app/_components/MobileServicesMenu";
 import SubmenuDropdown from "@/app/_components/SubmenuDropdown";
-import {
-  allServicesMenuItems,
-  navItems,
-  servicesMenu,
-} from "@/data/nav-items-data";
+import ZtsButton from "@/app/_components/ZtButton";
+import { navItems } from "@/data/nav-items-data";
 import { Close, Menu } from "@mui/icons-material";
 import Image from "next/image";
-import { BsArrow90DegLeft } from "react-icons/bs";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import MobileServicesMenu from "@/app/_components/MobileServicesMenu";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -134,7 +128,7 @@ const Navbar = () => {
                   </Button>
                 ),
               )}
-              <Button
+              {/* <Button
                 variant="contained"
                 component={Link}
                 href="/schedule"
@@ -148,7 +142,16 @@ const Navbar = () => {
                 }}
               >
                 Schedule a Call
-              </Button>
+              </Button> */}
+              <Link href={"/schedule"}>
+                <ZtsButton
+                  icon={<></>}
+                  onClick={() => setIsMenuOpen(false)}
+                  iconPlacement="after"
+                  text="Schedule a Call"
+                  className="py-2 text-white bg-primary-dark border-none hover:bg-white hover:text-primary shadow-lg hover:shadow-primary-dark/50"
+                />
+              </Link>
             </Box>
 
             <IconButton

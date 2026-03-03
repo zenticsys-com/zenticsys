@@ -36,7 +36,7 @@ const HeroSection = () => {
                   }
                   iconPlacement="after"
                   text="Get Started"
-                  className="text-white bg-primary-dark border-none hover:bg-white hover:text-primary shadow-lg hover:shadow-primary-dark/50"
+                  className="text-white bg-primary-dark border-none hover:bg-white hover:text-primary-dark shadow-lg hover:shadow-primary-dark/50"
                 />
               </Link>
             </div>

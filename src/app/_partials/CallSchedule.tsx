@@ -17,7 +17,7 @@ const CallSchedule = () => {
           <Link href="/schedule">
             <ZtsButton
               text="Schedule a Strategy Call"
-              className="text-primary bg-white border-none hover:text-white hover:shadow-lg hover:shadow-gray-200/50 hover:bg-primary-dark"
+              className="text-primary-dark bg-white border-none hover:text-white hover:shadow-lg hover:shadow-gray-200/50 hover:bg-primary-dark"
             />
           </Link>
         </div>

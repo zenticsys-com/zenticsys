@@ -1,5 +1,6 @@
 "use client";
 
+import ZtsButton from "@/app/_components/ZtButton";
 import { Facebook, Instagram, LinkedIn } from "@mui/icons-material";
 import {
   Box,
@@ -11,8 +12,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import NextLink from "next/link";
-import { theme } from "./ThemeProvider";
+import { default as Link, default as NextLink } from "next/link";
 
 const quickLinks = [
   { name: "Services", href: "/services" },
@@ -151,20 +151,13 @@ export function Footer() {
                   },
                 }}
               />
-              <Button
-                variant="contained"
-                fullWidth
-                sx={{
-                  backgroundColor: "primary.main",
-                  borderRadius: 0,
-                  "&:hover": {
-                    backgroundColor: "primary.dark",
-                    boxShadow: (theme) => `0px 2px 12px gray`,
-                  },
-                }}
-              >
-                Subscribe
-              </Button>
+
+              <Link href="#">
+                <ZtsButton
+                  text="Subscribe"
+                  className="w-full text-white bg-primary-dark border-none hover:bg-white hover:text-primary-dark shadow-lg hover:shadow-primary-dark/50"
+                />
+              </Link>
             </Box>
           </Box>
         </Box>

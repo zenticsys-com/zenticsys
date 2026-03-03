@@ -32,18 +32,18 @@ const HomeFAQ = () => {
       answer:
         "Project timelines depend on complexity and scope. MVP projects typically take 6–10 weeks, while full-scale enterprise systems may require 12–20 weeks or more.",
     },
+    {
+      question:
+        "Why is Zenticsys different from typical development companies?",
+      answer:
+        "We don’t rush projects or overpromise. We take time to understand your business, define the right structure, and build software that actually works in day-to-day operations. Our focus is clarity, clean implementation, and systems that remain stable as your company grows. No unnecessary complexity, no shortcuts, just solid engineering.",
+    },
 
     {
       question:
         "Why should I choose Zenticsys for custom software development?",
       answer:
         "Zenticsys focuses on architecture-first engineering, high-performance system design, and clean code standards. We build custom software solutions aligned with long-term business growth, ensuring performance, security, and maintainability from day one.",
-    },
-    {
-      question:
-        "What makes Zenticsys different from other software development companies?",
-      answer:
-        "We don’t rush projects or overpromise. We take time to understand your business, define the right structure, and build software that actually works in day-to-day operations. Our focus is clarity, clean implementation, and systems that remain stable as your company grows. No unnecessary complexity, no shortcuts, just solid engineering.",
     },
   ];
   return (
