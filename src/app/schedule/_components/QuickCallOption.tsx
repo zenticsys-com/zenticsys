@@ -14,7 +14,7 @@ const QuickCallOption = () => {
             call!
           </p>
           <ZtsButton
-            text="  Call Now: +88016 2940 3203"
+            text="  Call Now: +880 1629 403 202"
             className="w-full text-primary bg-white border-none hover:text-white hover:shadow-lg hover:shadow-gray-200/50 hover:bg-primary-dark"
           />
         </CardContent>

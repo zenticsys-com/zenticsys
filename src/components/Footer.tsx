@@ -69,7 +69,7 @@ export function Footer() {
               }}
             >
               <IconButton
-                href="https://www.facebook.com/share/17ZMAVMK5J/"
+                href="https://www.facebook.com/zenticsys/"
                 target="_blank"
                 sx={{ color: "grey.400", "&:hover": { color: "primary.main" } }}
               >
@@ -77,14 +77,14 @@ export function Footer() {
               </IconButton>
 
               <IconButton
-                href="https://www.linkedin.com/company/zenticsys/posts/?feedView=all"
+                href="https://www.linkedin.com/company/zenticsys/"
                 target="_blank"
                 sx={{ color: "grey.400", "&:hover": { color: "primary.main" } }}
               >
                 <LinkedIn />
               </IconButton>
               <IconButton
-                href="https://www.instagram.com/zentic.sys?igsh=MTluam1mM3Z6cW94ZA=="
+                href="https://www.instagram.com/zentic.sys"
                 target="_blank"
                 sx={{ color: "grey.400", "&:hover": { color: "primary.main" } }}
               >

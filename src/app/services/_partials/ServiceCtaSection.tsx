@@ -18,19 +18,20 @@ const ServiceCtaSection = () => {
             business growth. Partner with Zenticsys to architect, build, and
             launch technology that powers long-term success.
           </p>
-
-          <Link href="/schedule" className="flex justify-center">
-            <ZtsButton
-              icon={
-                <>
-                  <FaArrowRight className="w-4 h-4" />
-                </>
-              }
-              iconPlacement="after"
-              text="Contact Us"
-              className="border-none text-white bg-primary hover:border-transparent hover:bg-primary-dark hover:text-white"
-            />
-          </Link>
+          <div className="flex justify-center ">
+            <Link href="/schedule" className="flex justify-center">
+              <ZtsButton
+                icon={
+                  <>
+                    <FaArrowRight className="w-4 h-4" />
+                  </>
+                }
+                iconPlacement="after"
+                text="Contact Us"
+                className="text-white bg-primary-dark border-none hover:bg-white hover:text-primary shadow-lg hover:shadow-primary-dark/50"
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </section>

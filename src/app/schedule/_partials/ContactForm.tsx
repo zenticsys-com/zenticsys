@@ -241,7 +241,7 @@ const ContactForm = () => {
             <Button
               type="submit"
               disabled={!formData.agreeToTerms}
-              className="w-full bg-primary hover:bg-primary-dark py-2.5 text-white cursor-pointer transition duration-300"
+              className="w-full py-3 text-white bg-primary-dark border-none hover:bg-white hover:text-primary shadow-lg hover:shadow-primary-dark/50 cursor-pointer"
             >
               Schedule Consultation <ArrowRight className="ml-2 h-4 w-4" />
             </Button>

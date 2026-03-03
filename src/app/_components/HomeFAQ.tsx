@@ -8,16 +8,9 @@ const HomeFAQ = () => {
   /**_Data_**/
   const faqs = [
     {
-      question:
-        "Why should I choose Zenticsys for custom software development?",
+      question: "How can I get a project quote?",
       answer:
-        "Zenticsys focuses on architecture-first engineering, high-performance system design, and clean code standards. We build custom software solutions aligned with long-term business growth, ensuring performance, security, and maintainability from day one.",
-    },
-    {
-      question:
-        "What makes Zenticsys different from other software development companies?",
-      answer:
-        "We don’t rush projects or overpromise. We take time to understand your business, define the right structure, and build software that actually works in day-to-day operations. Our focus is clarity, clean implementation, and systems that remain stable as your company grows. No unnecessary complexity, no shortcuts, just solid engineering.",
+        "You can contact us through our website or schedule a consultation call. After understanding your requirements, we prepare a detailed proposal outlining the project scope, timeline, and cost estimation, ensuring everything is clearly defined before we move forward.",
     },
     {
       question: "What services does Zenticsys provide?",
@@ -30,19 +23,27 @@ const HomeFAQ = () => {
         "Our process starts with understanding your business goals, defining clear requirements and planning, UI/UX design, system architecture setup, backend and frontend development, testing and QA, deployment, and ongoing optimization. We follow agile principles for transparency and flexibility",
     },
     {
-      question: "How long does it take to build a custom software solution?",
-      answer:
-        "Project timelines depend on complexity and scope. MVP projects typically take 6–10 weeks, while full-scale enterprise systems may require 12–20 weeks or more.",
-    },
-    {
       question: "Do you provide ongoing support and maintenance?",
       answer:
         "Yes. We offer post-launch support, performance optimization, security updates, and feature enhancements. After successful project delivery, we provide 6 months of complimentary support to ensure system stability and smooth operation. Following that period, we offer affordable maintenance plans for continued reliability and long-term performance.",
     },
     {
-      question: "How can I get a project quote?",
+      question: "How long does it take to build a custom software solution?",
       answer:
-        "You can contact us through our website or schedule a consultation call. After understanding your requirements, we prepare a detailed proposal outlining the project scope, timeline, and cost estimation, ensuring everything is clearly defined before we move forward.",
+        "Project timelines depend on complexity and scope. MVP projects typically take 6–10 weeks, while full-scale enterprise systems may require 12–20 weeks or more.",
+    },
+
+    {
+      question:
+        "Why should I choose Zenticsys for custom software development?",
+      answer:
+        "Zenticsys focuses on architecture-first engineering, high-performance system design, and clean code standards. We build custom software solutions aligned with long-term business growth, ensuring performance, security, and maintainability from day one.",
+    },
+    {
+      question:
+        "What makes Zenticsys different from other software development companies?",
+      answer:
+        "We don’t rush projects or overpromise. We take time to understand your business, define the right structure, and build software that actually works in day-to-day operations. Our focus is clarity, clean implementation, and systems that remain stable as your company grows. No unnecessary complexity, no shortcuts, just solid engineering.",
     },
   ];
   return (

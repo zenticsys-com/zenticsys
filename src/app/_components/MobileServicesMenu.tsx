@@ -27,9 +27,6 @@ const MobileServicesMenu = ({
   const pathname = usePathname();
   const [openDropdown, setOpenDropdown] = useState<string | false>(false);
 
-  const resetDropdown = () => {
-    setOpenDropdown(false);
-  };
   const handleDropdownMenu = (name: string) => {
     setOpenDropdown(openDropdown === name ? false : name);
   };
