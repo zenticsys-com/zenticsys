@@ -9,7 +9,7 @@ const CareerPage = () => {
     <div className="min-h-screen">
       <CareerHeroSection />
       <WhyWorkWithOus />
-      <OpenPositions />
+      {/* <OpenPositions /> */}
       <CompanyCulture />
       <CallToAction />
     </div>

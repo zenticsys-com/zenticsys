@@ -13,7 +13,7 @@ const AboutPage = () => {
       <CompanyStatus />
       <MissionAndVision />
       <OurStory />
-      <LeadershipTeam />
+      {/* <LeadershipTeam /> */}
       <OurValues />
       <WhyChooseZenticsys />
       <JoinOurTeam />

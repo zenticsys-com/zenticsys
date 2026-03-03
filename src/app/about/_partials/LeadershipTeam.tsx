@@ -14,19 +14,19 @@ const LeadershipTeam = () => {
       name: "Sarah Chen",
       position: "CTO",
       bio: "Technology expert specializing in cloud architecture and enterprise solutions.",
-      image: "/assets/images/NK_Rafi (1).jpg",
+      image: "/assets/images/Image_avatar.png",
     },
     {
       name: "Michael Rodriguez",
       position: "Head of Development",
       bio: "Full-stack development expert with expertise in modern web and mobile technologies.",
-      image: "/assets/images/NK_Rafi (1).jpg",
+      image: "/assets/images/Image_avatar.png",
     },
     {
       name: "Emily Watson",
       position: "Head of Design",
       bio: "UX/UI design specialist creating intuitive and engaging user experiences.",
-      image: "/assets/images/NK_Rafi (1).jpg",
+      image: "/assets/images/Image_avatar.png",
     },
   ];
 
