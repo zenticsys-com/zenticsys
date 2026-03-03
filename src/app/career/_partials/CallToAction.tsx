@@ -26,7 +26,7 @@ const CallToAction = () => {
                 }
                 iconPlacement="after"
                 text="Send Your Resume"
-                className="text-white bg-primary-dark border-none hover:bg-white hover:text-primary shadow-lg shadow-gray-200/50"
+                className="text-white bg-primary-dark border-none hover:bg-white hover:text-primary-dark shadow-lg shadow-gray-200/50"
               />
             </Link>
           </div>
@@ -35,7 +35,7 @@ const CallToAction = () => {
             <Link href="/about">
               <ZtsButton
                 text="Learn More About Us"
-                className="text-primary  border-none bg-white hover:text-white hover:shadow-lg hover:shadow-gray-200/50 hover:bg-primary-dark"
+                className="text-primary-dark  border-none bg-white hover:text-white hover:shadow-lg hover:shadow-gray-200/50 hover:bg-primary-dark"
               />
             </Link>
           </div>

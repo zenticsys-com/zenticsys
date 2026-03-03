@@ -24,7 +24,7 @@ const LetUsBuild = () => {
                 }
                 iconPlacement="after"
                 text="Get Started"
-                className="text-white bg-primary-dark border-none hover:bg-white hover:text-primary shadow-lg shadow-gray-200/50"
+                className="text-white bg-primary-dark border-none hover:bg-white hover:text-primary-dark shadow-lg shadow-gray-200/50"
               />
             </Link>
           </div>
@@ -33,7 +33,7 @@ const LetUsBuild = () => {
             <Link href="/schedule">
               <ZtsButton
                 text="Schedule a Call Today"
-                className="text-primary  border-none bg-white hover:text-white hover:shadow-lg hover:shadow-gray-200/50 hover:bg-primary-dark"
+                className="text-primary-dark  border-none bg-white hover:text-white hover:shadow-lg hover:shadow-gray-200/50 hover:bg-primary-dark"
               />
             </Link>
           </div>
