@@ -128,26 +128,10 @@ const Navbar = () => {
                   </Button>
                 ),
               )}
-              {/* <Button
-                variant="contained"
-                component={Link}
-                href="/schedule"
-                sx={{
-                  borderRadius: 0,
-                  transition: "0.3s ease",
-                  "&:hover": {
-                    boxShadow: (theme) =>
-                      `0px 7px 20px ${theme.palette.primary.main}99`,
-                  },
-                }}
-              >
-                Schedule a Call
-              </Button> */}
+
               <Link href={"/schedule"}>
                 <ZtsButton
-                  icon={<></>}
                   onClick={() => setIsMenuOpen(false)}
-                  iconPlacement="after"
                   text="Schedule a Call"
                   className="py-2 text-white bg-primary-dark border-none hover:bg-white hover:text-primary shadow-lg hover:shadow-primary-dark/50"
                 />

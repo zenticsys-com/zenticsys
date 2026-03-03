@@ -15,7 +15,7 @@ const SpecificMenuItems: React.FC<PropsType> = () => {
             <Link href={submenu?.href}>
               <p className="flex justify-between">
                 {submenu?.title}
-                <BsArrow90DegLeft className="-scale-x-100 rotate-90 mt-2 ml-6" />
+                <BsArrow90DegLeft className="w-8 -scale-x-100 rotate-90 mt-2 ml-6" />
               </p>
             </Link>
           </h2>

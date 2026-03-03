@@ -48,14 +48,20 @@ const MobileServicesMenu = ({
             "&:before": { display: "none" },
           }}
         >
-          <AccordionSummary sx={{ padding: 0 }}>
+          <AccordionSummary
+            sx={{
+              padding: 0,
+              "& .MuiAccordionSummary-content": {
+                margin: 0,
+              },
+            }}
+          >
             <ListItemButton>
               <Link href={submenu.href}>
                 <ListItemText
                   primary={submenu.title}
                   sx={{
                     color: isActive(submenu.href) ? "#d62c14" : "text.primary",
-
                     fontWeight: isActive(submenu.href) ? 600 : 400,
                   }}
                 />
@@ -79,7 +85,7 @@ const MobileServicesMenu = ({
           </AccordionSummary>
 
           <AccordionDetails>
-            <p className="text-gray-600 mb-2">{submenu.description}</p>
+            {/* <p className="text-gray-600 mb-2 text-xs">{submenu.description}</p> */}
 
             {submenu.items.map((item) => (
               <ListItemButton
@@ -88,6 +94,7 @@ const MobileServicesMenu = ({
                 href={item.href}
                 sx={{
                   color: isActive(item.href) ? "white" : "text.primary",
+                  fontSize: "14px",
                   backgroundColor: isActive(item.href)
                     ? "#d62c14"
                     : "transparent",
