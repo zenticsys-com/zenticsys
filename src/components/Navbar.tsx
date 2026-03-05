@@ -63,7 +63,7 @@ const Navbar = () => {
           <Toolbar sx={{ justifyContent: "space-between", py: 1 }}>
             <Typography
               component={Link}
-              href="/"
+              href="#"
               sx={{ textDecoration: "none" }}
             >
               <Image
@@ -244,7 +244,9 @@ const Navbar = () => {
                           </AccordionSummary>
                           <AccordionDetails>
                             {/* Mobile Dropdown Menu for services */}
-                            <MobileServicesMenu />
+                            <MobileServicesMenu
+                              closeMenu={() => isMenuOpen(false)}
+                            />
                           </AccordionDetails>
                         </Accordion>
                       </ListItem>
