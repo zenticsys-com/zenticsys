@@ -20,7 +20,10 @@ export const servicesMenu: SubmenuType[] = [
     href: "/services/web-design-services",
     description: "Crafting Intuitive Experiences",
     items: [
-      { name: "Custom Website Design", href: "#" },
+      {
+        name: "Custom Website Design",
+        href: "/services/web-design-services/custom-website-design",
+      },
       { name: "Automotive Web Design", href: "#" },
       { name: "E-commerce Web Design", href: "#" },
       { name: "Healthcare Website", href: "#" },
