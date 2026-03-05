@@ -58,16 +58,18 @@ const MobileServicesMenu = ({
               },
             }}
           >
-            <ListItemButton>
-              <Link href={submenu.href} onClick={closeMenu}>
-                <ListItemText
-                  primary={submenu.title}
-                  sx={{
-                    color: isActive(submenu.href) ? "#d62c14" : "text.primary",
-                    fontWeight: isActive(submenu.href) ? 600 : 400,
-                  }}
-                />
-              </Link>
+            <ListItemButton
+              component={Link}
+              href={submenu.href}
+              onClick={closeMenu}
+            >
+              <ListItemText
+                primary={submenu.title}
+                sx={{
+                  color: isActive(submenu.href) ? "#d62c14" : "text.primary",
+                  fontWeight: isActive(submenu.href) ? 600 : 400,
+                }}
+              />
             </ListItemButton>
 
             <IconButton
@@ -97,10 +99,10 @@ const MobileServicesMenu = ({
                 onClick={closeMenu}
                 href={item.href}
                 sx={{
-                  color: isActive(item.href) ? "white" : "text.primary",
+                  color: isActive(item.href) ? "#ef3d23" : "text.primary",
                   fontSize: "14px",
                   backgroundColor: isActive(item.href)
-                    ? "#d62c14"
+                    ? "grey.200"
                     : "transparent",
                   "&:hover": {
                     backgroundColor: "grey.200",
