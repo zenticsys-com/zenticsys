@@ -19,11 +19,9 @@ import { allServicesMenuItems, SubmenuType } from "@/data/nav-items-data";
 
 type MobileServicesMenuProps = {
   submenus?: SubmenuType[];
-  closeMenu: () => void;
 };
 
 const MobileServicesMenu = ({
-  closeMenu,
   submenus = allServicesMenuItems,
 }: MobileServicesMenuProps) => {
   const pathname = usePathname();
@@ -61,7 +59,7 @@ const MobileServicesMenu = ({
             <ListItemButton
               component={Link}
               href={submenu.href}
-              onClick={closeMenu}
+              // onClick={closeMenu}
             >
               <ListItemText
                 primary={submenu.title}
@@ -76,7 +74,7 @@ const MobileServicesMenu = ({
               onClick={(e) => {
                 e.stopPropagation();
                 handleDropdownMenu(submenu.title);
-                closeMenu();
+                // closeMenu();
               }}
             >
               <MdKeyboardArrowDown
@@ -96,7 +94,7 @@ const MobileServicesMenu = ({
               <ListItemButton
                 key={item.href}
                 component={Link}
-                onClick={closeMenu}
+                // onClick={closeMenu}
                 href={item.href}
                 sx={{
                   color: isActive(item.href) ? "#ef3d23" : "text.primary",

@@ -244,9 +244,7 @@ const Navbar = () => {
                           </AccordionSummary>
                           <AccordionDetails>
                             {/* Mobile Dropdown Menu for services */}
-                            <MobileServicesMenu
-                              closeMenu={() => isMenuOpen(false)}
-                            />
+                            <MobileServicesMenu />
                           </AccordionDetails>
                         </Accordion>
                       </ListItem>
