@@ -17,12 +17,13 @@ export type SubmenuType = {
 export const servicesMenu: SubmenuType[] = [
   {
     title: "Web Design Services",
-    href: "/services/web-design-services",
+    href: "#",
     description: "Crafting Intuitive Experiences",
     items: [
       {
         name: "Custom Website Design",
-        href: "/services/custom-website-design",
+        // href: "/services/custom-website-design",
+        href: "#",
       },
       { name: "Automotive Web Design", href: "#" },
       { name: "E-commerce Web Design", href: "#" },
@@ -39,7 +40,7 @@ export const servicesMenu: SubmenuType[] = [
   },
   {
     title: "Custom Software Development Services",
-    href: "/services/custom-software-development-services",
+    href: "#",
     description: "Crafting Timeless Visuals",
     items: [
       { name: "Automotive Software Development", href: "#" },
@@ -54,7 +55,7 @@ export const servicesMenu: SubmenuType[] = [
   },
   {
     title: "UI/UX Design Services",
-    href: "/services/ui-ux-design-services",
+    href: "#",
     description: "Crafting Timeless Visuals",
     items: [
       { name: "Website UI UX Design", href: "#" },
@@ -84,7 +85,7 @@ export const navItems: MenuType[] = [
 export const specificMenuItems: SubmenuType[] = [
   {
     title: "Mobile App Development Services",
-    href: "/services/mobile-app-development-services",
+    href: "#",
     description: "Crafting Timeless Visuals",
     items: [
       { name: "Android App Development", href: "#" },
@@ -94,7 +95,7 @@ export const specificMenuItems: SubmenuType[] = [
   },
   {
     title: "Digital Marketing Services",
-    href: "/services/digital-marketing-services",
+    href: "#",
     description: "Crafting Timeles",
     items: [
       { name: "Search Engine Marketing (PPC)", href: "#" },

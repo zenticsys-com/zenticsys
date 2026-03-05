@@ -63,7 +63,7 @@ const Navbar = () => {
           <Toolbar sx={{ justifyContent: "space-between", py: 1 }}>
             <Typography
               component={Link}
-              href="#"
+              href="/"
               sx={{ textDecoration: "none" }}
             >
               <Image
