@@ -1,7 +1,7 @@
+import ZtsButton from "@/app/_components/ZtButton";
 import Link from "next/link";
-import ZtsButton from "../_components/ZtButton";
 
-const CallSchedule = () => {
+const CustomWebsiteDesignCta = () => {
   return (
     <section className="py-20 bg-primary ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -27,4 +27,4 @@ const CallSchedule = () => {
   );
 };
 
-export default CallSchedule;
+export default CustomWebsiteDesignCta;

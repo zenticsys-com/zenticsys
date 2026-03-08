@@ -18,7 +18,7 @@ const WhyBestChoiceUs = () => {
       icon: <FaRegLightbulb size={28} />,
       title: "Custom Web Designs For Your Brand",
       description:
-        "Musemind creates custom web designs that perfectly embody your brand’s identity and vision.",
+        "Zenticsys creates custom web designs that perfectly embody your brand’s identity and vision.",
     },
     {
       icon: <FiUsers size={28} />,
@@ -36,7 +36,7 @@ const WhyBestChoiceUs = () => {
       icon: <MdSupportAgent size={28} />,
       title: "Dedicated Support Every Step Of The Way",
       description:
-        "Musemind supports you at every stage, from beginning to end.",
+        "Zenticsys supports you at every stage, from beginning to end.",
     },
     {
       icon: <HiOutlineDevicePhoneMobile size={28} />,
@@ -75,7 +75,7 @@ const WhyBestChoiceUs = () => {
               className="h-full hover:shadow-lg shadow-primary/10 duration-300"
             >
               <CardContent className="p-8">
-                <div className="mb-6 transition-transform duration-300">
+                <div className="mb-6 transition-transform duration-300 text-primary">
                   {feature?.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">

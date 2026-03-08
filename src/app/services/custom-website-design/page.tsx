@@ -5,6 +5,11 @@ import CustomWebsiteDesignHeroSection from "./_partials/CustomWebsiteDesignHeroS
 import OurCustomWebProcess from "./_partials/OurCustomWebProcess";
 import WhyClientsWithUs from "./_partials/WhyClientsWithUs";
 import WhyBestChoiceUs from "./_partials/WhyBestChoiceUs";
+import CustomWebsiteDesignBanner from "./_partials/CustomWebsiteDesignBanner";
+import CaseStudies from "@/app/_partials/CaseStudies";
+import ClientReviews from "@/app/_partials/ClientReviews";
+import FAQSection from "../_partials/FAQSection";
+import CustomWebsiteDesignCta from "./_partials/CustomWebsiteDesignCta";
 
 const CustomWebsiteDesignPage = () => {
   return (
@@ -16,6 +21,11 @@ const CustomWebsiteDesignPage = () => {
       <OurPartnerships />
       <WhyClientsWithUs />
       <WhyBestChoiceUs />
+      <CustomWebsiteDesignBanner />
+      <CaseStudies />
+      <ClientReviews />
+      <FAQSection />
+      <CustomWebsiteDesignCta />
     </div>
   );
 };
