@@ -218,7 +218,7 @@ const Industries = () => {
                     Technologies:
                   </h4>
                   <div className="flex flex-wrap gap-2">
-                    {industry?.technologies.map((tech, techIndex) => (
+                    {industry?.technologies?.map((tech, techIndex) => (
                       <Chip key={techIndex} label={tech} size="small" />
                     ))}
                   </div>
