@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CustomWebAccordionItems from "./CustomWebAccordionItems";
+import CustomWebAccordionItems from "@/app/services/custom-website-design/_components/CustomWebAccordionItems";
 
 const CustomWebAccordion = () => {
   return (
