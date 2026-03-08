@@ -8,10 +8,13 @@ const CallSchedule = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
           Let’s Build Your Next Digital Product
         </h2>
-        <p className="text-lg md:text-xl text-red-100 mb-8 max-w-2xl mx-auto">
-          Have an idea, a system to improve, or a product to scale? Let’s
-          discuss how we can turn your vision into a reliable, high-performance
-          custom software solution built for long-term success.
+        <p className="text-lg md:text-xl text-red-100 mb-8 max-w-4xl mx-auto">
+          Have an idea, a system to improve, or a product to scale? <br />
+          <span className="py-6">
+            Let’s discuss how we can turn your vision into a reliable,
+            high-performance custom software solution built for long-term
+            success.
+          </span>
         </p>
         <div className="flex justify-center">
           <Link href="/schedule">
