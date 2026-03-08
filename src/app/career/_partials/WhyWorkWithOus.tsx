@@ -61,17 +61,17 @@ const WhyWorkWithOus = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {benefits.map((benefit, index) => (
+          {benefits?.map((benefit, index) => (
             <Card
               key={index}
               className="border-none hover:shadow-lg shadow-primary/10 shadow-xs"
             >
               <CardContent className="p-8 text-center">
-                <div className="mb-6 flex justify-center">{benefit.icon}</div>
+                <div className="mb-6 flex justify-center">{benefit?.icon}</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                  {benefit.title}
+                  {benefit?.title}
                 </h3>
-                <p className="text-gray-600">{benefit.description}</p>
+                <p className="text-gray-600">{benefit?.description}</p>
               </CardContent>
             </Card>
           ))}

@@ -68,17 +68,17 @@ const SolutionsWeEngineer = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {services.map((service, index) => (
+          {services?.map((service, index) => (
             <Card
               key={index}
               className="h-full hover:shadow-lg shadow-primary/10 duration-300 group"
             >
               <CardContent className="p-8">
                 <div className="mb-6 transition-transform duration-300">
-                  {service.icon}
+                  {service?.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4 hover:text-primary transition duration-300">
-                  {service.title}
+                  {service?.title}
                 </h3>
                 <p className="text-gray-600">{service.description}</p>
               </CardContent>

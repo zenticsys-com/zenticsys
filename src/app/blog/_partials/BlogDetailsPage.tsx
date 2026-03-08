@@ -28,8 +28,8 @@ interface BlogDetailsPageProps {
 
 const BlogDetailsPage = ({ blog }: BlogDetailsPageProps) => {
   const relatedPosts = blogPosts
-    .filter((post) => post.id !== blog.id)
-    .slice(0, 3);
+    ?.filter((post) => post?.id !== blog?.id)
+    ?.slice(0, 3);
 
   return (
     <div className="min-h-screen">
@@ -52,25 +52,25 @@ const BlogDetailsPage = ({ blog }: BlogDetailsPageProps) => {
             variant="outline"
             className="border-primary text-prborder-primary mb-4"
           >
-            {blog.category}
+            {blog?.category}
           </Badge>
 
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            {blog.title}
+            {blog?.title}
           </h1>
 
           <div className="flex flex-wrap items-center gap-6 text-gray-600 mb-8">
             <div className="flex items-center">
               <User className="w-5 h-5 mr-2" />
-              {blog.author}
+              {blog?.author}
             </div>
             <div className="flex items-center">
               <Calendar className="w-5 h-5 mr-2" />
-              {blog.date}
+              {blog?.date}
             </div>
             <div className="flex items-center">
               <Clock className="w-5 h-5 mr-2" />
-              {blog.readTime}
+              {blog?.readTime}
             </div>
           </div>
 
@@ -98,8 +98,8 @@ const BlogDetailsPage = ({ blog }: BlogDetailsPageProps) => {
 
           <div className="relative h-auto">
             <Image
-              src={blog.image}
-              alt={blog.title}
+              src={blog?.image}
+              alt={blog?.title}
               width={570}
               height={384}
               className="w-full  aspect-6/4"

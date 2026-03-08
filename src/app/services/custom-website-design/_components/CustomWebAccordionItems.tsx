@@ -35,7 +35,7 @@ const CustomWebAccordionItems = () => {
     {
       question: "Branding logo Design",
       answer:
-        "We don’t rush projects or overpromise. We take time to understand your business, define the right structure, and build software that actually works in day-to-day operations. Our focus is clarity, clean implementation, and systems that remain stable as your company grows. No unnecessary complexity, no shortcuts, just solid engineering.",
+        "We don’t rush projects or over promise. We take time to understand your business, define the right structure, and build software that actually works in day-to-day operations. Our focus is clarity, clean implementation, and systems that remain stable as your company grows. No unnecessary complexity, no shortcuts, just solid engineering.",
     },
   ];
   return (

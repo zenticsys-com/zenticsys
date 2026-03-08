@@ -43,11 +43,11 @@ const LeadershipTeam = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {team.map((member, index) => (
+          {team?.map((member, index) => (
             <Card key={index} className="overflow-hidden">
               <div className="relative h-auto">
                 <Image
-                  src={member.image}
+                  src={member?.image}
                   alt="Modern office workspace"
                   width={570}
                   height={384}
@@ -56,12 +56,12 @@ const LeadershipTeam = () => {
               </div>
               <CardContent className="p-6 text-center">
                 <h3 className="text-xl font-semibold text-gray-900 mb-1">
-                  {member.name}
+                  {member?.name}
                 </h3>
                 <p className="text-primary font-medium mb-3">
-                  {member.position}
+                  {member?.position}
                 </p>
-                <p className="text-gray-600 text-sm">{member.bio}</p>
+                <p className="text-gray-600 text-sm">{member?.bio}</p>
               </CardContent>
             </Card>
           ))}

@@ -17,7 +17,7 @@ const CategoryFilter = ({
         <h3 className="text-lg font-semibold text-gray-900 mb-4">Categories</h3>
 
         <div className="space-y-2">
-          {categories.map((category) => (
+          {categories?.map((category) => (
             <button
               key={category}
               onClick={() => onCategoryChange(category)}

@@ -55,24 +55,24 @@ const ClientReviews = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {testimonials.map((testimonial, index) => (
+          {testimonials?.map((testimonial, index) => (
             <Card
               key={index}
               className="h-full hover:shadow-lg shadow-primary/10 duration-300"
             >
               <CardContent className="p-8">
                 <div className="flex mb-4">
-                  <Rating value={testimonial.rating} readOnly />
+                  <Rating value={testimonial?.rating} readOnly />
                 </div>
                 <p className="text-gray-600 mb-6 text-lg">
-                  {testimonial.content}
+                  {testimonial?.content}
                 </p>
                 <div>
                   <div className="font-semibold text-gray-900">
-                    {testimonial.name}
+                    {testimonial?.name}
                   </div>
                   <div className="text-sm text-gray-500">
-                    {testimonial.position}
+                    {testimonial?.position}
                   </div>
                 </div>
               </CardContent>

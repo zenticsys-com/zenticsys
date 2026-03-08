@@ -47,7 +47,7 @@ const CaseStudies = () => {
         </div>
 
         <div className="space-y-16">
-          {caseStudies.map((study, index) => (
+          {caseStudies?.map((study, index) => (
             <div
               key={index}
               className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
@@ -56,23 +56,23 @@ const CaseStudies = () => {
             >
               <div className={index % 2 === 1 ? "lg:col-start-2" : ""}>
                 <h3 className="text-xl md:text-2xl md:font-bold font-semibold text-gray-900 mb-4">
-                  {study.title}
+                  {study?.title}
                 </h3>
                 <div>
                   <p className="text-gray-900 text-lg md:text-2xl">
                     <span className="font-semibold">Company:</span>
-                    <span> {study.company}</span>
+                    <span> {study?.company}</span>
                   </p>
                 </div>
                 <p className="text-gray-600 md:text-justify py-3">
-                  {study.description}
+                  {study?.description}
                 </p>
                 <section className="md:flex gap-4">
                   <p className="sm:text-xl font-semibold mb-2">
                     Service We Provide:
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
-                    {study.tags.map((tag, tagIndex) => (
+                    {study?.tags.map((tag, tagIndex) => (
                       <Chip
                         key={tagIndex}
                         label={tag}
@@ -92,7 +92,7 @@ const CaseStudies = () => {
               <div className={index % 2 === 1 ? "lg:col-start-1" : ""}>
                 <div className="w-full h-auto ">
                   <Image
-                    src={study.image}
+                    src={study?.image}
                     alt="image"
                     width={570}
                     height={380}

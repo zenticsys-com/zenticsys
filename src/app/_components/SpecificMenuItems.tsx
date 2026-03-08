@@ -26,7 +26,7 @@ const SpecificMenuItems: React.FC<PropsType> = () => {
               <p className="py-1 font-medium text-base text-gray-600">
                 <Link key={item?.href} href={item?.href}>
                   <span className=" inline-block transition duration-300 border-b border-b-white hover:border-b hover:border-b-primary ">
-                    {item.name}
+                    {item?.name}
                   </span>
                 </Link>
               </p>

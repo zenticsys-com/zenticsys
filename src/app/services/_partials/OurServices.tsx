@@ -69,7 +69,6 @@ const OurServices = () => {
         </div>
       </section>
       <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-12 gap-6 py-12">
-        {/* <div className="order-1 lg:order-2 col-span-6 py-8 lg:max-h-[520px] w-full"> */}
         <div className="order-1 lg:order-2 col-span-6 w-full">
           <Image
             src={"/assets/images/Digital_marketing.jpg"}

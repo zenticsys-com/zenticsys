@@ -13,7 +13,7 @@ const PopularTags = ({ tags, onTagClick }: PopularTagsProps) => {
           </h3>
 
           <div className="flex flex-wrap gap-2">
-            {tags.map((tag) => (
+            {tags?.map((tag) => (
               <button
                 key={tag}
                 onClick={() => onTagClick(tag)}

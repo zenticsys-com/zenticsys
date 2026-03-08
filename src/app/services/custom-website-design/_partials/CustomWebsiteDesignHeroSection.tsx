@@ -43,7 +43,7 @@ const CustomWebsiteDesignHeroSection = () => {
           </div>
           <div className="w-full h-auto">
             <Image
-              src={"/assets/images/photo_1.png"}
+              src={"/assets/images/img_13.jpg"}
               alt="image"
               width={570}
               height={380}

@@ -48,7 +48,7 @@ const HomeFAQ = () => {
   ];
   return (
     <div>
-      {faqs.map((faq, index) => (
+      {faqs?.map((faq, index) => (
         <Accordion
           key={index}
           sx={{
@@ -78,11 +78,11 @@ const HomeFAQ = () => {
               }}
               component="span"
             >
-              {faq.question}
+              {faq?.question}
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>{faq.answer}</Typography>
+            <Typography>{faq?.answer}</Typography>
           </AccordionDetails>
         </Accordion>
       ))}

@@ -184,24 +184,24 @@ const Industries = () => {
     <section className="py-6 bg-white">
       <div className="max-w-7xl mx-auto lg:px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {industries.map((industry, index) => (
+          {industries?.map((industry, index) => (
             <Card
               key={index}
               className="h-full hover:shadow-lg shadow-primary/10 group"
             >
               <CardContent className="p-4">
-                <div className="mb-4">{industry.icon}</div>
+                <div className="mb-4">{industry?.icon}</div>
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                  {industry.title}
+                  {industry?.title}
                 </h3>
-                <p className="text-gray-600 mb-6">{industry.description}</p>
+                <p className="text-gray-600 mb-6">{industry?.description}</p>
 
                 <div className="mb-6">
                   <h4 className="font-semibold text-gray-900 mb-3">
                     Key Services:
                   </h4>
                   <ul className="space-y-2">
-                    {industry.services.map((service, serviceIndex) => (
+                    {industry?.services.map((service, serviceIndex) => (
                       <li
                         key={serviceIndex}
                         className="flex items-center text-sm text-gray-600"
@@ -218,7 +218,7 @@ const Industries = () => {
                     Technologies:
                   </h4>
                   <div className="flex flex-wrap gap-2">
-                    {industry.technologies.map((tech, techIndex) => (
+                    {industry?.technologies.map((tech, techIndex) => (
                       <Chip key={techIndex} label={tech} size="small" />
                     ))}
                   </div>
@@ -226,7 +226,7 @@ const Industries = () => {
 
                 <div className="border-t pt-4">
                   <p className="text-sm text-gray-500 italic">
-                    {industry.caseStudy}
+                    {industry?.caseStudy}
                   </p>
                 </div>
               </CardContent>

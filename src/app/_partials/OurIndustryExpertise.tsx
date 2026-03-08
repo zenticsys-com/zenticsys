@@ -85,17 +85,17 @@ const OurIndustryExpertise = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {industries.map((industry, index) => (
+          {industries?.map((industry, index) => (
             <Card
               key={index}
               className="h-full hover:shadow-lg shadow-primary/10 duration-300"
             >
               <CardContent className="p-8">
-                <div className="mb-6">{industry.icon}</div>
+                <div className="mb-6">{industry?.icon}</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                  {industry.title}
+                  {industry?.title}
                 </h3>
-                <p className="text-gray-600">{industry.description}</p>
+                <p className="text-gray-600">{industry?.description}</p>
               </CardContent>
             </Card>
           ))}

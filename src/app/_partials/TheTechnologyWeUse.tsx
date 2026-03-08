@@ -41,16 +41,16 @@ const TheTechnologyWeUse = () => {
           </p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-4">
-          {technologies.map((tech, index) => (
+          {technologies?.map((tech, index) => (
             <div
               key={index}
               className="bg-gray-100  hover:shadow-lg shadow-primary/10  duration-300  p-5"
             >
               <div className="text-lg font-semibold text-gray-700 flex justify-center items-center gap-2">
                 <span className="text-xl md:text-3xl text-primary">
-                  {tech.icon}
+                  {tech?.icon}
                 </span>
-                <span className="text-sm sm:text-base">{tech.name}</span>
+                <span className="text-sm sm:text-base">{tech?.name}</span>
               </div>
             </div>
           ))}

@@ -32,8 +32,8 @@ const FeaturedPost = ({ post }: FeaturedPostProps) => {
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="relative h-64 md:h-auto">
             <Image
-              src={post.image}
-              alt={post.title}
+              src={post?.image}
+              alt={post?.title}
               width={570}
               height={380}
               className="w-full h-auto"
@@ -49,34 +49,34 @@ const FeaturedPost = ({ post }: FeaturedPostProps) => {
               variant="outline"
               className="border-primary text-primary mb-4"
             >
-              {post.category}
+              {post?.category}
             </Badge>
 
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              {post.title}
+              {post?.title}
             </h3>
 
-            <p className="text-gray-600 mb-6">{post.excerpt}</p>
+            <p className="text-gray-600 mb-6">{post?.excerpt}</p>
 
             <div className="flex items-center justify-between text-sm text-gray-500 mb-6">
               <span className="flex items-center">
                 <User className="w-4 h-4 mr-2" />
-                {post.author}
+                {post?.author}
               </span>
 
               <span className="flex items-center">
                 <Calendar className="w-4 h-4 mr-2" />
-                {post.date}
+                {post?.date}
               </span>
 
               <span className="flex items-center">
                 <Clock className="w-4 h-4 mr-2" />
-                {post.readTime}
+                {post?.readTime}
               </span>
             </div>
 
             <Link
-              // href={`/blog/${post.id}`}
+              // href={`/blog/${post?.id}`}
               href={`#`}
               className="inline-flex items-center"
             >

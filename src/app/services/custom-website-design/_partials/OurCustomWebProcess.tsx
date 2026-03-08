@@ -68,20 +68,20 @@ const OurCustomWebProcess = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {processData.map((item, index) => (
+          {processData?.map((item, index) => (
             <Card
               key={index}
               className="h-full hover:shadow-lg shadow-primary/10 duration-300 group"
             >
               <CardContent className="p-8">
                 <div className="mb-6 transition-transform duration-300">
-                  {item.icon}
+                  {item?.icon}
                 </div>
                 <h2 className="text-xl font-semibold text-gray-900  hover:text-primary transition duration-300">
-                  {item.title}
+                  {item?.title}
                 </h2>
-                <h4 className="text-lg font-normal mb-4 ">{item.subtitle}</h4>
-                <p className="text-gray-600">{item.description}</p>
+                <h4 className="text-lg font-normal mb-4 ">{item?.subtitle}</h4>
+                <p className="text-gray-600">{item?.description}</p>
               </CardContent>
             </Card>
           ))}
