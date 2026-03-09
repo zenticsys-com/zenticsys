@@ -3,7 +3,7 @@ import CustomWebAccordionItems from "@/app/services/custom-website-design/_compo
 
 const CustomWebAccordion = () => {
   return (
-    <section className="from-gray-50 to-white py-12">
+    <section className="py-12 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <section className="text-center">
           <h1 className="text-2xl  md:text-4xl font-bold text-gray-900 mb-6">

@@ -17,46 +17,67 @@ type ProcessDataType = {
 };
 const OurCustomWebProcess = () => {
   /**_Data_**/
+  /**_Data_**/
   const processData: ProcessDataType[] = [
+    {
+      icon: <FaPenNib className="w-8 h-8 text-primary" />,
+      title: "UI ",
+      subtitle: "DESIGN",
+      description:
+        "Our UI design process focuses on creating clean, modern, and user-friendly interfaces. We design layouts that improve usability, enhance visual appeal, and deliver a smooth user experience across all devices.",
+    },
     {
       icon: <FaBullseye className="w-8 h-8 text-primary" />,
       title: "WEBSITE",
       subtitle: "DESIGN",
       description:
-        "A professional custom web design starts with good research. Our team studies your audience, competitors, and goals to create a design that fits your business perfectly.",
-    },
-    {
-      icon: <FaPenNib className="w-8 h-8 text-primary" />,
-      title: "CONTENT",
-      subtitle: "WRITING",
-      description:
-        "Helping visitors understand your services quickly is key to success. Our team writes clear, engaging, and persuasive content that connects with your audience.",
+        "We craft professional website designs tailored to your brand identity and audience. Our designs focus on clarity, creativity, and conversion to help your business stand out online.",
     },
     {
       icon: <FaCode className="w-8 h-8 text-primary" />,
       title: "WEBSITE",
       subtitle: "DEVELOPMENT",
       description:
-        "Our development process converts design into a fully functional website using modern technologies, strong typography, and engaging visuals.",
+        "Our developers transform designs into fast, secure, and scalable websites using modern technologies. We ensure your site is responsive, optimized, and performs smoothly on all devices.",
+    },
+    {
+      icon: <FaPenNib className="w-8 h-8 text-primary" />,
+      title: "CONTENT",
+      subtitle: "WRITING",
+      description:
+        "We create clear and engaging content that communicates your message effectively. Our content writing helps improve user engagement, SEO performance, and builds trust with your audience.",
     },
     {
       icon: <FaTrophy className="w-8 h-8 text-primary" />,
       title: "QUALITY",
       subtitle: "ASSURANCE",
       description:
-        "During QA, we test every part of your website to ensure performance, responsiveness, and the best user experience before launch.",
+        "Before launch, our QA team tests every feature of your website. We ensure responsiveness, functionality, and performance so users receive a flawless experience.",
+    },
+    {
+      icon: <FaBullseye className="w-8 h-8 text-primary" />,
+      title: "BRANDING",
+      subtitle: "LOGO DESIGN",
+      description:
+        "We design unique and memorable logos that represent your brand identity. Our branding process ensures your business leaves a strong and lasting impression.",
+    },
+    {
+      icon: <FaBullseye className="hidden" />,
+      title: "",
+      subtitle: "",
+      description: "",
     },
     {
       icon: <FaRocket className="w-8 h-8 text-primary" />,
       title: "WEBSITE",
       subtitle: "LAUNCH",
       description:
-        "Once testing is complete, your website goes live. We ensure everything runs smoothly and provide ongoing support when needed.",
+        "After final testing, your website goes live. We ensure a smooth launch process and provide support to make sure everything works perfectly for your audience.",
     },
   ];
 
   return (
-    <section className="py-12 bg-white">
+    <section className="py-12 bg-background-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -71,7 +92,10 @@ const OurCustomWebProcess = () => {
           {processData?.map((item, index) => (
             <Card
               key={index}
-              className="h-full hover:shadow-lg shadow-primary/10 duration-300 group"
+              // className="h-full hover:shadow-lg shadow-primary/10 duration-300 group"
+              className={`h-full hover:shadow-lg shadow-primary/10 duration-300 group
+  ${index === processData.length - 2 ? "hidden md:block md:border-none hover:shadow-none " : ""}
+  `}
             >
               <CardContent className="p-8">
                 <div className="mb-6 transition-transform duration-300">
@@ -80,8 +104,8 @@ const OurCustomWebProcess = () => {
                 <h2 className="text-xl font-semibold text-gray-900  hover:text-primary transition duration-300">
                   {item?.title}
                 </h2>
-                <h4 className="text-lg font-normal mb-4 ">{item?.subtitle}</h4>
-                <p className="text-gray-600">{item?.description}</p>
+                <h4 className="font-normal mb-4">{item?.subtitle}</h4>
+                <p className="text-gray-600 ">{item?.description}</p>
               </CardContent>
             </Card>
           ))}

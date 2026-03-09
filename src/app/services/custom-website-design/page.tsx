@@ -1,15 +1,14 @@
-import OurPartnerships from "@/app/_partials/OurPartnerships";
 import CustomWebAccordion from "./_partials/CustomWebAccordion";
 import CustomWebServices from "./_partials/CustomWebServices";
 import CustomWebsiteDesignHeroSection from "./_partials/CustomWebsiteDesignHeroSection";
 import OurCustomWebProcess from "./_partials/OurCustomWebProcess";
-import WhyClientsWithUs from "./_partials/WhyClientsWithUs";
 import WhyBestChoiceUs from "./_partials/WhyBestChoiceUs";
 import CustomWebsiteDesignBanner from "./_partials/CustomWebsiteDesignBanner";
 import CaseStudies from "@/app/_partials/CaseStudies";
 import ClientReviews from "@/app/_partials/ClientReviews";
 import FAQSection from "../_partials/FAQSection";
 import CustomWebsiteDesignCta from "./_partials/CustomWebsiteDesignCta";
+import OurPartnerships from "@/app/_partials/OurPartnerships";
 
 const CustomWebsiteDesignPage = () => {
   return (
@@ -19,11 +18,12 @@ const CustomWebsiteDesignPage = () => {
       <CustomWebAccordion />
       <OurCustomWebProcess />
       <OurPartnerships />
-      <WhyClientsWithUs />
       <WhyBestChoiceUs />
       <CustomWebsiteDesignBanner />
       <CaseStudies />
-      <ClientReviews />
+      <section className="mx-auto bg-background-dark">
+        <ClientReviews />
+      </section>
       <FAQSection />
       <CustomWebsiteDesignCta />
     </div>
