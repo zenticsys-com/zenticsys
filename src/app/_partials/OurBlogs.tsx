@@ -28,22 +28,22 @@ const OurBlogs = () => {
     },
   ];
   return (
-    <section className="py-12 bg-gray-50">
+    <section className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Latest from Our Blog
           </h2>
-          <p className="text-lg md:text-xl text-gray-600">
+          <p className="text-lg text-gray-600">
             Insights, tips, and industry trends
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {blogPosts.map((post, index) => (
+          {blogPosts?.map((post, index) => (
             <Card key={index} className="h-full overflow-hidden">
               <div className="w-full h-auto ">
                 <Image
-                  src={post.image}
+                  src={post?.image}
                   alt="image"
                   width={570}
                   height={380}
@@ -51,11 +51,11 @@ const OurBlogs = () => {
                 />
               </div>
               <CardContent className="p-6">
-                <p className="text-sm text-gray-500 mb-2">{post.date}</p>
+                <p className="text-sm text-gray-500 mb-2">{post?.date}</p>
                 <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-3">
-                  {post.title}
+                  {post?.title}
                 </h3>
-                <p className="text-gray-600 mb-4">{post.excerpt}</p>
+                <p className="text-gray-600 mb-4">{post?.excerpt}</p>
 
                 <div className="flex justify-self-start">
                   <Link href="/blog">

@@ -35,11 +35,11 @@ const FeaturedWorks = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {projects.map((project, index) => (
+          {projects?.map((project, index) => (
             <Card key={index} className="h-full overflow-hidden">
               <div className="w-full h-auto ">
                 <Image
-                  src={project.image}
+                  src={project?.image}
                   alt="image"
                   width={570}
                   height={380}
@@ -48,11 +48,11 @@ const FeaturedWorks = () => {
               </div>
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  {project.title}
+                  {project?.title}
                 </h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
+                <p className="text-gray-600 mb-4">{project?.description}</p>
                 <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag, tagIndex) => (
+                  {project?.tags?.map((tag, tagIndex) => (
                     <Chip
                       key={tagIndex}
                       label={tag}

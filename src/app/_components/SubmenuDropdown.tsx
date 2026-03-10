@@ -11,8 +11,8 @@ type PropsType = {
 
 const SubmenuDropdown: React.FC<PropsType> = ({ submenus }) => {
   return (
-    <Box className="bg-white xl:w-6/7 mx-auto">
-      <section className=" grid grid-cols-12">
+    <Box className="bg-white  md:w-full lg:w-[98.7%] max-w-[1218px] mx-auto">
+      <section className="grid grid-cols-12">
         {submenus?.map((submenu) => (
           <div
             key={submenu?.title}
@@ -33,7 +33,7 @@ const SubmenuDropdown: React.FC<PropsType> = ({ submenus }) => {
                 <p className="py-1 font-medium text-base text-gray-600">
                   <Link key={item?.href} href={item?.href}>
                     <span className=" inline-block transition duration-300 border-b border-b-white hover:border-b hover:border-b-primary ">
-                      {item.name}
+                      {item?.name}
                     </span>
                   </Link>
                 </p>

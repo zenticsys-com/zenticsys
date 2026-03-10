@@ -9,9 +9,9 @@ const LetUsBuild = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
           Let us Build Your Solution Together
         </h2>
-        <p className="text-lg md:text-xl text-red-100 mb-8 max-w-2xl mx-auto">
-          Ready to transform your business with cutting-edge technology? <br />
-          Our expert team is here to help you succeed.
+        <p className="text-lg text-white mb-8 max-w-4xl mx-auto">
+          Ready to transform your business with cutting-edge technology? Our
+          expert team is here to help you succeed.
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <div className="flex justify-center">

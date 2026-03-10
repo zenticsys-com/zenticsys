@@ -36,13 +36,13 @@ const ContactInformation = () => {
             Contact Information
           </h3>
           <div className="space-y-6">
-            {contactInfo.map((info, index) => (
+            {contactInfo?.map((info, index) => (
               <div key={index} className="flex items-start space-x-4">
-                <div className="">{info.icon}</div>
+                <div className="">{info?.icon}</div>
                 <div>
-                  <h4 className="font-medium text-gray-900">{info.title}</h4>
-                  <p className="text-gray-900">{info.details}</p>
-                  <p className="text-sm text-gray-500">{info.description}</p>
+                  <h4 className="font-medium text-gray-900">{info?.title}</h4>
+                  <p className="text-gray-900">{info?.details}</p>
+                  <p className="text-sm text-gray-500">{info?.description}</p>
                 </div>
               </div>
             ))}

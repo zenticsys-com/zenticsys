@@ -68,7 +68,7 @@ const ContactForm = () => {
                 <Input
                   id="firstName"
                   required
-                  value={formData.firstName}
+                  value={formData?.firstName}
                   onChange={(e) =>
                     handleInputChange("firstName", e.target.value)
                   }
@@ -80,9 +80,9 @@ const ContactForm = () => {
                 <Input
                   id="lastName"
                   required
-                  value={formData.lastName}
+                  value={formData?.lastName}
                   onChange={(e) =>
-                    handleInputChange("lastName", e.target.value)
+                    handleInputChange("lastName", e?.target?.value)
                   }
                   className="mt-1.5 focus-visible:ring-transparent"
                 />
@@ -96,8 +96,8 @@ const ContactForm = () => {
                   id="email"
                   type="email"
                   required
-                  value={formData.email}
-                  onChange={(e) => handleInputChange("email", e.target.value)}
+                  value={formData?.email}
+                  onChange={(e) => handleInputChange("email", e?.target?.value)}
                   className="mt-1.5 focus-visible:ring-transparent"
                 />
               </div>
@@ -106,8 +106,8 @@ const ContactForm = () => {
                 <Input
                   id="phone"
                   type="tel"
-                  value={formData.phone}
-                  onChange={(e) => handleInputChange("phone", e.target.value)}
+                  value={formData?.phone}
+                  onChange={(e) => handleInputChange("phone", e?.target?.value)}
                   className="mt-1.5 focus-visible:ring-transparent"
                 />
               </div>
@@ -119,8 +119,10 @@ const ContactForm = () => {
                 <Input
                   id="company"
                   required
-                  value={formData.company}
-                  onChange={(e) => handleInputChange("company", e.target.value)}
+                  value={formData?.company}
+                  onChange={(e) =>
+                    handleInputChange("company", e?.target?.value)
+                  }
                   className="mt-1.5 focus-visible:ring-transparent"
                 />
               </div>
@@ -128,9 +130,9 @@ const ContactForm = () => {
                 <Label htmlFor="position">Your Position</Label>
                 <Input
                   id="position"
-                  value={formData.position}
+                  value={formData?.position}
                   onChange={(e) =>
-                    handleInputChange("position", e.target.value)
+                    handleInputChange("position", e?.target?.value)
                   }
                   className="mt-1.5 focus-visible:ring-transparent"
                 />
@@ -141,7 +143,7 @@ const ContactForm = () => {
               <div>
                 <Label htmlFor="projectType">Project Type *</Label>
                 <Select
-                  value={formData.projectType}
+                  value={formData?.projectType}
                   onValueChange={(value) =>
                     handleInputChange("projectType", value)
                   }
@@ -174,7 +176,7 @@ const ContactForm = () => {
               <div>
                 <Label htmlFor="budget">Budget Range</Label>
                 <Select
-                  value={formData.budget}
+                  value={formData?.budget}
                   onValueChange={(value) => handleInputChange("budget", value)}
                 >
                   <SelectTrigger className="mt-1.5 focus-visible:ring-transparent">
@@ -193,7 +195,7 @@ const ContactForm = () => {
               <div>
                 <Label htmlFor="timeline">Timeline</Label>
                 <Select
-                  value={formData.timeline}
+                  value={formData?.timeline}
                   onValueChange={(value) =>
                     handleInputChange("timeline", value)
                   }
@@ -219,8 +221,8 @@ const ContactForm = () => {
                 required
                 rows={4}
                 placeholder="Please describe your project requirements, goals, and any specific challenges you're facing..."
-                value={formData.message}
-                onChange={(e) => handleInputChange("message", e.target.value)}
+                value={formData?.message}
+                onChange={(e) => handleInputChange("message", e?.target?.value)}
                 className="mt-1.5 focus-visible:ring-transparent"
               />
             </div>
@@ -228,7 +230,7 @@ const ContactForm = () => {
             <div className="flex items-center space-x-2">
               <Checkbox
                 id="terms"
-                checked={formData.agreeToTerms}
+                checked={formData?.agreeToTerms}
                 onCheckedChange={(checked) =>
                   handleInputChange("agreeToTerms", checked as boolean)
                 }
@@ -240,7 +242,7 @@ const ContactForm = () => {
 
             <Button
               type="submit"
-              disabled={!formData.agreeToTerms}
+              disabled={!formData?.agreeToTerms}
               className="w-full py-3 text-white bg-primary border-none hover:bg-white hover:text-primary shadow-lg hover:shadow-primary-dark/50 cursor-pointer"
             >
               Schedule Consultation <ArrowRight className="ml-2 h-4 w-4" />

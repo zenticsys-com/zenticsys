@@ -8,7 +8,7 @@ const JoinOurTeam = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
           Ready to Work With Us?
         </h2>
-        <p className="md:text-xl text-red-100 mb-8 max-w-2xl mx-auto">
+        <p className="text-lg text-white mb-8 max-w-4xl mx-auto">
           Whether you're looking to transform your business with innovative
           software or join our team of experts, we'd love to hear from you.
         </p>

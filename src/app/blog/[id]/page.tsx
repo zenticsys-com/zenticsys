@@ -50,7 +50,7 @@ const BlogDetailsPage = ({ params }: Props) => {
 
       {/* Tags */}
       <div className="flex flex-wrap gap-2 mt-10">
-        {post.tags.map((tag, index) => (
+        {post?.tags?.map((tag, index) => (
           <Badge key={index} variant="secondary">
             {tag}
           </Badge>

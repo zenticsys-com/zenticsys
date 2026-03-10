@@ -15,13 +15,21 @@ const HomePage = () => {
     <div className="min-h-screen">
       <HeroSection />
       <OurPartnerships />
-      <InsideZenticsys />
+      <div className="bg-background-dark">
+        <InsideZenticsys />
+      </div>
       <SolutionsWeEngineer />
-      <OurIndustryExpertise />
+      <div className="bg-background-dark">
+        <OurIndustryExpertise />
+      </div>
       <CaseStudies />
-      <TheTechnologyWeUse />
+      <div className="bg-background-dark">
+        <TheTechnologyWeUse />
+      </div>
       <ClientReviews />
-      <OurBlogs />
+      <div className="bg-background-dark">
+        <OurBlogs />
+      </div>
       <FAQSection />
       <CallSchedule />
     </div>

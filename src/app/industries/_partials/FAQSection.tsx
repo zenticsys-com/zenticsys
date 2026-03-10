@@ -5,9 +5,9 @@ import IndustriesFAQ from "../_components/IndustriesFAQ";
 
 const FAQSection = () => {
   return (
-    <section className="bg-gray-50 py-12">
+    <section className="bg-background-dark py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
           Frequently Asked Questions
         </h2>
         <section className="grid grid-cols-12 gap-4 py-8">

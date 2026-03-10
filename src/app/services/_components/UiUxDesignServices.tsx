@@ -4,7 +4,7 @@ import Link from "next/link";
 const UiUxDesignServices = () => {
   return (
     <section>
-      <h2 className="text-2xl md:text-4xl font-bold mb-4 text-gray-900">
+      <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900">
         UI/UX Design Services
       </h2>
       <p className="text-gray-600 font-medium text-justify">

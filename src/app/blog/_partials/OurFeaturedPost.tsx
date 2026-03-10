@@ -23,20 +23,20 @@ const OurFeaturedPost = () => {
 
   const filteredPosts = blogPosts.filter((post) => {
     const matchesSearch =
-      post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      post.excerpt.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      post.tags.some((tag) =>
-        tag.toLowerCase().includes(searchTerm.toLowerCase()),
+      post?.title?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      post?.excerpt?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      post?.tags?.some((tag) =>
+        tag?.toLowerCase().includes(searchTerm.toLowerCase()),
       );
 
     const matchesCategory =
-      selectedCategory === "All" || post.category === selectedCategory;
+      selectedCategory === "All" || post?.category === selectedCategory;
 
     return matchesSearch && matchesCategory;
   });
 
-  const featuredPost = blogPosts.find((post) => post.featured);
-  const regularPosts = filteredPosts.filter((post) => !post.featured);
+  const featuredPost = blogPosts?.find((post) => post?.featured);
+  const regularPosts = filteredPosts?.filter((post) => !post?.featured);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

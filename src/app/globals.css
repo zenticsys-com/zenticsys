@@ -3,6 +3,7 @@
 :root {
   --font-size: 16px;
   --background: #ffffff;
+  --background-dark: #6969690e;
   --foreground: #2c2c2c;
   --primary: #ef3d23;
   --primary-dark: #d62c14;
@@ -29,6 +30,7 @@
 
 .dark {
   --background: #1a1a1a;
+  --background-dark: #1b1b1b;
   --foreground: #ffffff;
   --primary: #ef3d23;
   --primary-dark: #d62c14;
@@ -44,6 +46,7 @@
 
 @theme inline {
   --color-background: var(--background);
+  --color-background-dark: var(--background-dark);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-primary-dark: var(--primary-dark);

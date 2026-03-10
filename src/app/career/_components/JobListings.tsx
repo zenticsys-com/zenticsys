@@ -180,26 +180,26 @@ const JobListings = () => {
 
   const filteredJobs = jobOpenings.filter((job) => {
     const matchesSearch =
-      job.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      job.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      job.technologies.some((tech) =>
-        tech.toLowerCase().includes(searchTerm.toLowerCase())
+      job?.title?.toLowerCase().includes(searchTerm?.toLowerCase()) ||
+      job?.description?.toLowerCase().includes(searchTerm?.toLowerCase()) ||
+      job?.technologies?.some((tech) =>
+        tech.toLowerCase().includes(searchTerm?.toLowerCase()),
       );
 
     const matchesDepartment =
       selectedDepartment === "All" || job.department === selectedDepartment;
 
     const matchesLocation =
-      selectedLocation === "All" || job.location.includes(selectedLocation);
+      selectedLocation === "All" || job.location?.includes(selectedLocation);
 
     return matchesSearch && matchesDepartment && matchesLocation;
   });
 
   return (
     <div className="space-y-6">
-      {filteredJobs.map((job) => (
+      {filteredJobs?.map((job) => (
         <Card
-          key={job.id}
+          key={job?.id}
           className="border-none shadow-lg hover:shadow-xl transition-shadow"
         >
           <CardContent className="p-8">
@@ -210,28 +210,28 @@ const JobListings = () => {
                     variant="outline"
                     className="border-[#ef3d23] text-[#ef3d23]"
                   >
-                    {job.department}
+                    {job?.department}
                   </Badge>
-                  <Badge variant="secondary">{job.type}</Badge>
+                  <Badge variant="secondary">{job?.type}</Badge>
                 </div>
 
                 <h3 className="text-2xl font-semibold text-gray-900 mb-3">
-                  {job.title}
+                  {job?.title}
                 </h3>
-                <p className="text-gray-600 mb-4">{job.description}</p>
+                <p className="text-gray-600 mb-4">{job?.description}</p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-gray-500 mb-4">
                   <div className="flex items-center">
                     <MapPin className="w-4 h-4 mr-2" />
-                    {job.location}
+                    {job?.location}
                   </div>
                   <div className="flex items-center">
                     <Clock className="w-4 h-4 mr-2" />
-                    {job.experience}
+                    {job?.experience}
                   </div>
                   <div className="flex items-center">
                     <DollarSign className="w-4 h-4 mr-2" />
-                    {job.salary}
+                    {job?.salary}
                   </div>
                 </div>
 
@@ -240,7 +240,7 @@ const JobListings = () => {
                     Key Requirements:
                   </h4>
                   <ul className="space-y-1">
-                    {job.requirements.slice(0, 3).map((req, index) => (
+                    {job?.requirements?.slice(0, 3).map((req, index) => (
                       <li
                         key={index}
                         className="flex items-start text-sm text-gray-600"

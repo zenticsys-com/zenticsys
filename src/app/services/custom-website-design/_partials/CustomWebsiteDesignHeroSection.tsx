@@ -5,22 +5,20 @@ import Link from "next/link";
 
 const CustomWebsiteDesignHeroSection = () => {
   return (
-    <section className="from-gray-50 to-white py-12">
+    <section className="py-12 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-16 gap-10 items-center">
           <div>
-            <h1 className="text-3xl md:text-start md:text-[44px] font-bold text-gray-900 mb-6">
+            <h1 className="text-3xl md:text-start md:text-[44px] font-bold text-gray-900 mb-3">
               Building Reliable
               <span className="text-primary"> Custom </span>
               Software Solution
             </h1>
-            <h2 className="text-[22px] md:text-start md:text-3xl -mt-5 text-primary font-semibold  mb-6">
-              Secure. Scalable. Future-Ready.
-            </h2>
-            <h3 className="text-lg md:text-xl mb-2 font-semibold ">
+
+            <h3 className="md:text-xl mb-2 font-semibold ">
               Global Custom Software Development Agency
             </h3>
-            <p className="text- text-gray-600 mb-8 ">
+            <p className="text-lg text-gray-600 mb-8">
               We are a global software development company delivering custom
               software development services, SaaS platforms, web application
               development, and enterprise software solutions for growth-driven

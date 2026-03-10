@@ -4,7 +4,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-const HomeFAQ = () => {
+const CustomWebsiteDesignFAQ = () => {
   /**_Data_**/
   const faqs = [
     {
@@ -82,11 +82,11 @@ const HomeFAQ = () => {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography component={"p"}>{faq?.answer}</Typography>
+            <Typography>{faq?.answer}</Typography>
           </AccordionDetails>
         </Accordion>
       ))}
     </div>
   );
 };
-export default HomeFAQ;
+export default CustomWebsiteDesignFAQ;

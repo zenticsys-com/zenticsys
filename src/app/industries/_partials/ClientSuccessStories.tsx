@@ -38,13 +38,13 @@ const ClientSuccessStories = () => {
   ];
 
   return (
-    <section className="py-12 bg-white">
+    <section className="py-12 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
             Client Success Stories
           </h2>
-          <p className="text-lg md:text-xl text-gray-600">
+          <p className="text-lg  text-gray-600">
             Testimonials from clients across different industries
           </p>
         </div>
@@ -68,9 +68,9 @@ const ClientSuccessStories = () => {
                 </p>
                 <div className="flex items-center justify-between">
                   <div>
-                    <div className="font-semibold text-gray-900">
+                    <h4 className="font-semibold text-gray-900">
                       {testimonial.name}
-                    </div>
+                    </h4>
                     <div className="text-sm text-gray-500">
                       {testimonial.position}
                     </div>

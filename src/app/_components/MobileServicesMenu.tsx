@@ -38,10 +38,10 @@ const MobileServicesMenu = ({
 
   return (
     <>
-      {submenus.map((submenu) => (
+      {submenus?.map((submenu) => (
         <Accordion
-          key={submenu.title}
-          expanded={openDropdown === submenu.title}
+          key={submenu?.title}
+          expanded={openDropdown === submenu?.title}
           elevation={0}
           sx={{
             boxShadow: "none",
@@ -58,14 +58,14 @@ const MobileServicesMenu = ({
           >
             <ListItemButton
               component={Link}
-              href={submenu.href}
+              href={submenu?.href}
               // onClick={closeMenu}
             >
               <ListItemText
-                primary={submenu.title}
+                primary={submenu?.title}
                 sx={{
-                  color: isActive(submenu.href) ? "#d62c14" : "text.primary",
-                  fontWeight: isActive(submenu.href) ? 600 : 400,
+                  color: isActive(submenu?.href) ? "#d62c14" : "text.primary",
+                  fontWeight: isActive(submenu?.href) ? 600 : 400,
                 }}
               />
             </ListItemButton>
@@ -73,13 +73,13 @@ const MobileServicesMenu = ({
             <IconButton
               onClick={(e) => {
                 e.stopPropagation();
-                handleDropdownMenu(submenu.title);
+                handleDropdownMenu(submenu?.title);
                 // closeMenu();
               }}
             >
               <MdKeyboardArrowDown
                 className={`text-3xl transition duration-300 ${
-                  openDropdown === submenu.title
+                  openDropdown === submenu?.title
                     ? "rotate-180 text-primary"
                     : ""
                 }`}
@@ -90,16 +90,16 @@ const MobileServicesMenu = ({
           <AccordionDetails>
             {/* <p className="text-gray-600 mb-2 text-xs">{submenu.description}</p> */}
 
-            {submenu.items.map((item) => (
+            {submenu?.items?.map((item) => (
               <ListItemButton
-                key={item.href}
+                key={item?.href}
                 component={Link}
                 // onClick={closeMenu}
-                href={item.href}
+                href={item?.href}
                 sx={{
-                  color: isActive(item.href) ? "#ef3d23" : "text.primary",
+                  color: isActive(item?.href) ? "#ef3d23" : "text.primary",
                   fontSize: "14px",
-                  backgroundColor: isActive(item.href)
+                  backgroundColor: isActive(item?.href)
                     ? "grey.200"
                     : "transparent",
                   "&:hover": {
@@ -108,7 +108,7 @@ const MobileServicesMenu = ({
                   },
                 }}
               >
-                {item.name}
+                {item?.name}
               </ListItemButton>
             ))}
           </AccordionDetails>

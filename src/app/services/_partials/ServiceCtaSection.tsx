@@ -4,13 +4,13 @@ import { FaArrowRight } from "react-icons/fa";
 
 const ServiceCtaSection = () => {
   return (
-    <section className="bg-gray-50 py-12">
+    <section className="bg-background-dark py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl  font-bold text-gray-900 mb-6">
             Start Your Digital Journey
           </h2>
-          <p className="md:text-xl text-gray-600 max-w-4xl mx-auto mb-8 text-justify">
+          <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-8 text-justify">
             Build your next digital platform with a trusted custom software
             development company. From enterprise software solutions and SaaS
             application development to modern web and mobile app engineering, we

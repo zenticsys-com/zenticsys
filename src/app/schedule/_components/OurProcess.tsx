@@ -42,14 +42,14 @@ const OurProcess = () => {
             Our Process
           </h3>
           <div className="space-y-6">
-            {processSteps.map((step, index) => (
+            {processSteps?.map((step, index) => (
               <div key={index} className="flex items-start space-x-4">
-                <div className="">{step.icon}</div>
+                <div className="">{step?.icon}</div>
                 <div>
                   <h4 className="font-medium text-gray-900 mb-1">
-                    {step.title}
+                    {step?.title}
                   </h4>
-                  <p className="text-sm text-gray-600">{step.description}</p>
+                  <p className="text-sm text-gray-600">{step?.description}</p>
                 </div>
               </div>
             ))}

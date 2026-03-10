@@ -42,7 +42,7 @@ const OurStory = () => {
   ];
 
   return (
-    <section className="py-12 bg-white">
+    <section className="py-12 bg-background-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -56,7 +56,7 @@ const OurStory = () => {
         <div className="relative">
           <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gray-200"></div>
           <div className="space-y-12">
-            {timeline.map((item, index) => (
+            {timeline?.map((item, index) => (
               <div
                 key={index}
                 className={`flex items-center ${
@@ -79,15 +79,15 @@ const OurStory = () => {
                       >
                         <Calendar className="w-5 h-5 text-primary mr-2" />
                         <Chip
-                          label={item.year}
+                          label={item?.year}
                           variant="outlined"
                           className="border-primary text-primary"
                         />
                       </div>
                       <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-2">
-                        {item.title}
+                        {item?.title}
                       </h3>
-                      <p className="text-gray-600">{item.description}</p>
+                      <p className="text-gray-600">{item?.description}</p>
                     </CardContent>
                   </Card>
                 </div>

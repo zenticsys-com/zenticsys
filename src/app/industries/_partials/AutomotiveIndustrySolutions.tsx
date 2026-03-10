@@ -42,7 +42,7 @@ const AutomotiveIndustrySolutions = () => {
     ],
   };
   return (
-    <section className="py-12 bg-gray-50" id="automotive">
+    <section className="py-12 bg-background-dark" id="automotive">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
@@ -60,7 +60,7 @@ const AutomotiveIndustrySolutions = () => {
             <h3 className=" text-lg md:text-xl text-primary font-semibold mb-6">
               Driving Innovation in Connected Mobility
             </h3>
-            <p className="md:text-lg text-gray-600">
+            <p className="text-gray-600">
               The automotive industry is undergoing a digital transformation
               with connected vehicles, autonomous driving, and smart mobility
               solutions. We help automotive companies leverage technology to
