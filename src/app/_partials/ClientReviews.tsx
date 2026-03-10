@@ -50,7 +50,7 @@ const ClientReviews = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Client Reviews
           </h2>
-          <p className="md:text-xl text-gray-600">
+          <p className="text-lg text-gray-600">
             What our clients say about working with us
           </p>
         </div>

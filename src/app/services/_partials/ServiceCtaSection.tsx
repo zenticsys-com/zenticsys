@@ -10,7 +10,7 @@ const ServiceCtaSection = () => {
           <h2 className="text-3xl md:text-4xl  font-bold text-gray-900 mb-6">
             Start Your Digital Journey
           </h2>
-          <p className="md:text-xl text-gray-600 max-w-4xl mx-auto mb-8 text-justify">
+          <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-8 text-justify">
             Build your next digital platform with a trusted custom software
             development company. From enterprise software solutions and SaaS
             application development to modern web and mobile app engineering, we

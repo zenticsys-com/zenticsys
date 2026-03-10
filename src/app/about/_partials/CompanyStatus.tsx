@@ -12,9 +12,11 @@ const CompanyStatus = () => {
           {stats?.map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-3xl md:text-5xl font-bold text-primary mb-2">
-                {stat?.number}
+                <span> {stat?.number}</span>
               </div>
-              <div className="text-gray-600 font-medium">{stat?.label}</div>
+              <div className="text-gray-600 font-medium">
+                <span>{stat?.label}</span>
+              </div>
             </div>
           ))}
         </div>

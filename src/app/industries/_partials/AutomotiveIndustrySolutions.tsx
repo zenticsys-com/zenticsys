@@ -60,7 +60,7 @@ const AutomotiveIndustrySolutions = () => {
             <h3 className=" text-lg md:text-xl text-primary font-semibold mb-6">
               Driving Innovation in Connected Mobility
             </h3>
-            <p className="md:text-lg text-gray-600">
+            <p className="text-gray-600">
               The automotive industry is undergoing a digital transformation
               with connected vehicles, autonomous driving, and smart mobility
               solutions. We help automotive companies leverage technology to

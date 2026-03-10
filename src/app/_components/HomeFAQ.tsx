@@ -82,7 +82,7 @@ const HomeFAQ = () => {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>{faq?.answer}</Typography>
+            <Typography component={"p"}>{faq?.answer}</Typography>
           </AccordionDetails>
         </Accordion>
       ))}

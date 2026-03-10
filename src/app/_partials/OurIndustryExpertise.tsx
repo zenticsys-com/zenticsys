@@ -78,7 +78,7 @@ const OurIndustryExpertise = () => {
           <h2 className="text-3xl text-center md:text-4xl font-bold text-gray-900 mb-4">
             Industries We Serve
           </h2>
-          <p className="md:text-xl text-gray-600">
+          <p className="text-lg text-gray-600">
             We deliver custom software development, SaaS solutions, and
             industry-specific digital platforms engineered for scalability,
             security, and measurable business growth.

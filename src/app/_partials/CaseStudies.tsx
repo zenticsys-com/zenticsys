@@ -41,7 +41,7 @@ const CaseStudies = () => {
           <h2 className="text-3xl text-center md:text-4xl font-bold text-gray-900 mb-4">
             Case Studies
           </h2>
-          <p className="md:text-xl text-gray-600">
+          <p className="text-lg text-gray-600">
             Real-world examples of our successful projects
           </p>
         </div>

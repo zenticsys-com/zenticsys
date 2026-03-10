@@ -12,7 +12,7 @@ const InsideZenticsys = () => {
             <h2 className="text-3xl sm:text-start md:text-4xl font-bold text-gray-900 mb-4">
               Inside <span className="text-primary">Zenticsys</span>
             </h2>
-            <p className="md:text-xl text-gray-600 mb-6 md:mb-8 sm:text-start">
+            <p className="text-lg text-gray-600 mb-6 md:mb-8 sm:text-start">
               Zenticsys is a custom software development company specializing in
               advanced web applications, SaaS platforms, and enterprise software
               solutions. We focus on clean architecture, secure backend systems,

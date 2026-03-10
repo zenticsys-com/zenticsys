@@ -10,7 +10,7 @@ const ServicesHeroSection = () => {
           <h1 className="text-3xl md:text-5xl  font-bold text-gray-900 mb-6">
             Our <span className="text-primary">Services</span>
           </h1>
-          <p className="md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-8">
             Custom software development company Zenticsys delivers SaaS, web
             design, mobile app development, and UI/UX design services to build
             secure, high-performance enterprise software solutions. We engineer
