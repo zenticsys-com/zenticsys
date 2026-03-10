@@ -10,7 +10,7 @@ const CustomWebAccordion = () => {
             Custom Software Solution
           </h2>
 
-          <p className="text-gray-600 mb-8 max-w-5xl mx-auto text-lg">
+          <p className="text-gray-600 mb-8 max-w-4xl mx-auto text-lg">
             We are a global software development company delivering custom
             software development services, SaaS platforms, web application
             development, and enterprise software solutions for growth-driven

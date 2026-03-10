@@ -62,7 +62,7 @@ const WhyBestChoiceUs = () => {
             <br />
             for Website Design?
           </h2>
-          <p className="md:text-xl text-gray-600">
+          <p className="text-lg text-gray-600">
             We deliver custom software development, SaaS solutions, and
             industry-specific digital platforms engineered for scalability,
             security, and measurable business growth.

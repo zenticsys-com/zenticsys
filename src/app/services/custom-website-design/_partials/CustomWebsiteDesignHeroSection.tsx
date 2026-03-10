@@ -15,7 +15,7 @@ const CustomWebsiteDesignHeroSection = () => {
               Software Solution
             </h1>
 
-            <h3 className="text-lg md:text-xl mb-2 font-semibold ">
+            <h3 className="md:text-xl mb-2 font-semibold ">
               Global Custom Software Development Agency
             </h3>
             <p className="text-lg text-gray-600 mb-8">
