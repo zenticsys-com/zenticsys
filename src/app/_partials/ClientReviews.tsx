@@ -68,12 +68,12 @@ const ClientReviews = () => {
                   {testimonial?.content}
                 </p>
                 <div>
-                  <div className="font-semibold text-gray-900">
+                  <h4 className="font-semibold text-gray-900">
                     {testimonial?.name}
-                  </div>
-                  <div className="text-sm text-gray-500">
+                  </h4>
+                  <p className="text-sm text-gray-500">
                     {testimonial?.position}
-                  </div>
+                  </p>
                 </div>
               </CardContent>
             </Card>

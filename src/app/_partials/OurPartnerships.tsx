@@ -23,7 +23,7 @@ const OurPartnerships = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Our Partnerships
           </h2>
-          <p className="md:text-xl text-gray-600">
+          <p className="text-lg text-gray-600">
             Collaborating with world-class technology providers to build
             enterprise-grade digital systems.
           </p>
@@ -32,7 +32,7 @@ const OurPartnerships = () => {
           {partnerLogos?.map((partnerLogo, index) => (
             <div
               key={index}
-              className="bg-gray-100  hover:shadow-lg shadow-primary/10  duration-300  p-5"
+              className="bg-gray-100  hover:shadow-lg shadow-primary/10 duration-300 p-5"
             >
               <div className="text-lg font-semibold text-gray-700 flex justify-center items-center gap-2">
                 <span className="text-xl md:text-3xl text-primary">

@@ -56,26 +56,26 @@ const SolutionsWeEngineer = () => {
   ];
 
   return (
-    <section className="py-12 bg-white">
+    <section className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Solutions We Engineer
           </h2>
-          <p className="md:text-lg text-xl text-gray-600">
+          <p className="text-lg text-gray-600">
             Strategic design and development services built to power modern
             businesses.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
           {services?.map((service, index) => (
             <Card
               key={index}
               className="h-full hover:shadow-lg shadow-primary/10 duration-300 group"
             >
               <CardContent className="p-8">
-                <div className="mb-6 transition-transform duration-300">
-                  {service?.icon}
+                <div className="mb-4 transition-transform duration-300">
+                  <span> {service?.icon}</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4 hover:text-primary transition duration-300">
                   {service?.title}
