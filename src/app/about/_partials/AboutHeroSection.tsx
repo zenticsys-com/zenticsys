@@ -1,6 +1,6 @@
 const AboutHeroSection = () => {
   return (
-    <section className="from-gray-50 to-white py-12">
+    <section className="py-12 bg-background-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
