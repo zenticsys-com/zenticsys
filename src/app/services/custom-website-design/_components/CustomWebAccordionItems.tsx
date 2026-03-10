@@ -70,13 +70,13 @@ const CustomWebAccordionItems = () => {
                 padding: 0,
                 margin: 0,
               }}
-              component="span"
+              component="h3"
             >
               {faq.question}
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>{faq.answer}</Typography>
+            <Typography component="p">{faq.answer}</Typography>
           </AccordionDetails>
         </Accordion>
       ))}

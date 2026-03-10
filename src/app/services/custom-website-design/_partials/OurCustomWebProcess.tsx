@@ -62,12 +62,6 @@ const OurCustomWebProcess = () => {
         "We design unique and memorable logos that represent your brand identity. Our branding process ensures your business leaves a strong and lasting impression.",
     },
     {
-      icon: <FaBullseye className="hidden" />,
-      title: "",
-      subtitle: "",
-      description: "",
-    },
-    {
       icon: <FaRocket className="w-8 h-8 text-primary" />,
       title: "WEBSITE",
       subtitle: "LAUNCH",
@@ -88,22 +82,22 @@ const OurCustomWebProcess = () => {
             written, designed, and developed to bring in more business.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
           {processData?.map((item, index) => (
             <Card
               key={index}
-              // className="h-full hover:shadow-lg shadow-primary/10 duration-300 group"
-              className={`h-full hover:shadow-lg shadow-primary/10 duration-300 group
-  ${index === processData.length - 2 ? "hidden md:block md:border-none hover:shadow-none " : ""}
-  `}
+              className="h-full hover:shadow-lg shadow-primary/10 duration-300 group"
+              //             className={`h-full hover:shadow-lg shadow-primary/10 duration-300 group
+              // ${index === processData.length - 2 ? "hidden md:block md:border-none hover:shadow-none " : ""}
+              // `}
             >
               <CardContent className="p-8">
                 <div className="mb-6 transition-transform duration-300">
                   {item?.icon}
                 </div>
-                <h2 className="text-xl font-semibold text-gray-900  hover:text-primary transition duration-300">
+                <h3 className="text-xl font-semibold text-gray-900  hover:text-primary transition duration-300">
                   {item?.title}
-                </h2>
+                </h3>
                 <h4 className="font-normal mb-4">{item?.subtitle}</h4>
                 <p className="text-gray-600 ">{item?.description}</p>
               </CardContent>

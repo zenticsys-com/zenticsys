@@ -18,7 +18,7 @@ const CustomWebsiteDesignHeroSection = () => {
             <h3 className="text-lg md:text-xl mb-2 font-semibold ">
               Global Custom Software Development Agency
             </h3>
-            <p className="text- text-gray-600 mb-8 ">
+            <p className="text-lg text-gray-600 mb-8">
               We are a global software development company delivering custom
               software development services, SaaS platforms, web application
               development, and enterprise software solutions for growth-driven

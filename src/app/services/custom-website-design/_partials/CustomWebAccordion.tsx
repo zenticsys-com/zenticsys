@@ -6,11 +6,11 @@ const CustomWebAccordion = () => {
     <section className="py-12 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <section className="text-center">
-          <h1 className="text-2xl  md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-2xl  md:text-4xl font-bold text-gray-900 mb-6">
             Custom Software Solution
-          </h1>
+          </h2>
 
-          <p className="text-gray-600 mb-8 max-w-5xl mx-auto">
+          <p className="text-gray-600 mb-8 max-w-5xl mx-auto text-lg">
             We are a global software development company delivering custom
             software development services, SaaS platforms, web application
             development, and enterprise software solutions for growth-driven
