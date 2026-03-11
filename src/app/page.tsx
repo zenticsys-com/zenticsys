@@ -13,24 +13,34 @@ import OurBlogs from "./_partials/OurBlogs";
 const HomePage = () => {
   return (
     <div className="min-h-screen">
-      <HeroSection />
-      <OurPartnerships />
-      <div className="bg-background-dark">
+      <section className="bg-background">
+        <HeroSection />
+        <OurPartnerships />
+      </section>
+      <section className="bg-background-dark">
         <InsideZenticsys />
-      </div>
-      <SolutionsWeEngineer />
-      <div className="bg-background-dark">
+      </section>
+      <section className="bg-background">
+        <SolutionsWeEngineer />
+      </section>
+      <section className="bg-background-dark">
         <OurIndustryExpertise />
-      </div>
-      <CaseStudies />
-      <div className="bg-background-dark">
+      </section>
+      <section className="bg-background">
+        <CaseStudies />
+      </section>
+      <section className="bg-background-dark">
         <TheTechnologyWeUse />
-      </div>
-      <ClientReviews />
-      <div className="bg-background-dark">
+      </section>
+      <section className="bg-background">
+        <ClientReviews />
+      </section>
+      <section className="bg-background-dark">
         <OurBlogs />
-      </div>
-      <FAQSection />
+      </section>
+      <section className="bg-background">
+        <FAQSection />
+      </section>
       <CallSchedule />
     </div>
   );

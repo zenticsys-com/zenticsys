@@ -6,7 +6,7 @@ const CompanyStatus = () => {
     { number: "98%", label: "Client Satisfaction" },
   ];
   return (
-    <section className="py-8 bg-background">
+    <section className="py-8 bg-background-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 ">
           {stats?.map((stat, index) => (

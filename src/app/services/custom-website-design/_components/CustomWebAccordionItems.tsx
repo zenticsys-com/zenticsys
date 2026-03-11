@@ -56,7 +56,7 @@ const CustomWebAccordionItems = () => {
           sx={{
             borderRadius: 0,
             boxShadow: "none",
-            backgroundColor: "grey.50",
+            backgroundColor: "white",
             paddingX: "12px",
 
             "&:first-of-type": {

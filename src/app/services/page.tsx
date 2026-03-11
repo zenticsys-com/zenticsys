@@ -14,9 +14,13 @@ const ServicesPage = () => {
       <OurServices />
       <ServiceCtaSection />
       <OurIndustryExpertise />
-      <OurPartnerships />
+      <section className="bg-background-dark">
+        <OurPartnerships />
+      </section>
       <CaseStudies />
-      <FAQSection />
+      <section className="bg-background-dark">
+        <FAQSection />
+      </section>
       <LetUsBuild />
     </div>
   );

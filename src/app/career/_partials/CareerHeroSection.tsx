@@ -12,7 +12,7 @@ const CareerHeroSection = () => {
             <h1 className="text-3xl md:text-5xl text-center md:text-start font-bold text-gray-900 mb-6">
               Join Our <span className="text-primary">Team</span>
             </h1>
-            <p className="md:text-xl text-center md:text-start text-gray-600 mb-8">
+            <p className="text-lg text-center md:text-start text-gray-600 mb-8">
               Build the future of software with a passionate team of innovators.
               At Zenticsys, we're not just developing software – we're shaping
               the digital transformation of businesses worldwide.
