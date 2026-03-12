@@ -74,14 +74,15 @@ const OurCustomWebProcess = () => {
             written, designed, and developed to bring in more business.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4"> */}
+        <div className="grid grid-cols-12 gap-4">
           {processData?.map((item, index) => (
             <Card
               key={index}
-              className="h-full hover:shadow-lg shadow-primary/10 duration-300 group"
-              //             className={`h-full hover:shadow-lg shadow-primary/10 duration-300 group
-              // ${index === processData.length - 2 ? "hidden md:block md:border-none hover:shadow-none " : ""}
-              // `}
+              // className="h-full hover:shadow-lg shadow-primary/10 duration-300 group"
+              className={`h-full col-span-12 md:col-span-6 xl:col-span-4 hover:shadow-lg shadow-primary/10 duration-300 group
+              ${index === processData.length - 1 ? "" : ""}
+              `}
             >
               <CardContent className="p-8">
                 <div className="mb-6 transition-transform duration-300">
