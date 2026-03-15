@@ -22,11 +22,13 @@ export const servicesMenu: SubmenuType[] = [
     items: [
       {
         name: "Custom Website Design",
-        href: "/services/custom-website-design",
+        href: "#",
+        // href: "/services/custom-website-design",
       },
       {
         name: "Automotive Web Design",
-        href: "/services/automotive-web-design",
+        href: "#",
+        // href: "/services/automotive-web-design",
       },
       { name: "E-commerce Web Design", href: "#" },
       { name: "Healthcare Website", href: "#" },

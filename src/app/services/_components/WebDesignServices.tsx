@@ -21,14 +21,16 @@ const WebDesignServices = () => {
       </p>
       <div className="flex flex-col gap-3 font-semibold md:text-lg xl:text-2xl p-4 text-gray-900">
         <Link
-          href={"/services/custom-website-design"}
+          href={"#"}
+          // href={"/services/custom-website-design"}
           className="flex gap-3 items-center transition-all duration-300  hover:underline hover:text-primary"
         >
           <CheckCircle className="text-primary" />
           <span>Custom Website Design</span>
         </Link>
         <Link
-          href={"/services/automotive-web-design"}
+          href={"#"}
+          // href={"/services/automotive-web-design"}
           className="flex gap-3 items-center transition-all duration-300  hover:underline hover:text-primary"
         >
           <CheckCircle className="text-primary" />
