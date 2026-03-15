@@ -3,10 +3,11 @@ import AutomotiveHeroSection from "./_partials/AutomotiveHeroSection";
 import AutomotiveWebAccordion from "./_partials/AutomotiveWebAccordion";
 import AutomotiveWebDesignBanner from "./_partials/AutomotiveWebDesignBanner";
 import WhatsIncludedInPackege from "./_partials/WhatsIncludedInPackege";
-import AutomlotiveCaseStudies from "./AutomlotiveCaseStudies";
+import AutomlotiveCaseStudies from "./_partials/AutomlotiveCaseStudies";
 import TypesOfAutomotiveBusinesses from "./_partials/TypesOfAutomotiveBusinesses";
 import AutomotiveClientReviews from "./_partials/AutomotiveClientReviews";
 import FAQSection from "./_partials/FAQSection";
+import AutomotiveCtaSection from "./_partials/AutomotiveCtaSection";
 
 const AutomotiveWebDesign = () => {
   return (
@@ -33,6 +34,7 @@ const AutomotiveWebDesign = () => {
       <section className="bg-background-dark">
         <FAQSection />
       </section>
+      <AutomotiveCtaSection />
     </div>
   );
 };
