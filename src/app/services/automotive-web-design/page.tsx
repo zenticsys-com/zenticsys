@@ -4,6 +4,9 @@ import AutomotiveWebAccordion from "./_partials/AutomotiveWebAccordion";
 import AutomotiveWebDesignBanner from "./_partials/AutomotiveWebDesignBanner";
 import WhatsIncludedInPackege from "./_partials/WhatsIncludedInPackege";
 import AutomlotiveCaseStudies from "./AutomlotiveCaseStudies";
+import TypesOfAutomotiveBusinesses from "./_partials/TypesOfAutomotiveBusinesses";
+import AutomotiveClientReviews from "./_partials/AutomotiveClientReviews";
+import FAQSection from "./_partials/FAQSection";
 
 const AutomotiveWebDesign = () => {
   return (
@@ -22,7 +25,14 @@ const AutomotiveWebDesign = () => {
       <section className="bg-background-dark">
         <WhatsIncludedInPackege />
       </section>
-      <AutomlotiveCaseStudies />
+      <TypesOfAutomotiveBusinesses />
+      <section className="bg-background-dark">
+        <AutomlotiveCaseStudies />
+      </section>
+      <AutomotiveClientReviews />
+      <section className="bg-background-dark">
+        <FAQSection />
+      </section>
     </div>
   );
 };

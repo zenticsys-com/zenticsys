@@ -48,7 +48,7 @@ const IndustriesFAQ = () => {
           sx={{
             borderRadius: 0,
             boxShadow: "none",
-            backgroundColor: "#F9FAFB",
+            backgroundColor: "transparent",
 
             "&:first-of-type": {
               borderRadius: 0,

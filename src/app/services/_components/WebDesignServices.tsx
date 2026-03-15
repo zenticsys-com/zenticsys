@@ -20,51 +20,87 @@ const WebDesignServices = () => {
         long-term maintainability in mind.
       </p>
       <div className="flex flex-col gap-3 font-semibold md:text-lg xl:text-2xl p-4 text-gray-900">
-        <Link href={"#"} className="flex gap-3 items-center ">
+        <Link
+          href={"/services/custom-website-design"}
+          className="flex gap-3 items-center transition-all duration-300  hover:underline hover:text-primary"
+        >
           <CheckCircle className="text-primary" />
           <span>Custom Website Design</span>
         </Link>
-        <Link href={"#"} className="flex gap-3 items-center">
+        <Link
+          href={"/services/automotive-web-design"}
+          className="flex gap-3 items-center transition-all duration-300  hover:underline hover:text-primary"
+        >
           <CheckCircle className="text-primary" />
           <span>Automotive Web Design</span>
         </Link>
-        <Link href={"#"} className="flex gap-3 items-center">
+        <Link
+          href={"#"}
+          className="flex gap-3 items-center transition duration-300"
+        >
           <CheckCircle className="text-primary" />
           <span>E-commerce Web Design</span>
         </Link>
-        <Link href={"#"} className="flex gap-3 items-center">
+        <Link
+          href={"#"}
+          className="flex gap-3 items-center transition duration-300"
+        >
           <CheckCircle className="text-primary" />
           <span>Healthcare Website</span>
         </Link>
-        <Link href={"#"} className="flex gap-3 items-center">
+        <Link
+          href={"#"}
+          className="flex gap-3 items-center transition duration-300"
+        >
           <CheckCircle className="text-primary" />
           <span>Real Estate Web Design</span>
         </Link>
-        <Link href={"#"} className="flex gap-3 items-center">
+        <Link
+          href={"#"}
+          className="flex gap-3 items-center transition duration-300"
+        >
           <CheckCircle className="text-primary" />
           <span>Corporate Website Design</span>
         </Link>
-        <Link href={"#"} className="flex gap-3 items-center">
+        <Link
+          href={"#"}
+          className="flex gap-3 items-center transition duration-300"
+        >
           <CheckCircle className="text-primary" />
           <span>Saas Web Design</span>
         </Link>
-        <Link href={"#"} className="flex gap-3 items-center">
+        <Link
+          href={"#"}
+          className="flex gap-3 items-center transition duration-300"
+        >
           <CheckCircle className="text-primary" />
           <span>Website Redesign</span>
         </Link>
-        <Link href={"#"} className="flex gap-3 items-center">
+        <Link
+          href={"#"}
+          className="flex gap-3 items-center transition duration-300"
+        >
           <CheckCircle className="text-primary" />
           <span>Fintech Web Design</span>
         </Link>
-        <Link href={"#"} className="flex gap-3 items-center">
+        <Link
+          href={"#"}
+          className="flex gap-3 items-center transition duration-300"
+        >
           <CheckCircle className="text-primary" />
           <span>Manufacturing Website</span>
         </Link>
-        <Link href={"#"} className="flex gap-3 items-center">
+        <Link
+          href={"#"}
+          className="flex gap-3 items-center transition duration-300"
+        >
           <CheckCircle className="text-primary" />
           <span>Web App Design</span>
         </Link>
-        <Link href={"#"} className="flex gap-3 items-center">
+        <Link
+          href={"#"}
+          className="flex gap-3 items-center transition duration-300"
+        >
           <CheckCircle className="text-primary" />
           <span>QA Consulting & Testing</span>
         </Link>

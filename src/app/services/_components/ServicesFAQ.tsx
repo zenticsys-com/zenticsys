@@ -54,6 +54,7 @@ const ServicesFAQ = () => {
           sx={{
             borderRadius: 0,
             boxShadow: "none",
+            backgroundColor: "transparent",
 
             "&:first-of-type": {
               borderRadius: 0,

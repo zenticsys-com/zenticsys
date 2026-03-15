@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { FAQType } from "@/data/faq";
 
-const HomeFAQ = () => {
+const AutomotiveWebDesignFAQ = () => {
   /**_Data_**/
   const faqs: FAQType[] = [
     {
@@ -55,6 +55,7 @@ const HomeFAQ = () => {
           sx={{
             borderRadius: 0,
             boxShadow: "none",
+            backgroundColor: "transparent",
 
             "&:first-of-type": {
               borderRadius: 0,
@@ -90,4 +91,4 @@ const HomeFAQ = () => {
     </div>
   );
 };
-export default HomeFAQ;
+export default AutomotiveWebDesignFAQ;
