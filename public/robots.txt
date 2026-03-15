@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Block private areas
+Disallow: /admin
+Disallow: /dashboard
+Disallow: /api
+
+# Sitemap location
+Sitemap: https://zenticsys.com/sitemap.xml
