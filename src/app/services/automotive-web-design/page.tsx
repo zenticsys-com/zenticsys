@@ -3,6 +3,7 @@ import AutomotiveHeroSection from "./_partials/AutomotiveHeroSection";
 import AutomotiveWebAccordion from "./_partials/AutomotiveWebAccordion";
 import AutomotiveWebDesignBanner from "./_partials/AutomotiveWebDesignBanner";
 import WhatsIncludedInPackege from "./_partials/WhatsIncludedInPackege";
+import AutomlotiveCaseStudies from "./AutomlotiveCaseStudies";
 
 const AutomotiveWebDesign = () => {
   return (
@@ -21,6 +22,7 @@ const AutomotiveWebDesign = () => {
       <section className="bg-background-dark">
         <WhatsIncludedInPackege />
       </section>
+      <AutomlotiveCaseStudies />
     </div>
   );
 };

@@ -1,9 +1,9 @@
+import ZtsButton from "@/app/_components/ZtButton";
+import { caseStudies } from "@/data/caseStudies";
 import { Chip } from "@mui/material";
 import Image from "next/image";
-import ZtsButton from "../_components/ZtButton";
-import { caseStudies } from "@/data/caseStudies";
 
-const CaseStudies = () => {
+const AutomlotiveCaseStudies = () => {
   return (
     <section className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -78,4 +78,4 @@ const CaseStudies = () => {
   );
 };
 
-export default CaseStudies;
+export default AutomlotiveCaseStudies;
