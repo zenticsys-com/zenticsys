@@ -2,6 +2,7 @@ import OurPartnerships from "@/app/_partials/OurPartnerships";
 import AutomotiveHeroSection from "./_partials/AutomotiveHeroSection";
 import AutomotiveWebAccordion from "./_partials/AutomotiveWebAccordion";
 import AutomotiveWebDesignBanner from "./_partials/AutomotiveWebDesignBanner";
+import WhatsIncludedInPackege from "./_partials/WhatsIncludedInPackege";
 
 const AutomotiveWebDesign = () => {
   return (
@@ -17,7 +18,9 @@ const AutomotiveWebDesign = () => {
         <AutomotiveWebAccordion />
       </section>
       <OurPartnerships />
-      <section className="bg-background-dark"></section>
+      <section className="bg-background-dark">
+        <WhatsIncludedInPackege />
+      </section>
     </div>
   );
 };
