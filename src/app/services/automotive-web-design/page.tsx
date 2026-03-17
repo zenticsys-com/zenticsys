@@ -8,14 +8,15 @@ import TypesOfAutomotiveBusinesses from "./_partials/TypesOfAutomotiveBusinesses
 import AutomotiveClientReviews from "./_partials/AutomotiveClientReviews";
 import FAQSection from "./_partials/FAQSection";
 import AutomotiveCtaSection from "./_partials/AutomotiveCtaSection";
+import AutomotiveSlider from "./_components/AutomotiveSlider";
 
 const AutomotiveWebDesign = () => {
   return (
     <div>
       <AutomotiveHeroSection />
       <section className="bg-background-dark">
-        <div className="w-full h-screen flex bg-amber-200 justify-center items-center">
-          Slider
+        <div className="">
+          <AutomotiveSlider />
         </div>
       </section>
       <AutomotiveWebDesignBanner />
