@@ -15,7 +15,7 @@ const AutomotiveWebDesign = () => {
     <div>
       <AutomotiveHeroSection />
       <section className="bg-background-dark">
-        <div className="">
+        <div>
           <AutomotiveSlider />
         </div>
       </section>

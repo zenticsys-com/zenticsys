@@ -64,9 +64,11 @@ const AutomotiveSlider = () => {
   const settings = {
     dots: false,
     infinite: true,
+    arrows: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+
     responsive: [
       {
         breakpoint: 1024,
@@ -94,15 +96,12 @@ const AutomotiveSlider = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Slider {...settings}>
           {processData.map((item, index) => (
-            <div key={index} className="p-2 ">
-              \\
-              <div className="bg-white p-6 shadow-md h-full min-h-80 ">
+            <div key={index} className="p-2">
+              <div className="bg-white p-6 shadow-md h-full min-h-80">
                 <div className="text-4xl font-bold text-gray-800">
                   {item.number}
                 </div>
-
                 <h3 className="text-lg font-semibold mt-2">{item.title}</h3>
-
                 <p className="text-gray-600 text-sm mt-2">{item.description}</p>
               </div>
             </div>
