@@ -10,52 +10,50 @@ const AutomotiveSlider = () => {
   const processData = [
     {
       number: "01",
-      title: "Industry Research",
+      title: "Business & Requirement Analysis",
       description:
-        "We conduct research on your business, target market and competitors to ensure your website stands out.",
+        "Understanding business goals, requirements, and project scope.",
     },
     {
       number: "02",
-      title: "Marketing Strategy Review",
-      description:
-        "We review your marketing channels and sales process to improve lead generation.",
+      title: "Automotive Market & Competitor Research",
+      description: "Researching automotive trends and analyzing competitors.",
     },
     {
       number: "03",
-      title: "SEO Research & Planning",
-      description:
-        "We perform SEO audit and keyword research to optimize your content.",
+      title: "Website Structure & Sitemap Planning",
+      description: "Planning website structure and navigation flow.",
     },
     {
       number: "04",
-      title: "Conversion Strategy",
+      title: "Wireframing & Layout Architecture",
       description:
-        "Convert visitors into paying customers using strong call-to-actions.",
+        "Creating wireframes and layout architecture for the website.",
     },
     {
       number: "05",
-      title: "Content Optimization",
-      description:
-        "Improve your website content structure and keyword targeting.",
+      title: "Automotive UI/UX Interface Design",
+      description: "Designing user-friendly and visually appealing interfaces.",
     },
     {
       number: "06",
-      title: "Performance Tracking",
-      description:
-        "Track marketing results and optimize campaigns continuously.",
+      title: "Responsive Website Design and Development",
+      description: "Building responsive and scalable automotive websites.",
     },
-
     {
       number: "07",
-      title: "Performance Tracking",
-      description:
-        "Track marketing results and optimize campaigns continuously.",
+      title: "Vehicle Inventory & Feature Integration",
+      description: "Integrating vehicle listings and dynamic features.",
     },
     {
       number: "08",
-      title: "Performance Tracking",
-      description:
-        "Track marketing results and optimize campaigns continuously.",
+      title: "Quality Assurance & Cross-Device Testing",
+      description: "Ensuring performance across devices and browsers.",
+    },
+    {
+      number: "09",
+      title: "Website Launch & Deployment",
+      description: "Deploying the website and making it live.",
     },
   ];
   const sliderRef = useRef<Slider | null>(null);
@@ -101,6 +99,16 @@ const AutomotiveSlider = () => {
   return (
     <div className="pt-12 pb-6">
       <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12  max-w-4xl mx-auto">
+          <h2 className="text-3xl text-center md:text-4xl font-bold text-gray-900 mb-4">
+            Automotive Web Design Workflow
+          </h2>
+          <p className="text-lg text-gray-600">
+            We deliver Title: What’s included in Custom Website Design Service
+            Package digital platforms engineered for scalability, security, and
+            measurable business growth.
+          </p>
+        </div>
         <Slider ref={sliderRef} {...settings} focusOnSelect={true}>
           {processData.map((item, index) => (
             <div key={index} className="p-2">
