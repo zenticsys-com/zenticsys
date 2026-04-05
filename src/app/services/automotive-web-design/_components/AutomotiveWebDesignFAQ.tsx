@@ -3,7 +3,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { FAQType } from "@/data/faq";
+import { FAQType } from "@/data/faqs";
 
 const AutomotiveWebDesignFAQ = () => {
   /**_Data_**/
