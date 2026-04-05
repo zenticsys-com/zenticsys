@@ -1,11 +1,22 @@
+"use client";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { FAQType } from "@/data/faq";
+import { useState } from "react";
 
 const HomeFAQ = () => {
+  /**- State -**/
+  const [expanded, setExpanded] = useState<number | false>(false);
+
+  /**- Click Handler -**/
+  const handleChange =
+    (panel: number) => (_event: React.SyntheticEvent, isExpanded: boolean) => {
+      setExpanded(isExpanded ? panel : false);
+    };
+
   /**_Data_**/
   const faqs: FAQType[] = [
     {
@@ -51,6 +62,8 @@ const HomeFAQ = () => {
     <div>
       {faqs?.map((faq, index) => (
         <Accordion
+          expanded={expanded === index}
+          onChange={handleChange(index)}
           key={index}
           sx={{
             borderRadius: 0,
