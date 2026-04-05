@@ -84,3 +84,73 @@ export const servicesFaqs: FAQType[] = [
       "Yes. We measure response times, database efficiency, and infrastructure load capacity to ensure optimal performance.",
   },
 ];
+/**_Industries FAQ Data_**/
+export const industriesFaqs: FAQType[] = [
+  {
+    question: "Is the consultation free?",
+    answer:
+      "Yes, we offer free initial consultations to understand your needs and explore how we can help.",
+  },
+
+  {
+    question: "Do you work with startups?",
+    answer:
+      "Absolutely! We work with businesses of all sizes, from startups to enterprise organizations.",
+  },
+  {
+    question: "What happens after the consultation?",
+    answer:
+      "We'll provide a detailed proposal with timeline, costs, and next steps within 48 hours.",
+  },
+  {
+    question: "Can we schedule follow-up meetings?",
+    answer:
+      "Yes, we're happy to schedule additional meetings as needed throughout the project planning and development process.",
+  },
+  {
+    question: "How long does a typical consultation take?",
+    answer:
+      "Initial consultations usually last 30-60 minutes, depending on project complexity.",
+  },
+
+  {
+    question: "What information should I prepare for the consultation?",
+    answer:
+      "Come prepared with your project goals, timeline, budget range, and any existing documentation or requirements.",
+  },
+];
+
+/**_Schedule FAQ Data_**/
+export const scheduleFaqs: FAQType[] = [
+  {
+    question: "Is the consultation free?",
+    answer:
+      "Yes, we offer free initial consultations to understand your needs and explore how we can help.",
+  },
+  {
+    question: "Do you work with startups?",
+    answer:
+      "Absolutely! We work with businesses of all sizes, from startups to enterprise organizations.",
+  },
+  {
+    question: "What happens after the consultation?",
+    answer:
+      "We'll provide a detailed proposal with timeline, costs, and next steps within 48 hours.",
+  },
+
+  {
+    question: "Can we schedule follow-up meetings?",
+    answer:
+      "Yes, we're happy to schedule additional meetings as needed throughout the project planning and development process.",
+  },
+  {
+    question: "How long does a typical consultation take?",
+    answer:
+      "Initial consultations usually last 30-60 minutes, depending on project complexity.",
+  },
+  {
+    question: "What information should I prepare for the consultation?",
+    answer:
+      "Come prepared with your project goals, timeline, budget range, and any existing documentation or requirements.",
+  },
+];
