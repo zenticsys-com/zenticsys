@@ -6,9 +6,10 @@ import WhyBestChoiceUs from "./_partials/WhyBestChoiceUs";
 import CustomWebsiteDesignBanner from "./_partials/CustomWebsiteDesignBanner";
 import CaseStudies from "@/app/_partials/CaseStudies";
 import ClientReviews from "@/app/_partials/ClientReviews";
-import FAQSection from "../_partials/FAQSection";
+
 import CustomWebsiteDesignCta from "./_partials/CustomWebsiteDesignCta";
 import OurPartnerships from "@/app/_partials/OurPartnerships";
+import FAQSection from "./_partials/FAQSection";
 
 const CustomWebsiteDesignPage = () => {
   return (

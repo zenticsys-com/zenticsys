@@ -26,8 +26,7 @@ export const servicesMenu: SubmenuType[] = [
       },
       {
         name: "Automotive Web Design",
-        href: "#",
-        // href: "/services/automotive-web-design",
+        href: "/services/automotive-web-design",
       },
       { name: "E-commerce Web Design", href: "#" },
       { name: "Healthcare Website", href: "#" },

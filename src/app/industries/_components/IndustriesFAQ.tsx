@@ -1,49 +1,28 @@
+"use client";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { useState } from "react";
+import { industriesFaqs } from "@/data/faqs";
 
 const IndustriesFAQ = () => {
-  /**_Data_**/
-  const faqs = [
-    {
-      question: "Is the consultation free?",
-      answer:
-        "Yes, we offer free initial consultations to understand your needs and explore how we can help.",
-    },
+  /**- State -**/
+  const [expanded, setExpanded] = useState<number | false>(false);
 
-    {
-      question: "Do you work with startups?",
-      answer:
-        "Absolutely! We work with businesses of all sizes, from startups to enterprise organizations.",
-    },
-    {
-      question: "What happens after the consultation?",
-      answer:
-        "We'll provide a detailed proposal with timeline, costs, and next steps within 48 hours.",
-    },
-    {
-      question: "Can we schedule follow-up meetings?",
-      answer:
-        "Yes, we're happy to schedule additional meetings as needed throughout the project planning and development process.",
-    },
-    {
-      question: "How long does a typical consultation take?",
-      answer:
-        "Initial consultations usually last 30-60 minutes, depending on project complexity.",
-    },
+  /**- Click Handler -**/
+  const handleChange =
+    (panel: number) => (_event: React.SyntheticEvent, isExpanded: boolean) => {
+      setExpanded(isExpanded ? panel : false);
+    };
 
-    {
-      question: "What information should I prepare for the consultation?",
-      answer:
-        "Come prepared with your project goals, timeline, budget range, and any existing documentation or requirements.",
-    },
-  ];
   return (
     <div>
-      {faqs?.map((faq, index) => (
+      {industriesFaqs?.map((faq, index) => (
         <Accordion
+          expanded={expanded === index}
+          onChange={handleChange(index)}
           key={index}
           sx={{
             borderRadius: 0,

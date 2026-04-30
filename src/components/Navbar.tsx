@@ -100,7 +100,7 @@ const Navbar = () => {
                     <span>{item.name} </span>
                     <MdKeyboardArrowDown className="text-2xl" />
                     <div
-                      className="absolute top-[80%] left-0 w-full
+                      className="absolute top-[80%] w-[1236px] left-1/2 -translate-x-1/2
                    opacity-0 invisible scale-0
                    group-hover:opacity-100
                    group-hover:visible
@@ -244,7 +244,7 @@ const Navbar = () => {
                           </AccordionSummary>
                           <AccordionDetails>
                             {/* Mobile Dropdown Menu for services */}
-                            <MobileServicesMenu />
+                            <MobileServicesMenu setIsMenuOpen={setIsMenuOpen} />
                           </AccordionDetails>
                         </Accordion>
                       </ListItem>

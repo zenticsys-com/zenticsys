@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 import { ArrowRight } from "@mui/icons-material";
 import ZtsButton from "@/app/_components/ZtButton";
 import CustomWebsiteDesignFAQ from "../_components/CustomWebsiteDesignFAQ";
@@ -8,9 +7,15 @@ const FAQSection = () => {
   return (
     <section className="bg-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
-          Frequently Asked Questions
-        </h2>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Frequently Asked Questions
+          </h2>
+          <p className="text-lg text-gray-600">
+            Get quick insights into how we work and how we can help your
+            business grow.
+          </p>
+        </div>
         <section className="grid grid-cols-12 gap-4 py-8">
           <div className="col-span-12 md:col-span-4  mb-5 flex flex-col justify-center w-full items-center md:items-start md:justify-start">
             <h3 className="text-2xl md:text-3xl font-semibold md:font-bold text-gray-900 mb-5">

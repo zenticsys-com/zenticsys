@@ -11,7 +11,7 @@ type PropsType = {
 
 const SubmenuDropdown: React.FC<PropsType> = ({ submenus }) => {
   return (
-    <Box className="bg-white  md:w-full lg:w-[98.7%] max-w-[1218px] mx-auto">
+    <Box className="bg-white md:w-full lg:w-[98.7%] max-w-[1218px] mx-auto">
       <section className="grid grid-cols-12">
         {submenus?.map((submenu) => (
           <div

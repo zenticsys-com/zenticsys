@@ -10,19 +10,19 @@ const CustomWebsiteDesignHeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-16 gap-10 items-center">
           <div>
             <h1 className="text-3xl md:text-start md:text-[44px] font-bold text-gray-900 mb-3">
-              Building Reliable
-              <span className="text-primary"> Custom </span>
-              Software Solution
+              Custom Website
+              <span className="text-primary"> Design Services </span>
+              for Growing Businesses
             </h1>
 
             <h3 className="md:text-xl mb-2 font-semibold ">
-              Global Custom Software Development Agency
+              Custom Web Design Built for Modern Brands to Stand Out
             </h3>
-            <p className="text-lg text-gray-600 mb-8">
-              We are a global software development company delivering custom
-              software development services, SaaS platforms, web application
-              development, and enterprise software solutions for growth-driven
-              businesses.
+            <p className="text-lg text-gray-600 mb-8 max-w-4xl">
+              We create custom website design solutions based on your business
+              goals, brand identity, and customer journey. Zenticsys builds
+              fast, modern, and conversion-focused websites that help businesses
+              attract customers, build trust, and grow online.
             </p>
             <div className="flex justify-center md:justify-start">
               <Link href="/schedule">
