@@ -7,12 +7,12 @@ const CustomWebServices = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Custom Web Services
+            Custom Web Design and Development Solutions
           </h2>
           <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-8">
-            Specialized software solutions across diverse industries. We
-            understand the unique challenges and requirements of different
-            sectors, delivering tailored solutions that drive results.
+            We provide custom web design and custom web development solutions
+            that help growing brands build stronger online presence, improve
+            customer experience, and achieve long-term business growth.
           </p>
           <section className="flex flex-wrap gap-3 justify-center text-xs lg:text-sm">
             <Link href="#" className="flex justify-center">

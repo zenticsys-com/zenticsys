@@ -22,43 +22,43 @@ const OurCustomWebProcess = () => {
       icon: <FaPenNib className="w-8 h-8 text-primary" />,
       title: "Ui Design",
       description:
-        "Our UI design process focuses on creating clean, modern, and user-friendly interfaces. We design layouts that improve usability, enhance visual appeal, and deliver a smooth user experience across all devices.",
+        "Clear interfaces improve usability, navigation, consistency, accessibility, engagement, trust, responsiveness, user flow, overall digital experience, retention, satisfaction, and smoother customer interactions daily.",
     },
     {
       icon: <FaBullseye className="w-8 h-8 text-primary" />,
       title: "Website Design",
       description:
-        "We craft professional website designs tailored to your brand identity and audience. Our designs focus on clarity, creativity, and conversion to help your business stand out online.",
+        "Professional layouts strengthen branding, increase engagement, build trust, improve navigation, support conversions, create strong online presence, credibility, and lasting visitor impressions.",
     },
     {
       icon: <FaCode className="w-8 h-8 text-primary" />,
       title: "Website Development",
       description:
-        "Our developers transform designs into fast, secure, and scalable websites using modern technologies. We ensure your site is responsive, optimized, and performs smoothly on all devices.",
+        "Fast coding ensures security, responsive layouts, smooth performance, reliable functionality, scalability, clean structure, long-term website stability, efficiency, and dependable user experiences.",
     },
     {
       icon: <FaPenNib className="w-8 h-8 text-primary" />,
       title: "Content Writing",
       description:
-        "We create clear and engaging content that communicates your message effectively. Our content writing helps improve user engagement, SEO performance, and builds trust with your audience.",
+        "Clear messaging communicates value, builds trust, improves engagement, supports SEO, guides visitors, encourages meaningful customer action, clarity, and stronger conversions online.",
     },
     {
       icon: <FaTrophy className="w-8 h-8 text-primary" />,
       title: "Quality Assurance",
       description:
-        "Before launch, our QA team tests every feature of your website. We ensure responsiveness, functionality, and performance so users receive a flawless experience.",
+        "Detailed testing checks functionality, responsiveness, speed, usability, compatibility, navigation, forms, performance, launch readiness, reliability, and smooth user interactions everywhere.",
     },
     {
       icon: <FaBullseye className="w-8 h-8 text-primary" />,
       title: "Branding logo Design",
       description:
-        "We design unique and memorable logos that represent your brand identity. Our branding process ensures your business leaves a strong and lasting impression.",
+        "Memorable logos strengthen identity, improve recognition, reflect values, build trust, support consistent brand presence, professionalism, uniqueness, and market differentiation effectively.",
     },
     {
       icon: <FaRocket className="w-8 h-8 text-primary" />,
       title: "Website Launch",
       description:
-        "After final testing, your website goes live. We ensure a smooth launch process and provide support to make sure everything works perfectly for your audience.",
+        "Smooth deployment includes final checks, performance monitoring, error prevention, live readiness, strong foundation for future growth, confidence, and stable operations.",
     },
   ];
 
@@ -67,11 +67,12 @@ const OurCustomWebProcess = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Our Custom Web Design And Development Process
+            Our Custom Web Design and Development Process
           </h2>
-          <p className="text-lg text-gray-600">
-            Get a custom web page design that's not just beautiful, it's
-            written, designed, and developed to bring in more business.
+          <p className="text-lg text-gray-600 max-w-4xl mx-auto">
+            We follow a clear process from planning and design to custom web
+            development, testing, and launch. Creating websites that reflect
+            your brand, improve user experience, and drive measurable results.
           </p>
         </div>
         {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4"> */}

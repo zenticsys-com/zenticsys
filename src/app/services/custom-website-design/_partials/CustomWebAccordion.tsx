@@ -7,14 +7,13 @@ const CustomWebAccordion = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <section className="text-center">
           <h2 className="text-2xl  md:text-4xl font-bold text-gray-900 mb-6">
-            Custom Software Solution
+            Affordable Website Design & Development Solutions
           </h2>
 
           <p className="text-gray-600 mb-8 max-w-4xl mx-auto text-lg">
-            We are a global software development company delivering custom
-            software development services, SaaS platforms, web application
-            development, and enterprise software solutions for growth-driven
-            businesses.
+            We offer affordable web design services and custom web development
+            to improve user experience, refresh websites, and increase
+            conversions with high-performing landing pages.
           </p>
         </section>
         <section className="grid grid-cols-12 gap-3 md:gap-5">

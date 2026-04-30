@@ -160,40 +160,45 @@ export const scheduleFaqs: FAQType[] = [
 /**_Custom Website Design Data_**/
 export const customWebsiteDesignFaqs: FAQType[] = [
   {
-    question: "How can I get a project quote?",
+    question: "How much does a custom website design cost?",
     answer:
-      "You can contact us through our website or schedule a consultation call. After understanding your requirements, we prepare a detailed proposal outlining the project scope, timeline, and cost estimation, ensuring everything is clearly defined before we move forward.",
+      "The cost depends on your goals, features, number of pages, and complexity. We offer affordable website solutions for small businesses as well as advanced custom website projects for growing brands.",
   },
   {
-    question: "What services does Zenticsys provide?",
+    question: "How long does it take to build a custom website?",
     answer:
-      "We provide custom software development, SaaS product development, website design and development, mobile app development, website redesign, UI/UX design, and enterprise software solutions",
+      "Most custom website projects take between 2 to 8 weeks depending on scope, content readiness, revisions, and required functionality.",
   },
   {
-    question: "What is your software development process?",
+    question: "Do you build websites for small businesses?",
     answer:
-      "Our process starts with understanding your business goals, defining clear requirements and planning, UI/UX design, system architecture setup, backend and frontend development, testing and QA, deployment, and ongoing optimization. We follow agile principles for transparency and flexibility",
+      "Yes. We create affordable and professional websites for small businesses that want to build trust, attract customers, and grow online.",
   },
   {
-    question: "Do you provide ongoing support and maintenance?",
+    question: "Will my website be mobile-friendly?",
     answer:
-      "Yes. We offer post-launch support, performance optimization, security updates, and feature enhancements. After successful project delivery, we provide 6 months of complimentary support to ensure system stability and smooth operation. Following that period, we offer affordable maintenance plans for continued reliability and long-term performance.",
+      "Absolutely. Every website is fully responsive and designed to perform smoothly across mobile, tablet, and desktop devices.",
   },
   {
-    question: "How long does it take to build a custom software solution?",
+    question: "Can you redesign my existing website?",
     answer:
-      "Project timelines depend on complexity and scope. MVP projects typically take 6–10 weeks, while full-scale enterprise systems may require 12–20 weeks or more.",
+      "Yes. We provide website redesign services to improve design quality, user experience, speed, branding, and conversions.",
   },
   {
-    question: "Why is Zenticsys different from typical development companies?",
+    question: "Do you provide SEO with website design?",
     answer:
-      "We don’t rush projects or overpromise. We take time to understand your business, define the right structure, and build software that actually works in day-to-day operations. Our focus is clarity, clean implementation, and systems that remain stable as your company grows. No unnecessary complexity, no shortcuts, just solid engineering.",
+      "Yes. We build websites with SEO-friendly structure, fast performance, clean code, and best practices to help improve search visibility.",
   },
 
   {
-    question: "Why should I choose Zenticsys for custom software development?",
+    question: "Do you offer support after launch?",
     answer:
-      "Zenticsys focuses on architecture-first engineering, high-performance system design, and clean code standards. We build custom software solutions aligned with long-term business growth, ensuring performance, security, and maintainability from day one.",
+      "Yes. We provide ongoing support, updates, maintenance, and improvements after launch to keep your website secure and performing well.",
+  },
+  {
+    question: "Why choose Zenticsys for custom website design?",
+    answer:
+      "We combine strategy, design, development, and business-focused execution to create websites that look professional, perform strongly, and help businesses grow.",
   },
 ];
 
