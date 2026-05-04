@@ -229,18 +229,9 @@ export const customWebAccordionItemsFaqs: FAQType[] = [
     answer:
       "Project timelines depend on complexity and scope. MVP projects typically take 6–10 weeks, while full-scale enterprise systems may require 12–20 weeks or more.",
   },
-  {
-    question: "Custom Product Design",
-    answer:
-      "We don’t rush projects or over promise. We take time to understand your business, define the right structure, and build software that actually works in day-to-day operations. Our focus is clarity, clean implementation, and systems that remain stable as your company grows. No unnecessary complexity, no shortcuts, just solid engineering.",
-  },
+
   {
     question: "Custom SaaS Design",
-    answer:
-      "We don’t rush projects or over promise. We take time to understand your business, define the right structure, and build software that actually works in day-to-day operations. Our focus is clarity, clean implementation, and systems that remain stable as your company grows. No unnecessary complexity, no shortcuts, just solid engineering.",
-  },
-  {
-    question: "Custom Dashboard Design",
     answer:
       "We don’t rush projects or over promise. We take time to understand your business, define the right structure, and build software that actually works in day-to-day operations. Our focus is clarity, clean implementation, and systems that remain stable as your company grows. No unnecessary complexity, no shortcuts, just solid engineering.",
   },
