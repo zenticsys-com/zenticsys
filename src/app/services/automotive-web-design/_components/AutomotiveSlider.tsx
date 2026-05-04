@@ -2,7 +2,7 @@
 
 import Slider from "react-slick";
 import { useRef } from "react";
-import { FaCircleArrowLeft, FaCircleArrowRight } from "react-icons/fa6";
+import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 
 const AutomotiveSlider = () => {
   const processData = [
@@ -54,6 +54,7 @@ const AutomotiveSlider = () => {
       description: "Deploying the website and making it live.",
     },
   ];
+
   const sliderRef = useRef<Slider | null>(null);
   const handlePrevious = () => {
     sliderRef.current?.slickPrev();
@@ -125,14 +126,14 @@ const AutomotiveSlider = () => {
             onClick={() => handlePrevious()}
             className="bg-primary transition duration-300 hover:bg-green-600 font-semibold text-white  cursor-pointer rounded-full"
           >
-            <FaCircleArrowLeft className="text-3xl p-1" />
+            <FaArrowCircleLeft className="text-3xl p-1" />
           </button>
 
           <button
             onClick={() => handleNext()}
             className="bg-primary transition duration-300 hover:bg-green-600 font-semibold text-white  cursor-pointer rounded-full"
           >
-            <FaCircleArrowRight className="text-3xl p-1" />
+            <FaArrowCircleRight className="text-3xl p-1" />
           </button>
         </div>
       </div>
