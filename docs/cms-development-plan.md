@@ -201,14 +201,15 @@ Tasks:
 
 - Add schemas for company profile content.
 - Add schemas for industries and industry cards.
-- Add career content and optional job listings.
+- Add career content.
+- Add CMS-managed job listings with create, update, delete, draft, and publish controls.
 - Add SEO metadata fields.
 - Keep core page assets repo-controlled.
 
 Expected output:
 
 - Marketing can update company, industry, and hiring content.
-- Job listings can be managed without code changes if needed.
+- Job listings can be managed without code changes.
 
 ## Phase 7: Schedule and Conversion Content
 
