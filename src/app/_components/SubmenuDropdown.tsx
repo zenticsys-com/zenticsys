@@ -29,12 +29,15 @@ const SubmenuDropdown: React.FC<PropsType> = ({ submenus }) => {
             <p className="text-gray-600 mt-0.5">{submenu?.description}</p>
 
             <div className="mt-3">
-              {submenu?.items?.map((item) => (
-                <p className="py-1 font-medium text-base text-gray-600">
-                  <Link key={item?.href} href={item?.href}>
-                    <span className=" inline-block transition duration-300 border-b border-b-white hover:border-b hover:border-b-primary ">
-                      {item?.name}
-                    </span>
+            {submenu?.items?.map((item) => (
+              <p
+                key={item?.href}
+                className="py-1 font-medium text-base text-gray-600"
+              >
+                <Link href={item?.href}>
+                  <span className=" inline-block transition duration-300 border-b border-b-white hover:border-b hover:border-b-primary ">
+                    {item?.name}
+                  </span>
                   </Link>
                 </p>
               ))}

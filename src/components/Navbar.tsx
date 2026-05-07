@@ -84,21 +84,25 @@ const Navbar = () => {
               {/*_ Dropdown Menu_*/}
               {navItems?.map((item) =>
                 item?.menu?.length ? (
-                  <Button
+                  <Box
                     key={item.href}
-                    component={Link}
-                    href={item.href}
-                    sx={{
-                      color: isActive(item.href)
-                        ? "primary.main"
-                        : "text.secondary",
-                      textTransform: "none",
-                      fontWeight: 500,
-                    }}
                     className="group static!"
+                    sx={{ position: "relative" }}
                   >
-                    <span>{item.name} </span>
-                    <MdKeyboardArrowDown className="text-2xl" />
+                    <Button
+                      component={Link}
+                      href={item.href}
+                      sx={{
+                        color: isActive(item.href)
+                          ? "primary.main"
+                          : "text.secondary",
+                        textTransform: "none",
+                        fontWeight: 500,
+                      }}
+                    >
+                      <span>{item.name} </span>
+                      <MdKeyboardArrowDown className="text-2xl" />
+                    </Button>
                     <div
                       className="absolute top-[80%] w-[1236px] left-1/2 -translate-x-1/2
                    opacity-0 invisible scale-0
@@ -109,7 +113,7 @@ const Navbar = () => {
                     >
                       <SubmenuDropdown submenus={item?.menu} />
                     </div>
-                  </Button>
+                  </Box>
                 ) : (
                   <Button
                     key={item.href}

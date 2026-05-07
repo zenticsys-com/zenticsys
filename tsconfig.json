@@ -20,6 +20,12 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
+      "@/app/about/*": ["./src/app/(frontend)/about/*"],
+      "@/app/blog/*": ["./src/app/(frontend)/blog/*"],
+      "@/app/career/*": ["./src/app/(frontend)/career/*"],
+      "@/app/industries/*": ["./src/app/(frontend)/industries/*"],
+      "@/app/schedule/*": ["./src/app/(frontend)/schedule/*"],
+      "@/app/services/*": ["./src/app/(frontend)/services/*"],
       "@payload-config": ["./src/payload.config.ts"]
     }
   },
