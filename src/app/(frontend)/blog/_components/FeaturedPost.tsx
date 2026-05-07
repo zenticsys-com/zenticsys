@@ -13,6 +13,7 @@ import {
 type FeaturedPostProps = {
   post: {
     id: string;
+    slug: string;
     image: string;
     title: string;
     excerpt: string;
@@ -76,8 +77,7 @@ const FeaturedPost = ({ post }: FeaturedPostProps) => {
             </div>
 
             <Link
-              // href={`/blog/${post?.id}`}
-              href={`#`}
+              href={`/blog/${post?.slug}`}
               className="inline-flex items-center"
             >
               <ZtsButton

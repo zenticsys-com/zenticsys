@@ -1,11 +1,16 @@
 import BlogHeroSection from "./_partials/BlogHeroSection";
 import OurFeaturedPost from "./_partials/OurFeaturedPost";
+import { getBlogPosts } from "@/lib/blog";
 
-const BlogPage = () => {
+export const dynamic = "force-dynamic";
+
+const BlogPage = async () => {
+  const posts = await getBlogPosts();
+
   return (
     <div>
       <BlogHeroSection />
-      <OurFeaturedPost />
+      <OurFeaturedPost posts={posts} />
     </div>
   );
 };

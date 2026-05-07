@@ -64,14 +64,16 @@ Expected output:
 
 ## Phase 2: Blog CMS
 
+Status: complete locally.
+
 Purpose: migrate the blog from hardcoded data to Payload.
 
 Current source:
 
 - `src/data/blogPosts.ts`
-- `src/app/blog/page.tsx`
-- `src/app/blog/[id]/page.tsx`
-- `src/app/blog/_partials/*`
+- `src/app/(frontend)/blog/page.tsx`
+- `src/app/(frontend)/blog/[id]/page.tsx`
+- `src/app/(frontend)/blog/_partials/*`
 
 CMS fields:
 
@@ -88,6 +90,8 @@ CMS fields:
 - `featured`
 - `coverImage`
 - `authorImage`
+- `coverImageUrl`
+- `authorImageUrl`
 - `seoTitle`
 - `seoDescription`
 - `publishedAt`
@@ -99,7 +103,7 @@ Tasks:
 - Add draft/publish support.
 - Seed or manually migrate existing blog posts.
 - Update `/blog` to read posts from Payload.
-- Update `/blog/[slug]` to read one post from Payload.
+- Update `/blog/[id]` to read one post from Payload by slug/id.
 - Add metadata generation from CMS SEO fields.
 - Keep fallback behavior for missing posts.
 - Limit CMS media uploads to blog images only.
@@ -107,7 +111,7 @@ Tasks:
 Expected output:
 
 - Marketing can create, edit, draft, publish, and update blog content.
-- Blog images can be managed through the CMS if storage is configured.
+- Blog images can be managed through the CMS if storage is configured; external image URLs work now.
 - Non-blog pages remain unchanged.
 
 ## Phase 3: Global SEO and Site Settings

@@ -12,7 +12,8 @@
     "start": "next start",
     "lint": "eslint",
     "payload:generate:importmap": "payload generate:importmap",
-    "payload:generate:types": "payload generate:types"
+    "payload:generate:types": "payload generate:types",
+    "payload:seed:blog": "tsx scripts/seed-blog-posts.ts"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -76,6 +77,7 @@
     "zod": "^4.1.12"
   },
   "devDependencies": {
+    "@next/env": "16.2.4",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -84,6 +86,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.4",
     "tailwindcss": "^4",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }

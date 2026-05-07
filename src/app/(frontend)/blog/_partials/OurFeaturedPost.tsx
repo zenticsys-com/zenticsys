@@ -1,27 +1,26 @@
 "use client";
 
-import { blogPosts } from "@/data/blogPosts";
+import type { BlogViewPost } from "@/lib/blog";
 import { useState } from "react";
 
 import BlogPosts from "../_components/BlogPosts";
 import BlogSidebar from "../_components/BlogSidebar";
 import FeaturedPost from "../_components/FeaturedPost";
 
-const OurFeaturedPost = () => {
+type Props = {
+  posts: BlogViewPost[];
+};
+
+const OurFeaturedPost = ({ posts }: Props) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const categories = [
     "All",
-    "Technology",
-    "Industry Insights",
-    "Development",
-    "AI & ML",
-    "Cloud",
-    "Security",
+    ...Array.from(new Set(posts.map((post) => post.category))).sort(),
   ];
 
-  const filteredPosts = blogPosts.filter((post) => {
+  const filteredPosts = posts.filter((post) => {
     const matchesSearch =
       post?.title?.toLowerCase().includes(searchTerm.toLowerCase()) ||
       post?.excerpt?.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -35,12 +34,12 @@ const OurFeaturedPost = () => {
     return matchesSearch && matchesCategory;
   });
 
-  const featuredPost = blogPosts?.find((post) => post?.featured);
+  const featuredPost = posts?.find((post) => post?.featured);
   const regularPosts = filteredPosts?.filter((post) => !post?.featured);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      {/* <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
         <div className="lg:col-span-3">
           {featuredPost && selectedCategory === "All" && !searchTerm && (
             <FeaturedPost post={featuredPost} />
@@ -63,7 +62,7 @@ const OurFeaturedPost = () => {
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
         />
-      </div> */}
+      </div>
     </div>
   );
 };

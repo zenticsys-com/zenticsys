@@ -50,6 +50,13 @@ export const BlogPosts: CollectionConfig = {
       relationTo: "media",
     },
     {
+      name: "authorImageUrl",
+      type: "text",
+      admin: {
+        description: "Use this for externally hosted author images.",
+      },
+    },
+    {
       name: "publishedAt",
       type: "date",
       admin: {
@@ -82,6 +89,13 @@ export const BlogPosts: CollectionConfig = {
       name: "coverImage",
       type: "upload",
       relationTo: "media",
+    },
+    {
+      name: "coverImageUrl",
+      type: "text",
+      admin: {
+        description: "Use this for externally hosted blog cover images.",
+      },
     },
     {
       name: "featured",

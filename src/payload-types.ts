@@ -208,6 +208,10 @@ export interface BlogPost {
   author: string;
   authorBio?: string | null;
   authorImage?: (string | null) | Media;
+  /**
+   * Use this for externally hosted author images.
+   */
+  authorImageUrl?: string | null;
   publishedAt?: string | null;
   readTime?: string | null;
   category: string;
@@ -218,6 +222,10 @@ export interface BlogPost {
       }[]
     | null;
   coverImage?: (string | null) | Media;
+  /**
+   * Use this for externally hosted blog cover images.
+   */
+  coverImageUrl?: string | null;
   featured?: boolean | null;
   seoTitle?: string | null;
   seoDescription?: string | null;
@@ -379,6 +387,7 @@ export interface BlogPostsSelect<T extends boolean = true> {
   author?: T;
   authorBio?: T;
   authorImage?: T;
+  authorImageUrl?: T;
   publishedAt?: T;
   readTime?: T;
   category?: T;
@@ -389,6 +398,7 @@ export interface BlogPostsSelect<T extends boolean = true> {
         id?: T;
       };
   coverImage?: T;
+  coverImageUrl?: T;
   featured?: T;
   seoTitle?: T;
   seoDescription?: T;

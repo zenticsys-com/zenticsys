@@ -1,17 +1,38 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import type { Metadata } from "next";
 
 import { Badge } from "@/components/ui/badge";
-import { blogPosts } from "@/data/blogPosts";
+import { getBlogPostBySlug } from "@/lib/blog";
 
 type Props = {
-  params: {
+  params: Promise<{
     id: string;
+  }>;
+};
+
+export const dynamic = "force-dynamic";
+
+export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
+  const { id } = await params;
+  const post = await getBlogPostBySlug(id);
+
+  if (!post) return {};
+
+  return {
+    title: post.seoTitle || post.title,
+    description: post.seoDescription || post.excerpt,
+    openGraph: {
+      title: post.seoTitle || post.title,
+      description: post.seoDescription || post.excerpt,
+      images: post.image ? [post.image] : undefined,
+    },
   };
 };
 
-const BlogDetailsPage = ({ params }: Props) => {
-  const post = blogPosts?.find((item) => item?.id === params?.id);
+const BlogDetailsPage = async ({ params }: Props) => {
+  const { id } = await params;
+  const post = await getBlogPostBySlug(id);
 
   if (!post) {
     return notFound();
