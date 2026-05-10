@@ -51,7 +51,7 @@ const BlogDetailsPage = async ({ params }: Props) => {
       </div>
 
       {/* Category */}
-      <Badge className="mb-4">{post?.category}</Badge>
+      <Badge className="mb-4 text-white">{post?.category}</Badge>
 
       {/* Title */}
       <h1 className="text-4xl font-bold mb-4">{post?.title}</h1>
@@ -65,7 +65,7 @@ const BlogDetailsPage = async ({ params }: Props) => {
 
       {/* Blog Content */}
       <div
-        className="prose max-w-none"
+        className="blog-rich-text max-w-none"
         dangerouslySetInnerHTML={{ __html: post?.content }}
       />
 

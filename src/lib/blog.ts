@@ -1,4 +1,8 @@
-import { convertLexicalToHTML } from "@payloadcms/richtext-lexical/html";
+import {
+  convertLexicalToHTML,
+  defaultHTMLConverters,
+  type HTMLConverters,
+} from "@payloadcms/richtext-lexical/html";
 import { getPayload } from "payload";
 
 import { blogPosts as fallbackBlogPosts } from "@/data/blogPosts";
@@ -51,6 +55,31 @@ const getMediaURL = (media: BlogPost["coverImage"] | BlogPost["authorImage"]) =>
   return "";
 };
 
+const escapeHTML = (value: string) =>
+  value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+
+const blogHTMLConverters: HTMLConverters = {
+  ...defaultHTMLConverters,
+  blocks: {
+    Code: ({ node }) => {
+      const fields = node.fields as {
+        code?: string;
+        language?: string;
+      };
+      const language = fields.language || "text";
+
+      return `<pre class="blog-code-block"><code class="language-${escapeHTML(
+        language,
+      )}">${escapeHTML(fields.code || "")}</code></pre>`;
+    },
+  },
+};
+
 const fallbackToViewPost = (post: FallbackBlogPost): BlogViewPost => ({
   ...post,
   slug: post.id,
@@ -64,6 +93,7 @@ const payloadToViewPost = (post: BlogPost): BlogViewPost => ({
   title: post.title,
   excerpt: post.excerpt,
   content: convertLexicalToHTML({
+    converters: blogHTMLConverters,
     data: post.content,
     disableContainer: true,
   }),
