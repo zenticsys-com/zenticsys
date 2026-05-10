@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+
 import CallSchedule from "@/app/_partials/CallSchedule";
 import ClientReviews from "@/app/_partials/ClientReviews";
 import HeroSection from "@/app/_partials/HeroSection";
@@ -9,25 +11,39 @@ import SolutionsWeEngineer from "@/app/_partials/SolutionsWeEngineer";
 import CaseStudies from "./_partials/CaseStudies";
 import FAQSection from "./_partials/FAQSection";
 import OurBlogs from "./_partials/OurBlogs";
+import { getHomePage } from "@/lib/homePage";
 
-const HomePage = () => {
+export const dynamic = "force-dynamic";
+
+export const generateMetadata = async (): Promise<Metadata> => {
+  const page = await getHomePage();
+
+  return {
+    title: page.seo?.title || undefined,
+    description: page.seo?.description || undefined,
+  };
+};
+
+const HomePage = async () => {
+  const page = await getHomePage();
+
   return (
     <div className="min-h-screen">
       <section className="bg-background">
-        <HeroSection />
-        <OurPartnerships />
+        <HeroSection content={page.hero} />
+        <OurPartnerships content={page.partnerships} />
       </section>
       <section className="bg-background-dark">
-        <InsideZenticsys />
+        <InsideZenticsys content={page.inside} />
       </section>
       <section className="bg-background">
-        <SolutionsWeEngineer />
+        <SolutionsWeEngineer content={page.solutions} />
       </section>
       <section className="bg-background-dark">
-        <OurIndustryExpertise />
+        <OurIndustryExpertise content={page.industries} />
       </section>
       <section className="bg-background">
-        <CaseStudies />
+        <CaseStudies content={page.caseStudies} />
       </section>
       <section className="bg-background-dark">
         <TheTechnologyWeUse />
@@ -36,12 +52,12 @@ const HomePage = () => {
         <ClientReviews />
       </section>
       <section className="bg-background-dark">
-        <OurBlogs />
+        <OurBlogs content={page.blogPreview} />
       </section>
       <section className="bg-background">
-        <FAQSection />
+        <FAQSection content={page.faq} />
       </section>
-      <CallSchedule />
+      <CallSchedule content={page.cta} />
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import type { HomePageView } from "@/lib/homePage";
 import { FaMoneyCheckAlt } from "react-icons/fa";
 import {
   FaBuildingColumns,
@@ -10,7 +11,11 @@ import { IoLayersSharp, IoSettingsSharp } from "react-icons/io5";
 import { MdShoppingCart } from "react-icons/md";
 import { PiHandHeartFill } from "react-icons/pi";
 
-const OurIndustryExpertise = () => {
+type Props = {
+  content?: HomePageView["industries"];
+};
+
+const OurIndustryExpertise = ({ content }: Props) => {
   /**- Data -**/
   const industries = [
     {
@@ -71,21 +76,31 @@ const OurIndustryExpertise = () => {
     },
   ];
 
+  const data = content || {
+    heading: "Industries We Serve",
+    description:
+      "We deliver custom software development, SaaS solutions, and industry-specific digital platforms engineered for scalability, security, and measurable business growth.",
+    items: industries.map(({ title, description }) => ({ title, description })),
+  };
+  const contentItems = data.items?.length ? data.items : industries;
+  const items = contentItems.map((item, index) => ({
+    ...item,
+    icon: industries[index]?.icon || <FaCar className="w-8 h-8 text-primary" />,
+  }));
+
   return (
     <section className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12  max-w-230 mx-auto">
-          <h2 className="text-3xl text-center md:text-4xl font-bold text-gray-900 mb-4">
-            Industries We Serve
+            <h2 className="text-3xl text-center md:text-4xl font-bold text-gray-900 mb-4">
+            {data.heading}
           </h2>
           <p className="text-lg text-gray-600">
-            We deliver custom software development, SaaS solutions, and
-            industry-specific digital platforms engineered for scalability,
-            security, and measurable business growth.
+            {data.description}
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {industries?.map((industry, index) => (
+          {items?.map((industry, index) => (
             <Card
               key={index}
               className="h-full hover:shadow-lg shadow-primary/10 duration-300"

@@ -91,9 +91,11 @@ export interface Config {
   fallbackLocale: null;
   globals: {
     siteSettings: SiteSetting;
+    homePage: HomePage;
   };
   globalsSelect: {
     siteSettings: SiteSettingsSelect<false> | SiteSettingsSelect<true>;
+    homePage: HomePageSelect<false> | HomePageSelect<true>;
   };
   locale: null;
   widgets: {
@@ -488,6 +490,100 @@ export interface SiteSetting {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "homePage".
+ */
+export interface HomePage {
+  id: string;
+  seo?: {
+    title?: string | null;
+    description?: string | null;
+  };
+  hero: {
+    heading: string;
+    highlight?: string | null;
+    subheading?: string | null;
+    eyebrow?: string | null;
+    description?: string | null;
+    ctaLabel?: string | null;
+    ctaHref?: string | null;
+  };
+  inside: {
+    heading: string;
+    description?: string | null;
+    highlights?:
+      | {
+          text: string;
+          id?: string | null;
+        }[]
+      | null;
+    ctaLabel?: string | null;
+    ctaHref?: string | null;
+  };
+  partnerships: {
+    heading: string;
+    description?: string | null;
+    partners?:
+      | {
+          name: string;
+          id?: string | null;
+        }[]
+      | null;
+  };
+  solutions: {
+    heading: string;
+    description?: string | null;
+    items?:
+      | {
+          title: string;
+          description: string;
+          id?: string | null;
+        }[]
+      | null;
+  };
+  industries: {
+    heading: string;
+    description?: string | null;
+    items?:
+      | {
+          title: string;
+          description: string;
+          id?: string | null;
+        }[]
+      | null;
+  };
+  caseStudies: {
+    heading: string;
+    description?: string | null;
+  };
+  blogPreview: {
+    heading: string;
+    description?: string | null;
+  };
+  faq: {
+    heading: string;
+    description?: string | null;
+    sidebarHeading?: string | null;
+    ctaLabel?: string | null;
+    ctaHref?: string | null;
+    items?:
+      | {
+          question: string;
+          answer: string;
+          id?: string | null;
+        }[]
+      | null;
+  };
+  cta: {
+    heading: string;
+    description?: string | null;
+    buttonLabel?: string | null;
+    buttonHref?: string | null;
+  };
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "siteSettings_select".
  */
 export interface SiteSettingsSelect<T extends boolean = true> {
@@ -522,6 +618,120 @@ export interface SiteSettingsSelect<T extends boolean = true> {
         newsletterTitle?: T;
         newsletterDescription?: T;
         copyrightText?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "homePage_select".
+ */
+export interface HomePageSelect<T extends boolean = true> {
+  seo?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+      };
+  hero?:
+    | T
+    | {
+        heading?: T;
+        highlight?: T;
+        subheading?: T;
+        eyebrow?: T;
+        description?: T;
+        ctaLabel?: T;
+        ctaHref?: T;
+      };
+  inside?:
+    | T
+    | {
+        heading?: T;
+        description?: T;
+        highlights?:
+          | T
+          | {
+              text?: T;
+              id?: T;
+            };
+        ctaLabel?: T;
+        ctaHref?: T;
+      };
+  partnerships?:
+    | T
+    | {
+        heading?: T;
+        description?: T;
+        partners?:
+          | T
+          | {
+              name?: T;
+              id?: T;
+            };
+      };
+  solutions?:
+    | T
+    | {
+        heading?: T;
+        description?: T;
+        items?:
+          | T
+          | {
+              title?: T;
+              description?: T;
+              id?: T;
+            };
+      };
+  industries?:
+    | T
+    | {
+        heading?: T;
+        description?: T;
+        items?:
+          | T
+          | {
+              title?: T;
+              description?: T;
+              id?: T;
+            };
+      };
+  caseStudies?:
+    | T
+    | {
+        heading?: T;
+        description?: T;
+      };
+  blogPreview?:
+    | T
+    | {
+        heading?: T;
+        description?: T;
+      };
+  faq?:
+    | T
+    | {
+        heading?: T;
+        description?: T;
+        sidebarHeading?: T;
+        ctaLabel?: T;
+        ctaHref?: T;
+        items?:
+          | T
+          | {
+              question?: T;
+              answer?: T;
+              id?: T;
+            };
+      };
+  cta?:
+    | T
+    | {
+        heading?: T;
+        description?: T;
+        buttonLabel?: T;
+        buttonHref?: T;
       };
   updatedAt?: T;
   createdAt?: T;

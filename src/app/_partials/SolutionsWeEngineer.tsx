@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import type { HomePageView } from "@/lib/homePage";
 import { FaCode } from "react-icons/fa6";
 import {
   FiCode,
@@ -14,7 +15,11 @@ type ServicePropsType = {
   title: string;
   description: string;
 };
-const SolutionsWeEngineer = () => {
+type Props = {
+  content: HomePageView["solutions"];
+};
+
+const SolutionsWeEngineer = ({ content }: Props) => {
   /**_Services Data_**/
   const services: ServicePropsType[] = [
     {
@@ -55,20 +60,25 @@ const SolutionsWeEngineer = () => {
     },
   ];
 
+  const contentItems = content.items?.length ? content.items : services;
+  const items = contentItems.map((item, index) => ({
+    ...item,
+    icon: services[index]?.icon || <FiCode className="w-8 h-8 text-primary" />,
+  }));
+
   return (
     <section className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Solutions We Engineer
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            {content.heading}
           </h2>
           <p className="text-lg text-gray-600">
-            Strategic design and development services built to power modern
-            businesses.
+            {content.description}
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
-          {services?.map((service, index) => (
+          {items?.map((service, index) => (
             <Card
               key={index}
               className="h-full hover:shadow-lg shadow-primary/10 duration-300 group"

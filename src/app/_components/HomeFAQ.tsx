@@ -1,5 +1,5 @@
 "use client";
-import { homeFaqs } from "@/data/faqs";
+import { type FAQType, homeFaqs } from "@/data/faqs";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -7,7 +7,11 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import { useState } from "react";
 
-const HomeFAQ = () => {
+type Props = {
+  items?: FAQType[] | null;
+};
+
+const HomeFAQ = ({ items }: Props) => {
   /**- State -**/
   const [expanded, setExpanded] = useState<number | false>(false);
 
@@ -19,7 +23,7 @@ const HomeFAQ = () => {
 
   return (
     <div>
-      {homeFaqs?.map((faq, index) => (
+      {(items?.length ? items : homeFaqs)?.map((faq, index) => (
         <Accordion
           expanded={expanded === index}
           onChange={handleChange(index)}

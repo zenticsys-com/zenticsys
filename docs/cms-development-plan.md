@@ -141,6 +141,8 @@ Expected output:
 
 ## Phase 4: Homepage Content
 
+Status: complete locally.
+
 Purpose: make high-impact homepage copy editable while preserving the designed layout.
 
 Candidate sections:
@@ -159,6 +161,7 @@ Tasks:
 - Add structured section fields.
 - Replace hardcoded copy section by section.
 - Keep homepage images repo-controlled unless explicitly approved.
+- Keep icons and layout component-controlled.
 
 Expected output:
 
