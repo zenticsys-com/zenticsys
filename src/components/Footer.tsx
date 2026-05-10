@@ -1,6 +1,7 @@
 "use client";
 
 import ZtsButton from "@/app/_components/ZtButton";
+import type { SiteSettingsView } from "@/lib/siteSettings";
 import { Facebook, Instagram, LinkedIn } from "@mui/icons-material";
 import {
   Box,
@@ -22,7 +23,11 @@ const quickLinks = [
   { name: "Career", href: "/career" },
 ];
 
-export function Footer() {
+type Props = {
+  settings: SiteSettingsView;
+};
+
+export function Footer({ settings }: Props) {
   return (
     <Box
       component="footer"
@@ -47,7 +52,7 @@ export function Footer() {
               component="div"
               sx={{ fontWeight: "bold", mb: 2 }}
             >
-              Zenticsys
+              {settings.siteName}
             </Typography>
             <Typography
               variant="body1"
@@ -57,9 +62,7 @@ export function Footer() {
                 mx: { xs: "auto", md: 0 },
               }}
             >
-              We are a software development company dedicated to creating
-              innovative solutions that transform businesses and drive digital
-              success.
+              {settings.footer.description}
             </Typography>
             <Box
               sx={{
@@ -69,7 +72,7 @@ export function Footer() {
               }}
             >
               <IconButton
-                href="https://www.facebook.com/zenticsys/"
+                href={settings.socialLinks.facebook}
                 target="_blank"
                 sx={{ color: "grey.400", "&:hover": { color: "primary.main" } }}
               >
@@ -77,14 +80,14 @@ export function Footer() {
               </IconButton>
 
               <IconButton
-                href="https://www.linkedin.com/company/zenticsys/"
+                href={settings.socialLinks.linkedin}
                 target="_blank"
                 sx={{ color: "grey.400", "&:hover": { color: "primary.main" } }}
               >
                 <LinkedIn />
               </IconButton>
               <IconButton
-                href="https://www.instagram.com/zentic.sys"
+                href={settings.socialLinks.instagram}
                 target="_blank"
                 sx={{ color: "grey.400", "&:hover": { color: "primary.main" } }}
               >
@@ -126,10 +129,10 @@ export function Footer() {
 
           <Box>
             <Typography variant="h6" sx={{ fontWeight: 600, mb: 2 }}>
-              Newsletter
+              {settings.footer.newsletterTitle}
             </Typography>
             <Typography variant="body2" sx={{ color: "grey.300", mb: 2 }}>
-              Stay updated with our latest insights and news.
+              {settings.footer.newsletterDescription}
             </Typography>
             <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
               <TextField
@@ -173,7 +176,7 @@ export function Footer() {
           }}
         >
           <Typography variant="body2" sx={{ color: "grey.400" }}>
-            (c) 2024 Zenticsys. All rights reserved.
+            {settings.footer.copyrightText}
           </Typography>
           <Box sx={{ display: "flex", gap: 3 }}>
             <MuiLink

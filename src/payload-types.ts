@@ -89,8 +89,12 @@ export interface Config {
     defaultIDType: string;
   };
   fallbackLocale: null;
-  globals: {};
-  globalsSelect: {};
+  globals: {
+    siteSettings: SiteSetting;
+  };
+  globalsSelect: {
+    siteSettings: SiteSettingsSelect<false> | SiteSettingsSelect<true>;
+  };
   locale: null;
   widgets: {
     collections: CollectionsWidget;
@@ -445,6 +449,83 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
   batch?: T;
   updatedAt?: T;
   createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "siteSettings".
+ */
+export interface SiteSetting {
+  id: string;
+  siteName: string;
+  siteDescription: string;
+  defaultSeo: {
+    title: string;
+    description: string;
+    image?: (string | null) | Media;
+    /**
+     * Use this for externally hosted social share images.
+     */
+    imageUrl?: string | null;
+  };
+  contact?: {
+    email?: string | null;
+    phone?: string | null;
+    address?: string | null;
+  };
+  socialLinks?: {
+    facebook?: string | null;
+    linkedin?: string | null;
+    instagram?: string | null;
+  };
+  footer?: {
+    description?: string | null;
+    newsletterTitle?: string | null;
+    newsletterDescription?: string | null;
+    copyrightText?: string | null;
+  };
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "siteSettings_select".
+ */
+export interface SiteSettingsSelect<T extends boolean = true> {
+  siteName?: T;
+  siteDescription?: T;
+  defaultSeo?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        image?: T;
+        imageUrl?: T;
+      };
+  contact?:
+    | T
+    | {
+        email?: T;
+        phone?: T;
+        address?: T;
+      };
+  socialLinks?:
+    | T
+    | {
+        facebook?: T;
+        linkedin?: T;
+        instagram?: T;
+      };
+  footer?:
+    | T
+    | {
+        description?: T;
+        newsletterTitle?: T;
+        newsletterDescription?: T;
+        copyrightText?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema

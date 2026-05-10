@@ -116,6 +116,8 @@ Expected output:
 
 ## Phase 3: Global SEO and Site Settings
 
+Status: complete locally.
+
 Purpose: give SEO control over cross-site metadata without touching page layouts.
 
 CMS globals:
@@ -129,9 +131,9 @@ CMS globals:
 Tasks:
 
 - Add `siteSettings` global.
-- Add reusable SEO field group.
-- Wire default metadata in `src/app/layout.tsx`.
-- Add footer/contact content where appropriate.
+- Add default SEO fields inside `siteSettings`.
+- Wire default metadata in `src/app/(frontend)/layout.tsx`.
+- Add footer and common business content where appropriate.
 
 Expected output:
 

@@ -6,6 +6,7 @@ import sharp from "sharp";
 import { BlogPosts } from "./collections/BlogPosts";
 import { Media } from "./collections/Media";
 import { Users } from "./collections/Users";
+import { SiteSettings } from "./globals/SiteSettings";
 
 export default buildConfig({
   admin: {
@@ -15,6 +16,7 @@ export default buildConfig({
     },
   },
   collections: [Users, Media, BlogPosts],
+  globals: [SiteSettings],
   db: mongooseAdapter({
     url: process.env.DATABASE_URI || "",
   }),
