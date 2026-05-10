@@ -25,6 +25,14 @@ export type BlogViewPost = {
   seoDescription?: string;
 };
 
+export type BlogPostsResult = {
+  posts: BlogViewPost[];
+  featuredPost?: BlogViewPost;
+  page: number;
+  totalPages: number;
+  totalDocs: number;
+};
+
 const formatDate = (date?: string | null) => {
   if (!date) return "";
 
@@ -78,29 +86,134 @@ const payloadToViewPost = (post: BlogPost): BlogViewPost => ({
   seoDescription: post.seoDescription || post.excerpt,
 });
 
-export const getBlogPosts = async (): Promise<BlogViewPost[]> => {
+type GetBlogPostsOptions = {
+  page?: number;
+  limit?: number;
+};
+
+export const getBlogPosts = async ({
+  page = 1,
+  limit = 4,
+}: GetBlogPostsOptions = {}): Promise<BlogPostsResult> => {
+  const payload = await getPayload({ config });
+  const [featuredPosts, posts] = await Promise.all([
+    page === 1
+      ? payload.find({
+          collection: "blogPosts",
+          depth: 1,
+          limit: 1,
+          sort: "-publishedAt",
+          where: {
+            and: [
+              {
+                _status: {
+                  equals: "published",
+                },
+              },
+              {
+                featured: {
+                  equals: true,
+                },
+              },
+            ],
+          },
+        })
+      : Promise.resolve({ docs: [] }),
+    payload.find({
+      collection: "blogPosts",
+      depth: 1,
+      limit,
+      page,
+      sort: "-publishedAt",
+      where: {
+        and: [
+          {
+            _status: {
+              equals: "published",
+            },
+          },
+          {
+            or: [
+              {
+                featured: {
+                  equals: false,
+                },
+              },
+              {
+                featured: {
+                  exists: false,
+                },
+              },
+            ],
+          },
+        ],
+      },
+    }),
+  ]);
+
+  if (!posts.totalDocs) {
+    const start = (page - 1) * limit;
+    const fallbackPosts = fallbackBlogPosts.map(fallbackToViewPost);
+    const fallbackFeaturedPost =
+      page === 1 ? fallbackPosts.find((post) => post.featured) : undefined;
+    const fallbackRegularPosts = fallbackPosts.filter((post) => !post.featured);
+
+    return {
+      posts: fallbackRegularPosts.slice(start, start + limit),
+      featuredPost: fallbackFeaturedPost,
+      page,
+      totalDocs: fallbackRegularPosts.length,
+      totalPages: Math.max(1, Math.ceil(fallbackRegularPosts.length / limit)),
+    };
+  }
+
+  return {
+    posts: posts.docs.map(payloadToViewPost),
+    featuredPost: featuredPosts.docs[0]
+      ? payloadToViewPost(featuredPosts.docs[0])
+      : undefined,
+    page: posts.page || page,
+    totalDocs: posts.totalDocs,
+    totalPages: posts.totalPages,
+  };
+};
+
+export const getBlogPostBySlug = async (slug: string) => {
   const payload = await getPayload({ config });
   const posts = await payload.find({
     collection: "blogPosts",
     depth: 1,
-    limit: 100,
-    sort: "-publishedAt",
+    limit: 1,
     where: {
-      _status: {
-        equals: "published",
-      },
+      and: [
+        {
+          _status: {
+            equals: "published",
+          },
+        },
+        {
+          or: [
+            {
+              slug: {
+                equals: slug,
+              },
+            },
+            {
+              id: {
+                equals: slug,
+              },
+            },
+          ],
+        },
+      ],
     },
   });
 
-  if (!posts.docs.length) {
-    return fallbackBlogPosts.map(fallbackToViewPost);
+  if (posts.docs[0]) {
+    return payloadToViewPost(posts.docs[0]);
   }
 
-  return posts.docs.map(payloadToViewPost);
-};
-
-export const getBlogPostBySlug = async (slug: string) => {
-  const posts = await getBlogPosts();
-
-  return posts.find((post) => post.slug === slug || post.id === slug);
+  return fallbackBlogPosts
+    .map(fallbackToViewPost)
+    .find((post) => post.slug === slug || post.id === slug);
 };

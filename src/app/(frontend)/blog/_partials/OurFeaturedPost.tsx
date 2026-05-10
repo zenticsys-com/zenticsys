@@ -1,6 +1,8 @@
 "use client";
 
 import type { BlogViewPost } from "@/lib/blog";
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 
 import BlogPosts from "../_components/BlogPosts";
@@ -9,9 +11,19 @@ import FeaturedPost from "../_components/FeaturedPost";
 
 type Props = {
   posts: BlogViewPost[];
+  featuredPost?: BlogViewPost;
+  currentPage: number;
+  totalPages: number;
 };
 
-const OurFeaturedPost = ({ posts }: Props) => {
+const OurFeaturedPost = ({
+  posts,
+  featuredPost,
+  currentPage,
+  totalPages,
+}: Props) => {
+  const pathname = usePathname();
+  const router = useRouter();
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
 
@@ -34,8 +46,24 @@ const OurFeaturedPost = ({ posts }: Props) => {
     return matchesSearch && matchesCategory;
   });
 
-  const featuredPost = posts?.find((post) => post?.featured);
-  const regularPosts = filteredPosts?.filter((post) => !post?.featured);
+  const regularPosts = filteredPosts;
+  const pages = Array.from({ length: totalPages }, (_, index) => index + 1);
+
+  const resetToFirstPage = () => {
+    if (currentPage > 1) {
+      router.replace(pathname);
+    }
+  };
+
+  const handleSearchTermChange = (value: string) => {
+    setSearchTerm(value);
+    resetToFirstPage();
+  };
+
+  const handleCategoryChange = (value: string) => {
+    setSelectedCategory(value);
+    resetToFirstPage();
+  };
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -53,14 +81,54 @@ const OurFeaturedPost = ({ posts }: Props) => {
                 : "Latest Posts"
             }
           />
+
+          {!searchTerm && selectedCategory === "All" && totalPages > 1 && (
+            <nav
+              aria-label="Blog pagination"
+              className="mt-10 flex flex-wrap items-center justify-center gap-2"
+            >
+              {currentPage > 1 && (
+                <Link
+                  className="rounded-md border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 hover:border-primary hover:text-primary"
+                  href={`${pathname}?page=${currentPage - 1}`}
+                >
+                  Previous
+                </Link>
+              )}
+
+              {pages.map((page) => (
+                <Link
+                  aria-current={page === currentPage ? "page" : undefined}
+                  className={`rounded-md border px-4 py-2 text-sm font-medium ${
+                    page === currentPage
+                      ? "border-primary bg-primary text-white"
+                      : "border-gray-300 text-gray-700 hover:border-primary hover:text-primary"
+                  }`}
+                  href={page === 1 ? pathname : `${pathname}?page=${page}`}
+                  key={page}
+                >
+                  {page}
+                </Link>
+              ))}
+
+              {currentPage < totalPages && (
+                <Link
+                  className="rounded-md border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 hover:border-primary hover:text-primary"
+                  href={`${pathname}?page=${currentPage + 1}`}
+                >
+                  Next
+                </Link>
+              )}
+            </nav>
+          )}
         </div>
 
         <BlogSidebar
           searchTerm={searchTerm}
-          setSearchTerm={setSearchTerm}
+          setSearchTerm={handleSearchTermChange}
           categories={categories}
           selectedCategory={selectedCategory}
-          setSelectedCategory={setSelectedCategory}
+          setSelectedCategory={handleCategoryChange}
         />
       </div>
     </div>
